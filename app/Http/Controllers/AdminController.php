@@ -10,6 +10,6 @@ class AdminController extends Controller
         return view('layouts.admin.admin');
     }
     public function log(){
-        return view('layouts.admin.login');
+        return view('layouts.admin.admin');
     }
 }

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Login Admin</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -30,7 +30,6 @@
         <div class="row justify-content-center">
 
             <div class="col-xl-10 col-lg-12 col-md-9">
-
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
@@ -38,8 +37,9 @@
                             <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
+                                    <a class="fas fa-arrow-left" href="/home"></a>
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Silahkan Login!</h1>
                                     </div>
                                     <form method="POST" class="user">
                                         <div class="form-group">
@@ -84,11 +84,16 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        {{-- <a class="small" href="/resetpass">Lupa Password?</a> --}}
+                                        @if (Route::has('password.request'))
+                                        <a class="small" href="{{ route('password.request') }}">
+                                            {{ __('Lupa Password?') }}
+                                        </a>
+                                    @endif
                                     </div>
                                     <div class="text-center">
                                         @if (Route::has('register'))
-                                            <a class="small" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                            <a class="small" href="{{ route('register') }}">Belum punya akun? Registrasi!</a>
                                     @endif
                                     </div>
                                 </div>

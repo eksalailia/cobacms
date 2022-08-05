@@ -9,7 +9,7 @@ class AdminController extends Controller
     public function admin(){
         return view('layouts.admin.admin');
     }
-    public function log(){
-        return view('layouts.admin.admin');
+    public function reset(){
+        return view('auth.sb-login.pass');
     }
 }

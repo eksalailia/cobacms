@@ -28,7 +28,7 @@ Route::get('/about', [\App\Http\Controllers\AboutController::class, 'about'])->n
 Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'blog'])->name('layouts.blogpost');
 Route::get('/contact', [\App\Http\Controllers\BlogController::class, 'contact'])->name('layouts.contact');
 Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'admin'])->name('layouts.admin.admin');
-Route::get('/log', [\App\Http\Controllers\AdminController::class, 'log'])->name('layouts.admin.login');
+Route::get('/reset', [\App\Http\Controllers\AdminController::class, 'reset'])->name('auth.sb-login.pass');
 Route::resource('saran',  SaranController::class);
 // Route::get('/log2', [\App\Http\Controllers\LogController::class, 'log'])->name('auth.login_new');
 // Route::get('/loginadmin', [\App\Http\Controllers\AdminController::class, 'login'])->name('layouts.login.login');

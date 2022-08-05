@@ -29,6 +29,10 @@ Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'blog'])->name
 Route::get('/contact', [\App\Http\Controllers\BlogController::class, 'contact'])->name('layouts.contact');
 Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'admin'])->name('layouts.admin.admin');
 Route::get('/reset', [\App\Http\Controllers\AdminController::class, 'reset'])->name('auth.sb-login.pass');
+Route::get('/table', [\App\Http\Controllers\TableController::class, 'tab'])->name('layouts.admin.table');
+Route::get('/kegiatan', [\App\Http\Controllers\KegiatanController::class, 'kegiatan'])->name('layouts.admin.kegiatan');
+Route::get('/create-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'create_kegiatan'])->name('layouts.admin.create_kegiatan');
+Route::post('/save-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'save_kegiatan'])->name('layouts.admin.kegiatan');
 Route::resource('saran',  SaranController::class);
 // Route::get('/log2', [\App\Http\Controllers\LogController::class, 'log'])->name('auth.login_new');
 // Route::get('/loginadmin', [\App\Http\Controllers\AdminController::class, 'login'])->name('layouts.login.login');

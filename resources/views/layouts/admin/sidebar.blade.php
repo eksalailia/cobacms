@@ -1,11 +1,12 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
         <div class="sidebar-brand-icon">
             <i class="fas fa-user"></i>
         </div>
         <div class="sidebar-brand-text mx-3">{{ Auth::user()->name }}</div>
+        <div class="user-role" >{{ Auth::user()->role }}</div>
     </a>
 
     <!-- Divider -->
@@ -99,9 +100,14 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="/table">
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/kegiatan">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Data Kegiatan</span></a>
     </li>
 
     <!-- Divider -->

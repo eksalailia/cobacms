@@ -203,9 +203,9 @@
                             <div class="text-center">
                                 <a class="small" href="{{ route('password.request') }}">Lupa Password?</a>
                             </div>
-                            <div class="text-center">
+                            {{-- <div class="text-center">
                                 <a class="small" href="{{ ('register') }}">Buat Akun!</a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

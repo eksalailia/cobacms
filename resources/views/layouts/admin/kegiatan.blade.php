@@ -223,17 +223,28 @@
                                             <th>No</th>
                                             <th>Nama Kegiatan</th>
                                             <th>Tanggal Kegiatan</th>
+                                            <th>Deskripsi</th>
                                             <th>Action</th>
                                         </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                        <tbody>
+                                            <tr>
+                                                @foreach ($kegiatan as $kegiatans)
+                                                <td>{{ $kegiatans->id }}</td>
+                                                <td>{{ $kegiatans->nama_kegiatan }}</td>
+                                                <td>{{ $kegiatans->tgl_kegiatan }}</td>
+                                                <td>{{ $kegiatans->deskripsi }}</td>
+                                                <td>
+                                                    <form action="" method="Post">
+                                                        {{-- <a class="btn btn-primary" href="{{ route('companies.edit',$company->id) }}">Edit</a> --}}
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                                    </form>
+                                                </td>
                                         </tr>
+                                        @endforeach
+                                        </tbody>
                                     </thead>
-                                    <tbody>
-                                    </tbody>
                                 </table>
                             </div>
                         </div>

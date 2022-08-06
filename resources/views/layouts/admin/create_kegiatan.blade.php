@@ -206,13 +206,26 @@
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Create Kegiatan</h6>
                         </div>
+                        <div class="content">
+                            <div class="card card-info card-outline">
+                                <div class="card-header">
+                                    <div class="card-tools">
+                                        <a class="fas fa-arrow-left" href="/kegiatan"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                <form action="{{ route('layouts.admin.kegiatan') }}" method="POST">
+                                <form method="POST" action="{{ route ('layouts.admin.kegiatan') }}">
+                                @csrf
                                     <div class="form-group col-sm-12">
                                         <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" placeholder="Nama Kegiatan">
                                     </div>
                                     <div class="form-group col-sm-12">
                                         <input type="date" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" placeholder="Tanggal Kegiatan">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" id="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi">
                                     </div>
                                     <div class="form-group col-sm-5">
                                         <button type="submit" class="btn btn-success">Simpan</button>

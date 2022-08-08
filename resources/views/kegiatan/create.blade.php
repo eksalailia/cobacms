@@ -28,7 +28,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+                    {{-- <h1 class="h3 mb-2 text-gray-800">Tables</h1> --}}
                     {{-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank"
                             href="https://datatables.net">official DataTables documentation</a>.</p> --}}
@@ -51,15 +51,18 @@
                                 <form method="POST" action="{{ route ('kegiatan.create') }}" >
                                 @csrf
                                     <div class="form-group col-sm-12">
-                                        <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" placeholder="Nama Kegiatan">
+                                        <label>Nama Kegiatan</label>
+                                        <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" >
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <input type="date" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" placeholder="Tanggal Kegiatan">
+                                        <label>Tanggal Kegiatan</label>
+                                        <input type="date" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" >
                                     </div>
                                     <div class="form-group col-md-12">
+                                        <label>Deskripsi Kegiatan</label>
                                         {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi">
                                     </div> --}}
-                                    <textarea id="text" name="deskripsi" rows="5" cols="33" placeholder="    Isi Deskripsi..." style="width:100%"></textarea>
+                                    <textarea id="text" name="deskripsi" rows="5" cols="33" style="width:100%"></textarea>
                                 </div>
                                     <div class="form-group col-sm-5">
                                         <button type="submit" class="btn btn-success">Simpan</button>

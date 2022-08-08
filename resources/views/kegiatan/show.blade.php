@@ -29,16 +29,16 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+                    {{-- S --}}
                     {{-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank"
                             href="https://datatables.net">official DataTables documentation</a>.</p> --}}
-            <br></br>
-            <div class="container mt-5">
-                <div class="row justify-content-center align-items-center">
+            <br>
+            <div class="container mt-5" >
+                <div class="row justify-content-center align-items-center" style="margin-right: 170px">
                     <div class="card" style="width: 50rem; margin-left: 150px">
                         <div class="card-header">
-                            <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Detail Data Kegiatan</h5></b>
+                            <h5 style="font-size: 18px; font-family: Arial, Helvetica; text-align:center"><b>Detail Data Kegiatan</h5></b>
                         </div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">

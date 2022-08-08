@@ -29,7 +29,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800" style="text-align: center">Data Kegiatan</h1>
+                    <h1 class="h3 mb-2 text-gray-800" style="text-align: center">Data Profil</h1>
                     {{-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank"
                             href="https://datatables.net">official DataTables documentation</a>.</p> --}}
@@ -37,18 +37,18 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Kegiatan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Profil</h6>
                         </div>
                         <div class="content">
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                        <a href="{{ route('kegiatan.create') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
+                                        <a href="{{ route('profil.create') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <form action="{{route('kegiatan.index')}}"method="GET"><br>
+                        <form action="{{route('profil.index')}}"method="GET"><br>
                         {{-- <div class="input-group custom-search-form col-sm-5">
                             <input type="search" class="form-control" name="search" placeholder="Search...">
                             <span class="input-group-btn">&nbsp;
@@ -68,29 +68,28 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama Kegiatan</th>
-                                            <th>Tanggal Kegiatan</th>
-                                            <th>Deskripsi</th>
+                                            <th>Foto Profil</th>
+                                            <th>Nama Profil</th>
+                                            <th>Jabatan</th>
                                             <th>Action</th>
                                         </tr>
                                         <tbody>
-                                            <tr>
-                                                @foreach ($kegiatan as $data)
-                                                <td>{{ $data->id }}</td>
-                                                <td>{{ $data->nama_kegiatan }}</td>
-                                                <td>{{ $data->tgl_kegiatan }}</td>
-                                                <td>{{ $data->deskripsi }}</td>
-                                                <td>
-                                                    <form action="{{ route('kegiatan.destroy',$data->id) }}" method="POST">
-                                                        <a class="btn btn-info" href="{{ route('kegiatan.show',$data->id) }}">Show <i class="fa fa-eye"></i></a>
-                                                        <a href="{{route('kegiatan.edit',$data->id)}}" class="btn btn-success ">Edit <i class="fa fa-edit"></i></a>
+                                            {{-- <tr>
+                                                @foreach ($profil as $pr)
+                                                <td>{{ $pr->id }}</td>
+                                                <td>{{ $pr->nama_profil }}</td>
+                                                <td>{{ $pr->jabatan }}</td>
+                                                <td> --}}
+                                                    {{-- <form action="{{ route('kegiatan.destroy',$data->id) }}" method="POST">
+                                                        <a class="btn btn-info" href="{{ route('kegiatan.show',$data->id) }}">Show</a>
+                                                        <a href="{{route('kegiatan.edit',$data->id)}}" class="btn btn-success ">Edit</a>
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger">Delete <i class="fa fa-trash"></i></button>
-                                                    {{-- </form> --}}
-                                                </td>
+                                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                                    </form> --}}
+                                                {{-- </td>
                                         </tr>
-                                        @endforeach
+                                        @endforeach --}}
                                         </tbody>
                                     </thead>
                                 </table>

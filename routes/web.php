@@ -45,16 +45,30 @@ Route::get('/table', [\App\Http\Controllers\TableController::class, 'tab'])->nam
 // // Route::get('/log2', [\App\Http\Controllers\LogController::class, 'log'])->name('auth.login_new');
 // // Route::get('/loginadmin', [\App\Http\Controllers\AdminController::class, 'login'])->name('layouts.login.login');
 
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/admin/kegiatan','App\Http\Controllers\KegiatanController@index')->name('kegiatan.index');
+    Route::get('/admin/create','App\Http\Controllers\KegiatanController@create')->name('kegiatan.create');
+    Route::post('/admin/create','App\Http\Controllers\KegiatanController@store')->name('kegiatan.create');
+    Route::get('/edit/{id}','App\Http\Controllers\KegiatanController@edit')->name('kegiatan.edit');
+    Route::post('/edit/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/admin/kegiatan/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    Route::delete('/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
+});
 
-Route::get('/admin/kegiatan','App\Http\Controllers\KegiatanController@index')->name('kegiatan.index');
-Route::get('/admin/create','App\Http\Controllers\KegiatanController@create')->name('kegiatan.create');
-Route::post('/admin/create','App\Http\Controllers\KegiatanController@store')->name('kegiatan.create');
-Route::get('/edit/{id}','App\Http\Controllers\KegiatanController@edit')->name('kegiatan.edit');
-Route::post('/edit/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
-// Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-// Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
-Route::get('/admin/kegiatan/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-Route::delete('/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/admin/profil','App\Http\Controllers\ProfilController@index')->name('profil.index');
+    Route::get('/admin/create','App\Http\Controllers\ProfilController@create')->name('profil.create');
+    Route::post('/admin/create','App\Http\Controllers\KegiatanController@store')->name('kegiatan.create');
+    Route::get('/edit/{id}','App\Http\Controllers\KegiatanController@edit')->name('kegiatan.edit');
+    Route::post('/edit/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/admin/kegiatan/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    Route::delete('/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

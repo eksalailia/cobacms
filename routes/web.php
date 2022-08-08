@@ -34,10 +34,13 @@ Route::get('/reset', [\App\Http\Controllers\AdminController::class, 'reset'])->n
 Route::get('/table', [\App\Http\Controllers\TableController::class, 'tab'])->name('layouts.admin.table');
 Route::get('/kegiatan', [\App\Http\Controllers\KegiatanController::class, 'kegiatan'])->name('layouts.admin.kegiatan');
 Route::get('/create-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'create_kegiatan'])->name('layouts.admin.create_kegiatan');
+Route::get('/show-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'show'])->name('layouts.admin.show_kegiatan');
 Route::post('kegiatan', 'KegiatanController@store');
+Route::get('/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+Route::delete('/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
 // Route::resource('kegiatan', KegiatanController::class);
 // Route::resource('kegiatan', KegiatanController::class);
-Route::resource('saran',  SaranController::class);
+// Route::resource('saran',  SaranController::class);
 // Route::get('/log2', [\App\Http\Controllers\LogController::class, 'log'])->name('auth.login_new');
 // Route::get('/loginadmin', [\App\Http\Controllers\AdminController::class, 'login'])->name('layouts.login.login');
 

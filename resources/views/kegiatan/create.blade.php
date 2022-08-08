@@ -42,13 +42,13 @@
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                        <a class="fas fa-arrow-left" href="/kegiatan"></a>
+                                        <a class="fas fa-arrow-left" href="/admin/kegiatan"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                                <form method="POST" action="{{ route ('kegiatan.index') }}" >
+                                <form method="POST" action="{{ route ('kegiatan.create') }}" >
                                 @csrf
                                     <div class="form-group col-sm-12">
                                         <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" placeholder="Nama Kegiatan">

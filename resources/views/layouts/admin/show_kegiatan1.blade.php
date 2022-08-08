@@ -5,16 +5,28 @@
 
 @include('layouts.admin.sidebar')
 
-<section class="section">
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                @include('layouts.admin.nav_item')
+
+                @include('layouts.admin.user_info')
+
+            </ul>
+        </nav>
+        <section class="section">
       <div class="container mt-3" style= "margin : auto">
         <div class="row">
           <div class="col-12 col-sm-12 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
             <div class="login-brand">
-            <b>SARAN DAN KRITIK</b>
+            <b>Kegiatan</b>
             </div>
-
-            @section('content')
-            <br></br>
+            <br>
             <div class="container mt-5">
                 <div class="row justify-content-center align-items-center">
                     <div class="card" style="width: 50rem; margin-left: 150px">

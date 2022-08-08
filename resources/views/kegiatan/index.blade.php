@@ -69,19 +69,20 @@
                                         </tr>
                                         <tbody>
                                             <tr>
-                                                @foreach ($kegiatan as $kegiatans)
-                                                <td>{{ $kegiatans->id }}</td>
-                                                <td>{{ $kegiatans->nama_kegiatan }}</td>
-                                                <td>{{ $kegiatans->tgl_kegiatan }}</td>
-                                                <td>{{ $kegiatans->deskripsi }}</td>
-                                                <!-- <td>
-                                                    <form action="{{ route('kegiatan.destroy',$kegiatans->id) }}" method="POST">
-                                                        <a class="btn btn-info" href="{{ route('kegiatan.show',$kegiatans->id) }}">Show</a>
+                                                @foreach ($kegiatan as $data)
+                                                <td>{{ $data->id }}</td>
+                                                <td>{{ $data->nama_kegiatan }}</td>
+                                                <td>{{ $data->tgl_kegiatan }}</td>
+                                                <td>{{ $data->deskripsi }}</td>
+                                                <td>
+                                                    <form action="{{ route('kegiatan.destroy',$data->id) }}" method="POST">
+                                                        <a class="btn btn-info" href="{{ route('kegiatan.show',$data->id) }}">Show</a>
+                                                        <a href="{{route('kegiatan.edit',$data->id)}}" class="btn btn-success ">EDIT</a>
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger">Delete</button>
                                                     {{-- </form> --}}
-                                                </td> -->
+                                                </td>
                                         </tr>
                                         @endforeach
                                         </tbody>

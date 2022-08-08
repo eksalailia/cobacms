@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class KegiatanController extends Controller
 {
-    public function kegiatan(Request $request){
+    public function index(Request $request){
         // $kegiatan = Kegiatan::all();
         // return view('layouts.admin.kegiatan', compact('kegiatan'));
 
@@ -17,11 +17,12 @@ class KegiatanController extends Controller
             //fungsi eloquent menampilkan data menggunakan pagination
             $kegiatan = Kegiatan::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
         }
-        return view('layouts.admin.kegiatan', compact('kegiatan'));
+        return view('kegiatan.index', compact('kegiatan'));
 
     }
-    public function create_kegiatan(){
-        return view('layouts.admin.create_kegiatan');
+    public function create(){
+        $data=Kegiatan::all();
+        return view('kegiatan.create', compact('data'));
     }
     public function store(Request $request){
        $request->validate([
@@ -30,19 +31,35 @@ class KegiatanController extends Controller
             // 'deskrips' => 'required'
        ]);
        Kegiatan::create($request->all());
-       return redirect()->route('layouts.admin.kegiatan')
+       return redirect()->route('kegiatan.index')
                         ->with('success','Kegiatan created successfully');
+    }
+
+    public function edit($id) {
+        $data = Kegiatan::all();
+        $kegiatan = Kegiatan::find($id);
+        return view('kegiatan.edit',compact('data','kegiatan'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $Kegiatan = Kegiatan::find($id);
+        $Kegiatan->nama_kegiatan = $request->nama_kegiatan;
+        $Kegiatan->tgl_kegiatan = $request->tgl_kegiatan;
+        $Kegiatan->deskripsi= $request->deskripsi;
+        $Kegiatan->save();
+        return redirect()->route('kegiatan.index');
     }
 
     public function show($id)
     {
-        $kegiatan = Kegiatan::find($id);
-        return view('layouts.admin.show_kegiatan', compact('kegiatan'));
+        $data= Kegiatan::find($id);
+        return view('kegiatan.show', compact('data'));
     }
     public function destroy($id) {
         // Alert::success('Kegiatan Berhasi Dihapus','Sukses');
         Kegiatan::find($id)->delete();
-        return redirect()->route('layouts.admin.kegiatan')
+        return redirect()->route('kegiatan.index')
             ->with('success', 'Data Berhasil Dihapus');
     }
 }

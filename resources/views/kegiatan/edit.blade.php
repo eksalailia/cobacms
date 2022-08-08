@@ -36,34 +36,36 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Create Kegiatan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Edit Kegiatan</h6>
                         </div>
                         <div class="content">
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                        <a class="fas fa-arrow-left" href="/kegiatan"></a>
+                                        <a class="fas fa-arrow-left" href="/admin/kegiatan"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                                <form method="POST" action="{{ route ('kegiatan.index') }}" >
-                                @csrf
-                                    <div class="form-group col-sm-12">
-                                        <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" placeholder="Nama Kegiatan">
-                                    </div>
-                                    <div class="form-group col-sm-12">
-                                        <input type="date" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" placeholder="Tanggal Kegiatan">
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi">
-                                    </div> --}}
-                                    <textarea id="text" name="deskripsi" rows="5" cols="33" placeholder="    Isi Deskripsi..." style="width:100%"></textarea>
-                                </div>
-                                    <div class="form-group col-sm-5">
-                                        <button type="submit" class="btn btn-success">Simpan</button>
-                                    </div>
+                        <form action="{{route('kegiatan.edit',$kegiatan->id)}}" method="post" enctype="multipart/form-data">
+                        {{csrf_field()}}
+                        <div class="form-group col-sm-12">
+                   
+                    <label>Nama Kegiatan</label>
+                    <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" required="" value="{{$kegiatan->nama_kegiatan}}" >
+                </div>
+                <div class="form-group col-sm-12">
+                   
+                    <label>Tanggal Kegiatan</label>
+                    <input type="date" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" required="" value="{{$kegiatan->tgl_kegiatan}}" >
+                </div>
+                <div class="form-group col-sm-12">
+                   
+                    <label>Deskripsi Kegiatan</label>
+                    <input type="text" id="deskripsi" name="deskripsi" class="form-control" required="" value="{{$kegiatan->deskripsi}}" >
+                </div>
+                <div class="form-group col-sm-12">
+                <input type="submit" value="SIMPAN" class="btn btn-info">
                                 </form>
                             </div>
                         </div>

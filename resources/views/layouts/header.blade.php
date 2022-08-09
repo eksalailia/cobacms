@@ -4,7 +4,7 @@
       <a href="/" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="d-flex align-items-center">CMS</h1>
+        <img src="{{URL::asset('frontend/assets/img/logo4.png')}}" style="height: 70px;width:195px;max-height:100px">
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>

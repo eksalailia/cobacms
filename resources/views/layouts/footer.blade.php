@@ -57,7 +57,7 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Eks Website</span></strong>. All Rights Reserved 2022
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->

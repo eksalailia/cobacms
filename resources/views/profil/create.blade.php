@@ -36,13 +36,13 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Create Kegiatan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Tambah Profil</h6>
                         </div>
                         <div class="content">
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                        <a class="fas fa-arrow-left" href="/admin/profil"></a>
+                                        {{-- <a class="fas fa-arrow-left" href="/admin/profil"></a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -50,10 +50,6 @@
 
                                 <form method="POST" action="{{ route ('profil.create') }}" enctype="multipart/form-data"  >
                                 @csrf
-                                <div class="form-group col-sm-12">
-                                    <label>Foto Profil</label>
-                                    <input type="file" id="img_profil" name="img_profil" class="form-control">
-                                </div>
                                     <div class="form-group col-sm-12">
                                         <label>Nama Profil</label>
                                         <input type="text" id="nama_profil" name="nama_profil" class="form-control" >
@@ -62,8 +58,13 @@
                                         <label>Jabatan</label>
                                         <input type="text" id="jabatan" name="jabatan" class="form-control" >
                                     </div>
+                                    <div class="form-group col-sm-12">
+                                        <label>Foto Profil</label>
+                                        <input type="file" id="img_profil" name="img_profil" class="form-control">
+                                    </div>
                                     <div class="form-group col-sm-5">
                                         <button type="submit" class="btn btn-success">Simpan</button>
+                                        <a href="/admin/profil" class="btn btn-secondary">Cancel</a>
                                     </div>
                                 </form>
                             </div>

@@ -24,20 +24,37 @@ class ProfilController extends Controller
         return view('profil.create', compact('data'));
     }
     public function store(Request $request){
-        $file = $request->file('img_profil');
-        $org = $file->getClientOriginalName();
-        $path = 'img_profil';
-        $file->move($path,$org);
+        // $file = $request->file('img_profil');
+        // $org = $file->getClientOriginalName();
+        // $path = 'img_profil';
+        // $file->move($path,$org);
 
-        $profil = new Profil;
-        $profil->nama_profil = $request->nama_profil;
-        $profil->jabatan = $request->jabatan;
-        $profil->img_profil = $org;
-        $profil->save();
-        Profil::create($request->all());
+        // $profil = new Profil;
+        // $profil->nama_profil = $request->nama_profil;
+        // $profil->jabatan = $request->jabatan;
+        // $profil->img_profil = $org;
+        // $profil->save();
+        // Profil::create($request->all());
+        // return redirect()->route('profil.index')
+        //                 ->with('success','Profil created successfully');
+
+        $request->validate([
+            'nama_profil' => 'required',
+            'jabatan' => 'required',
+            'img_profil' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $input = $request->all();
+        if ($img = $request->file('img_profil')) {
+            $destinationPath = 'img_profil/';
+            $file = date('YmdHis') . "." . $img->getClientOriginalExtension();
+            $img->move($destinationPath, $file);
+            $input['img_profil'] = "$file";
+        }
+        Profil::create($input);
         return redirect()->route('profil.index')
-                        ->with('success','Profil created successfully');
-            }
+            ->with('success','Profil created successfully.');
+    }
 
     public function edit($id) {
         $data = Profil::all();
@@ -45,20 +62,34 @@ class ProfilController extends Controller
         return view('profil.edit',compact('data','profil'));
     }
 
-    // public function update(Request $request, $id)
-    // {
-    //     $Profil = profil::find($id);
-    //     $Profil->img_profil = $request->img_profil;
-    //     $Profil->nama_profil = $request->nama_profil;
-    //     $Profil->jabatan= $request->jabatan;
-    //     $Profil->save();
-    //     return redirect()->route('profil.index');
-    // }
+    public function update(Request $request, $id)
+    {
+       $request->validate([
+        'nama_profil' => 'required',
+        'jabatan' => 'required'
+    ]);
+
+    $input = $request->all();
+
+    if ($img = $request->file('img_profil')) {
+        $destinationPath = 'img_profil/';
+        $file = date('YmdHis') . "." . $img->getClientOriginalExtension();
+        $img->move($destinationPath, $file);
+        $input['img_profil'] = "$file";
+    }else{
+        unset($input['img_profil']);
+    }
+
+    $profil->update($input);
+
+    return redirect()->route('profil.index')
+                    ->with('success','Profil updated successfully');
+    }
 
     public function show($id)
     {
-        $data= Profil::find($id);
-        return view('profil.show', compact('data'));
+        $profil= Profil::find($id);
+        return view('profil.show', compact('profil'));
     }
     public function destroy($id) {
         // Alert::success('Kegiatan Berhasi Dihapus','Sukses');

@@ -61,8 +61,8 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('/admin/profil','App\Http\Controllers\ProfilController@index')->name('profil.index');
     Route::get('/admin/profil/create','App\Http\Controllers\ProfilController@create')->name('profil.create');
     Route::post('/admin/profil/create','App\Http\Controllers\ProfilController@store')->name('profil.create');
-    Route::get('/edit/{id}','App\Http\Controllers\KegiatanController@edit')->name('kegiatan.edit');
-    Route::post('/edit/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
+    Route::get('/edit/profil/{id}','App\Http\Controllers\ProfilController@edit')->name('profil.edit');
+    Route::post('/edit/profil/{id}','App\Http\Controllers\ProfilController@update')->name('profil.edit');
     // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
     // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/admin/profil/{id}','App\Http\Controllers\ProfilController@show')->name('profil.show');

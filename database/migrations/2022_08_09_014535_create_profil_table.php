@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama_profil');
             $table->string('jabatan');
-            $table->binary('img_profil');
+            $table->string('img_profil');
             $table->timestamps();
         });
     }

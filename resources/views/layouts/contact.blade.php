@@ -16,10 +16,10 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/contact-header.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>Contact</h2>
+        <h2>Kontak</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Contact</li>
+          <li><a href="index.html">Beranda</a></li>
+          <li>Kontak</li>
         </ol>
 
       </div>

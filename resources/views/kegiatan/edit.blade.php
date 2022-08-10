@@ -42,7 +42,7 @@
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                        <a class="fas fa-arrow-left" href="/admin/kegiatan"></a>
+                                        {{-- <a class="fas fa-arrow-left" href="/admin/kegiatan"></a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,8 @@
                     {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" required="" value="{{$kegiatan->deskripsi}}" > --}}
                 </div>
                 <div class="form-group col-sm-12">
-                <input type="submit" value="SIMPAN" class="btn btn-info">
+                <input type="submit" value="Simpan" class="btn btn-success">&nbsp;
+                <a href="/admin/kegiatan" class="btn btn-secondary">Cancel</a>
                                 </form>
                             </div>
                         </div>

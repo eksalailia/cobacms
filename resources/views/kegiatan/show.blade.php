@@ -42,9 +42,9 @@
                         </div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item" style="font-size: 16px;"><b>Nama Kegiatan: </b>{{$data->nama_kegiatan}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Tanggal Kegiatan: </b>{{$data->tgl_kegiatan}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Deskripsi: </b>{{$data->deskripsi}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Nama Kegiatan : </b>{{$data->nama_kegiatan}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Tanggal Kegiatan : </b>{{$data->tgl_kegiatan}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Deskripsi : </b>{{$data->deskripsi}}</li>
                             </ul>
                         </div>
                         <a class="btn btn-success mt-3" href="{{ route('kegiatan.index') }}" style="font-size: 16px;">Kembali</a>

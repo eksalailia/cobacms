@@ -42,9 +42,9 @@
                         </div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item" style="font-size: 16px;"><b>Foto Profil: </b>{{$data->img_profil}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Nama Profil: </b>{{$data->nama_profil}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Jabatan: </b>{{$data->jabatan}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Nama Profil : </b>{{$profil->nama_profil}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Jabatan : </b>{{$profil->jabatan}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Foto Profil : </b><img src="/img_profil/{{ $profil->img_profil }}" width="100px"></li>
                             </ul>
                         </div>
                         <a class="btn btn-success mt-3" href="{{ route('profil.index') }}" style="font-size: 16px;">Kembali</a>

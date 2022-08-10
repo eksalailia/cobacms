@@ -16,10 +16,10 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/about-header.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>About</h2>
+        <h2>Tentang</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>About</li>
+          <li><a href="index.html">Beranda</a></li>
+          <li>Tentang</li>
         </ol>
 
       </div>
@@ -114,7 +114,7 @@
     </section><!-- End Why Choose Us Section -->
 
     <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
+    {{-- <section id="call-to-action" class="call-to-action">
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
@@ -125,7 +125,8 @@
         </div>
 
       </div>
-    </section><!-- End Call To Action Section -->
+    </section> --}}
+    <!-- End Call To Action Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">

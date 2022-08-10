@@ -58,7 +58,7 @@
                         <div class="row">
                         <div class="form-group col-3" style="margin-left:20px">
                             <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Search...">
-                            <button class="btn btn-secondary" type="submit" style="font-size: 22px;"><i class="fa fa-search"></i></button>
+                            <button class="btn btn-secondary" type="submit"  style="font-size: 23px;margin-bottom:3px"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                     </form>
@@ -67,7 +67,7 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
+                                            <th>No.</th>
                                             <th>Nama Kegiatan</th>
                                             <th>Tanggal Kegiatan</th>
                                             <th>Deskripsi</th>

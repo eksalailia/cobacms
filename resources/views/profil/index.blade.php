@@ -81,12 +81,12 @@
                                                 <td>{{ $pr->nama_profil }}</td>
                                                 <td>{{ $pr->jabatan }}</td>
                                                 <td>
-                                                    <form action="" method="POST">
-                                                        <a class="btn btn-info" href="">Show</a>
-                                                        <a href="" class="btn btn-success ">Edit</a>
+                                                    <form action="{{ route('profil.destroy',$pr->id) }}" method="POST">
+                                                        <a class="btn btn-info" href="{{ route('profil.show',$pr->id) }}">Show <i class="fa fa-eye"></i></a>
+                                                        <a href="" class="btn btn-success ">Edit <i class="fa fa-edit"></i></a>
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                                        <button type="submit" class="btn btn-danger">Delete <i class="fa fa-trash"></i></button>
                                                     </form>
                                                 </td>
                                         </tr>

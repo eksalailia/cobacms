@@ -19,15 +19,15 @@
           <div class="col-lg-2 col-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/">Home</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/about">About us</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/blog">Blog</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/contact">Contact</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/admin">Admin</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-6 footer-links">
+          {{-- <div class="col-lg-2 col-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i class="bi bi-dash"></i> <a href="#">Web Design</a></li>
@@ -36,16 +36,17 @@
               <li><i class="bi bi-dash"></i> <a href="#">Marketing</a></li>
               <li><i class="bi bi-dash"></i> <a href="#">Graphic Design</a></li>
             </ul>
-          </div>
+          </div> --}}
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Jl. Perintis Kemerdekaan No. 32 <br>
+              Kota Madiun, Jawa Timur 63117<br><br>
+              {{-- United States <br><br> --}}
+              <strong>Telepon :</strong> (0351) 467327<br>
+              <strong>WhatsApp :</strong> 0811-3577-800<br>
+              <strong>Email :</strong> kominfo@madiunkota.go.id<br>
             </p>
 
           </div>

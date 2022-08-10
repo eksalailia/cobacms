@@ -65,8 +65,8 @@ Route::group(['middleware'=>'auth'],function(){
     Route::post('/edit/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
     // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
     // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
-    Route::get('/admin/kegiatan/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-    Route::delete('/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
+    Route::get('/admin/profil/{id}','App\Http\Controllers\ProfilController@show')->name('profil.show');
+    Route::delete('/admin/delete/{profil}', ['as' => 'profil.destroy', 'uses' => 'ProfilController@destroy']);
 });
 
 Auth::routes();

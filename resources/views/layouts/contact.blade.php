@@ -36,7 +36,7 @@
             <div class="info-item d-flex">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h4>Lokasi:</h4>
+                <h4>Lokasi :</h4>
                 <p>Jl. Perintis Kemerdekaan No 32, Kota Madiun</p>
               </div>
             </div><!-- End Info Item -->
@@ -44,7 +44,7 @@
             <div class="info-item d-flex">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h4>Email:</h4>
+                <h4>Email :</h4>
                 <p>kominfo@madiunkota.go.id</p>
               </div>
             </div><!-- End Info Item -->
@@ -52,10 +52,19 @@
             <div class="info-item d-flex">
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
-                <h4>Telepon:</h4>
+                <h4>Telepon :</h4>
                 <p>(0351) 467327</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
+
+            <div class="info-item d-flex">
+                <i class="bi bi-whatsapp flex-shrink-0"></i>
+                <div>
+                  <h4>WhatsApp :</h4>
+                  <p>0811-3577-800</p>
+                </div>
+              </div>
+            <!-- End Info Item -->
 
           </div>
 

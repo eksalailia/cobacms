@@ -35,7 +35,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Why Choose Us</h2>
+          <h2>Project</h2>
         </div>
         <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
           <div class="col-xl-5 img-bg" style="background-image: url({{ asset('frontend/assets/img/why-us-bg.jpg')}}"></div>
@@ -84,7 +84,8 @@
         </div>
 
       </div>
-    </section><!-- End Why Choose Us Section -->
+    </section>
+    <!-- End Why Choose Us Section -->
 
     <!-- ======= Our Services Section ======= -->
     <section id="services-list" class="services-list">
@@ -257,7 +258,7 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-posts" class="recent-posts">
+    {{-- <section id="recent-posts" class="recent-posts">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -322,7 +323,8 @@
         </div>
 
       </div>
-    </section><!-- End Recent Blog Posts Section -->
+    </section> --}}
+    <!-- End Recent Blog Posts Section -->
 
   </main><!-- End #main -->
 

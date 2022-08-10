@@ -5,7 +5,9 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span>Nova</span>
+              <span>
+                <img src="{{URL::asset('frontend/assets/img/logo4.png')}}" style="height: 70px;width:195px;max-height:100px">
+              </span>
             </a>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div class="social-links d-flex  mt-3">
@@ -17,12 +19,12 @@
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Menu</h4>
             <ul>
-              <li><i class="bi bi-dash"></i> <a href="/">Home</a></li>
-              <li><i class="bi bi-dash"></i> <a href="/about">About us</a></li>
-              <li><i class="bi bi-dash"></i> <a href="/blog">Blog</a></li>
-              <li><i class="bi bi-dash"></i> <a href="/contact">Contact</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/">Beranda</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/about">Tentang</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/blog">Aktivitas</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/contact">Kontak</a></li>
               <li><i class="bi bi-dash"></i> <a href="/admin">Admin</a></li>
             </ul>
           </div>
@@ -39,7 +41,7 @@
           </div> --}}
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
+            <h4>Hubungi Kami</h4>
             <p>
               Jl. Perintis Kemerdekaan No. 32 <br>
               Kota Madiun, Jawa Timur 63117<br><br>

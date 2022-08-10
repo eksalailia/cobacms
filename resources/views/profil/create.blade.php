@@ -48,11 +48,11 @@
                             </div>
                         </div>
 
-                                <form method="POST" action="{{ route ('profil.create') }}" >
+                                <form method="POST" action="{{ route ('profil.create') }}" enctype="multipart/form-data"  >
                                 @csrf
                                 <div class="form-group col-sm-12">
                                     <label>Foto Profil</label>
-                                    <input type="file" id="img_profil" name="img_profil" class="form-control" >
+                                    <input type="file" id="img_profil" name="img_profil" class="form-control">
                                 </div>
                                     <div class="form-group col-sm-12">
                                         <label>Nama Profil</label>

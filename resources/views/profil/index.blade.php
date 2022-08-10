@@ -74,22 +74,23 @@
                                             <th>Action</th>
                                         </tr>
                                         <tbody>
-                                            {{-- <tr>
+                                            <tr>
                                                 @foreach ($profil as $pr)
                                                 <td>{{ $pr->id }}</td>
+                                                <td>{{ $pr->img_profil }}</td>
                                                 <td>{{ $pr->nama_profil }}</td>
                                                 <td>{{ $pr->jabatan }}</td>
-                                                <td> --}}
-                                                    {{-- <form action="{{ route('kegiatan.destroy',$data->id) }}" method="POST">
-                                                        <a class="btn btn-info" href="{{ route('kegiatan.show',$data->id) }}">Show</a>
-                                                        <a href="{{route('kegiatan.edit',$data->id)}}" class="btn btn-success ">Edit</a>
+                                                <td>
+                                                    <form action="" method="POST">
+                                                        <a class="btn btn-info" href="">Show</a>
+                                                        <a href="" class="btn btn-success ">Edit</a>
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger">Delete</button>
-                                                    </form> --}}
-                                                {{-- </td>
+                                                    </form>
+                                                </td>
                                         </tr>
-                                        @endforeach --}}
+                                        @endforeach
                                         </tbody>
                                     </thead>
                                 </table>

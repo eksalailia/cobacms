@@ -24,16 +24,20 @@ class ProfilController extends Controller
         return view('profil.create', compact('data'));
     }
     public function store(Request $request){
-       $request->validate([
-            'img_profil'=>'required',
-            'nama_profil' => 'required',
-            'jabatan' => 'required',
-            // 'deskrips' => 'required'
-       ]);
-       Profil::create($request->all());
-       return redirect()->route('profil.index')
+        $file = $request->file('img_profil');
+        $org = $file->getClientOriginalName();
+        $path = 'img_profil';
+        $file->move($path,$org);
+
+        $profil = new Profil;
+        $profil->nama_profil = $request->nama_profil;
+        $profil->jabatan = $request->jabatan;
+        $profil->img_profil = $org;
+        $profil->save();
+        Profil::create($request->all());
+        return redirect()->route('profil.index')
                         ->with('success','Profil created successfully');
-    }
+            }
 
     public function edit($id) {
         $data = Profil::all();
@@ -41,15 +45,15 @@ class ProfilController extends Controller
         return view('profil.edit',compact('data','profil'));
     }
 
-    public function update(Request $request, $id)
-    {
-        $Profil = profil::find($id);
-        $Profil->img_profil = $request->img_profil;
-        $Profil->nama_profil = $request->nama_profil;
-        $Profil->jabatan= $request->jabatan;
-        $Profil->save();
-        return redirect()->route('profil.index');
-    }
+    // public function update(Request $request, $id)
+    // {
+    //     $Profil = profil::find($id);
+    //     $Profil->img_profil = $request->img_profil;
+    //     $Profil->nama_profil = $request->nama_profil;
+    //     $Profil->jabatan= $request->jabatan;
+    //     $Profil->save();
+    //     return redirect()->route('profil.index');
+    // }
 
     public function show($id)
     {
@@ -59,7 +63,7 @@ class ProfilController extends Controller
     public function destroy($id) {
         // Alert::success('Kegiatan Berhasi Dihapus','Sukses');
         Profil::find($id)->delete();
-        return redirect()->route('Profil.index')
+        return redirect()->route('profil.index')
             ->with('success', 'Data Berhasil Dihapus');
     }
 }

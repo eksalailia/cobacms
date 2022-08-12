@@ -8,17 +8,16 @@ use Illuminate\Http\Request;
 class KegiatanController extends Controller
 {
     public function index(Request $request){
-        // $kegiatan = Kegiatan::all();
-        // return view('layouts.admin.kegiatan', compact('kegiatan'));
-
-        if ($request->has('search')) { // Jika ingin melakukan pencarian judul
-            $kegiatan = Kegiatan::where('nama_kegiatan', 'like', "%" . $request->search . "%")->paginate(5);
-        } else { // Jika tidak melakukan pencarian judul
-            //fungsi eloquent menampilkan data menggunakan pagination
-            $kegiatan = Kegiatan::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
-        }
+        $kegiatan = Kegiatan::paginate(5);
         return view('kegiatan.index', compact('kegiatan'));
 
+        // if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+        //     $kegiatan = Kegiatan::where('nama_kegiatan', 'like', "%" . $request->search . "%")->paginate(5);
+        // } else { // Jika tidak melakukan pencarian judul
+        //     //fungsi eloquent menampilkan data menggunakan pagination
+        //     $kegiatan = Kegiatan::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
+        // }
+        // return view('kegiatan.index', compact('kegiatan'));
     }
     public function create(){
         $data=Kegiatan::all();
@@ -28,11 +27,11 @@ class KegiatanController extends Controller
        $request->validate([
             'nama_kegiatan' => 'required',
             'tgl_kegiatan' => 'required',
-            // 'deskrips' => 'required'
+            'deskripsi' => 'required'
        ]);
        Kegiatan::create($request->all());
        return redirect()->route('kegiatan.index')
-                        ->with('success','Kegiatan created successfully');
+                        ->with('success','Kegiatan Berhasil Ditambahkan!');
     }
 
     public function edit($id) {
@@ -48,7 +47,8 @@ class KegiatanController extends Controller
         $Kegiatan->tgl_kegiatan = $request->tgl_kegiatan;
         $Kegiatan->deskripsi= $request->deskripsi;
         $Kegiatan->save();
-        return redirect()->route('kegiatan.index');
+        return redirect()->route('kegiatan.index')
+                        ->with('success', 'Kegiatan Berhasil Diupdate!');
     }
 
     public function show($id)
@@ -60,6 +60,6 @@ class KegiatanController extends Controller
         // Alert::success('Kegiatan Berhasi Dihapus','Sukses');
         Kegiatan::find($id)->delete();
         return redirect()->route('kegiatan.index')
-            ->with('success', 'Data Berhasil Dihapus');
+            ->with('success', 'Kegiatan Berhasil Dihapus!');
     }
 }

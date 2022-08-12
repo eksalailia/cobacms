@@ -61,6 +61,11 @@
                             <button class="btn btn-secondary" type="submit"  style="font-size: 23px;margin-bottom:3px"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
+                    @if ($message = Session::get('success'))
+                    <div class="alert alert-success">
+                        <p>{{ $message }}</p>
+                    </div>
+                    @endif
                     </form>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -94,6 +99,8 @@
                                         </tbody>
                                     </thead>
                                 </table>
+                                  {{-- Menampilan Paginasi --}}
+                                {{ $kegiatan->render() }}
                             </div>
                         </div>
                     </div>
@@ -115,7 +122,7 @@
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
+    <a class="scroll-to-top rounded" href="/admin/kegiatan">
         <i class="fas fa-angle-up"></i>
     </a>
 

@@ -29,7 +29,7 @@
             </div>
             <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
             <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi qui magni est...</p>
-            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="/blog/details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
 

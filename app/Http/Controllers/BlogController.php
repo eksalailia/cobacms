@@ -12,4 +12,7 @@ class BlogController extends Controller
     public function contact(){
         return view('layouts.contact');
     }
+    public function blog_details(){
+        return view('layouts.blog_details');
+    }
 }

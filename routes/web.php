@@ -6,6 +6,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\AktivitasController;
 use App\Models\Kegiatan;
 // use App\Http\Controllers\LoginController;
 
@@ -32,6 +33,8 @@ Route::get('/contact', [\App\Http\Controllers\BlogController::class, 'contact'])
 Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'admin'])->name('layouts.admin.admin');
 Route::get('/reset', [\App\Http\Controllers\AdminController::class, 'reset'])->name('auth.sb-login.pass');
 Route::get('/table', [\App\Http\Controllers\TableController::class, 'tab'])->name('layouts.admin.table');
+Route::get('/blog/details', [\App\Http\Controllers\BlogController::class, 'blog_details'])->name('layouts.blog_details');
+
 // Route::get('/kegiatan', [\App\Http\Controllers\KegiatanController::class, 'kegiatan'])->name('layouts.admin.kegiatan');
 // Route::get('/create-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'create_kegiatan'])->name('layouts.admin.create_kegiatan');
 // Route::get('/show-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'show'])->name('layouts.admin.show_kegiatan');
@@ -67,6 +70,18 @@ Route::group(['middleware'=>'auth'],function(){
     // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/admin/profil/{id}','App\Http\Controllers\ProfilController@show')->name('profil.show');
     Route::delete('/admin/delete/{profil}', ['as' => 'profil.destroy', 'uses' => 'ProfilController@destroy']);
+});
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/admin/aktivitas','App\Http\Controllers\AktivitasController@index')->name('aktivitas.index');
+    Route::get('/admin/aktivitas/create','App\Http\Controllers\AktivitasController@create')->name('aktivitas.create');
+    Route::post('/admin/aktivitas/create','App\Http\Controllers\AktivitasController@store')->name('aktivitas.create');
+    Route::get('/edit/aktivitas/{id}','App\Http\Controllers\AktivitasController@edit')->name('aktivitas.edit');
+    Route::post('/edit/aktivitas/{id}','App\Http\Controllers\AktivitasController@update')->name('aktivitas.edit');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/admin/aktivitas/{id}','App\Http\Controllers\AktivitasController@show')->name('aktivitas.show');
+    Route::delete('/aktivitas/delete/{aktivitas}', ['as' => 'aktivitas.destroy', 'uses' => 'AktivitasController@destroy']);
 });
 
 Auth::routes();

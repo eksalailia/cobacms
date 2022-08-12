@@ -3,20 +3,21 @@
 namespace App\Http\Controllers;
 use App\Models\Profil;
 use Illuminate\Http\Request;
+use Alert;
 
 class ProfilController extends Controller
 {
     public function index(Request $request){
-        // $kegiatan = Kegiatan::all();
-        // return view('layouts.admin.kegiatan', compact('kegiatan'));
-
-        if ($request->has('search')) { // Jika ingin melakukan pencarian judul
-            $profil = Profil::where('nama_profil', 'like', "%" . $request->search . "%")->paginate(5);
-        } else { // Jika tidak melakukan pencarian judul
-            //fungsi eloquent menampilkan data menggunakan pagination
-            $profil = Profil::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
-        }
+        $profil = Profil::paginate(5);
         return view('profil.index', compact('profil'));
+
+        // if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+        //     $profil = Profil::where('nama_profil', 'like', "%" . $request->search . "%")->paginate(5);
+        // } else { // Jika tidak melakukan pencarian judul
+        //     //fungsi eloquent menampilkan data menggunakan pagination
+        //     $profil = Profil::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
+        // }
+
 
     }
     public function create(){
@@ -53,7 +54,7 @@ class ProfilController extends Controller
         }
         Profil::create($input);
         return redirect()->route('profil.index')
-            ->with('success','Profil created successfully.');
+            ->with('success','Profil Berhasil Ditambahkan!');
     }
 
     public function edit($id) {
@@ -83,7 +84,7 @@ class ProfilController extends Controller
     $profil->update($input);
 
     return redirect()->route('profil.index')
-                    ->with('success','Profil updated successfully');
+                    ->with('success','Profil Berhasil Diupdate!');
     }
 
     public function show($id)
@@ -92,9 +93,9 @@ class ProfilController extends Controller
         return view('profil.show', compact('profil'));
     }
     public function destroy($id) {
-        // Alert::success('Kegiatan Berhasi Dihapus','Sukses');
+        // Alert::success('Profil Berhasi Dihapus','Sukses');
         Profil::find($id)->delete();
         return redirect()->route('profil.index')
-            ->with('success', 'Data Berhasil Dihapus');
+            ->with('success', 'Profil Berhasil Dihapus!');
     }
 }

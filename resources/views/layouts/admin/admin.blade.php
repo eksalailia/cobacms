@@ -21,7 +21,7 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
 
-
+                    {{-- @include('sweetalert::alert') --}}
                         @include('layouts.admin.nav_item')
 
                         @include('layouts.admin.user_info')

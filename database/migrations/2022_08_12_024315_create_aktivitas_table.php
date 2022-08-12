@@ -13,8 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('kegiatan', function (Blueprint $table) {
-            $table->text('deskripsi');
+        Schema::create('aktivitas', function (Blueprint $table) {
+            $table->id();
+            $table->string('judul');
+            $table->date('tgl_aktivitas');
+            $table->string('author');
+            $table->text('isi');
+            $table->string('img_aktv');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('kegiatan', function (Blueprint $table) {
-            $table->dropColumn('deskripsi');
-        });
+        Schema::dropIfExists('aktivitas');
     }
 };

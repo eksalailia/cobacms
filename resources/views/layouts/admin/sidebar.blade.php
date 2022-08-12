@@ -24,7 +24,7 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Interface
+        {{-- Interface --}}
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
@@ -67,7 +67,7 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Addons
+        {{-- Addons --}}
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
@@ -99,22 +99,27 @@
     </li> --}}
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="/table">
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a>
-    </li>
+    </li> --}}
     <li class="nav-item">
         <a class="nav-link" href="/admin/kegiatan">
             <i class="fas fa-fw fa-table"></i>
-            <span>Data Kegiatan</span></a>
+            <span>Kegiatan</span></a>
     </li>
 
     <!-- Nav Item - Profile -->
     <li class="nav-item">
         <a class="nav-link" href="/admin/profil">
             <i class="fas fa-users"></i>
-            <span>Data Profil</span></a>
+            <span>Profil</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/admin/aktivitas">
+            <i class="fas fa-newspaper"></i>
+            <span>Aktivitas</span></a>
     </li>
 
     <!-- Divider -->

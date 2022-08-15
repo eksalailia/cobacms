@@ -8,7 +8,6 @@
 
 @section('content')
 
-
   {{-- <main id="main"> --}}
 
     <!-- ======= Breadcrumbs ======= -->
@@ -120,7 +119,7 @@
               </div>
             </div><!-- End post author -->
 
-            <div class="comments">
+            {{-- <div class="comments">
 
               <h4 class="comments-count">8 Comments</h4>
 
@@ -242,7 +241,7 @@
 
               </div>
 
-            </div><!-- End blog comments -->
+            </div><!-- End blog comments --> --}}
 
           </div>
 
@@ -258,7 +257,7 @@
                 </form>
               </div><!-- End sidebar search formn-->
 
-              <div class="sidebar-item categories">
+              {{-- <div class="sidebar-item categories">
                 <h3 class="sidebar-title">Categories</h3>
                 <ul class="mt-3">
                   <li><a href="#">General <span>(25)</span></a></li>
@@ -268,9 +267,9 @@
                   <li><a href="#">Creative <span>(8)</span></a></li>
                   <li><a href="#">Educaion <span>(14)</span></a></li>
                 </ul>
-              </div><!-- End sidebar categories-->
+              </div><!-- End sidebar categories--> --}}
 
-              <div class="sidebar-item recent-posts">
+              {{-- <div class="sidebar-item recent-posts">
                 <h3 class="sidebar-title">Recent Posts</h3>
 
                 <div class="mt-3">
@@ -317,9 +316,9 @@
 
                 </div>
 
-              </div><!-- End sidebar recent posts-->
+              </div><!-- End sidebar recent posts--> --}}
 
-              <div class="sidebar-item tags">
+              {{-- <div class="sidebar-item tags">
                 <h3 class="sidebar-title">Tags</h3>
                 <ul class="mt-3">
                   <li><a href="#">App</a></li>
@@ -334,7 +333,7 @@
                   <li><a href="#">Tips</a></li>
                   <li><a href="#">Marketing</a></li>
                 </ul>
-              </div><!-- End sidebar tags-->
+              </div><!-- End sidebar tags--> --}}
 
             </div><!-- End Blog Sidebar -->
 
@@ -345,7 +344,7 @@
     </section><!-- End Blog Details Section -->
 
   {{-- </main><!-- End #main --> --}}
-
+    @include('layouts.footer')
   <!-- ======= Footer ======= -->
 
   <!-- End Footer -->

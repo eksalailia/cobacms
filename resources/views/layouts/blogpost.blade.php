@@ -14,7 +14,7 @@
     <div class="container" data-aos="fade-up">
 
       <div class="section-header">
-        <h2>Aktivitas</h2>
+        <h2>Kegiatan</h2>
 
       </div>
 
@@ -76,5 +76,6 @@
 
     </div>
   </section><!-- End Recent Blog Posts Section -->
+  @include('layouts.footer')
 
 @endsection

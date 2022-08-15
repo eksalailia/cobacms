@@ -216,6 +216,8 @@
       </div>
     </section><!-- End Team Section -->
 
+    @include('layouts.footer')
+
   </main><!-- End #main -->
 
 

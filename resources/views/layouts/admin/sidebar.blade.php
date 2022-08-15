@@ -106,8 +106,8 @@
     </li> --}}
     <li class="nav-item">
         <a class="nav-link" href="/admin/kegiatan">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Kegiatan</span></a>
+            <i class="fa fa-bullhorn"></i>
+            <span>Pengumuman</span></a>
     </li>
 
     <!-- Nav Item - Profile -->
@@ -119,7 +119,7 @@
     <li class="nav-item">
         <a class="nav-link" href="/admin/aktivitas">
             <i class="fas fa-newspaper"></i>
-            <span>Aktivitas</span></a>
+            <span>Kegiatan</span></a>
     </li>
 
     <!-- Divider -->

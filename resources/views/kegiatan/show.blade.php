@@ -38,12 +38,12 @@
                 <div class="row justify-content-center align-items-center" style="margin-right: 170px">
                     <div class="card" style="width: 50rem; margin-left: 150px">
                         <div class="card-header">
-                            <h5 style="font-size: 18px; font-family: Arial, Helvetica; text-align:center"><b>Detail Data Kegiatan</h5></b>
+                            <h5 style="font-size: 18px; font-family: Arial, Helvetica; text-align:center"><b>Detail Pengumuman</h5></b>
                         </div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item" style="font-size: 16px;"><b>Nama Kegiatan : </b>{{$data->nama_kegiatan}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Tanggal Kegiatan : </b>{{$data->tgl_kegiatan}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Nama Pengumuman : </b>{{$data->nama_kegiatan}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Tanggal Pengumuman : </b>{{$data->tgl_kegiatan}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Deskripsi : </b>{{$data->deskripsi}}</li>
                             </ul>
                         </div>

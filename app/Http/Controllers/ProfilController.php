@@ -8,15 +8,13 @@ use Alert;
 class ProfilController extends Controller
 {
     public function index(Request $request){
-        $profil = Profil::paginate(5);
+        if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+            $profil = Profil::where('nama_profil', 'like', "%" . $request->search . "%")->paginate(5);
+        } else { // Jika tidak melakukan pencarian judul
+            //fungsi eloquent menampilkan data menggunakan pagination
+            $profil = Profil::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
+        }
         return view('profil.index', compact('profil'));
-
-        // if ($request->has('search')) { // Jika ingin melakukan pencarian judul
-        //     $profil = Profil::where('nama_profil', 'like', "%" . $request->search . "%")->paginate(5);
-        // } else { // Jika tidak melakukan pencarian judul
-        //     //fungsi eloquent menampilkan data menggunakan pagination
-        //     $profil = Profil::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
-        // }
 
 
     }

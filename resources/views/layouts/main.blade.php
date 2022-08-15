@@ -329,6 +329,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
+  @include('layouts.footer')
 
   @endsection
 

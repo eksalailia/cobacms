@@ -48,18 +48,11 @@
                                 </div>
                             </div>
                         </div>
-                        <form action="{{route('profil.index')}}"method="GET"><br>
-                        {{-- <div class="input-group custom-search-form col-sm-5">
-                            <input type="search" class="form-control" name="search" placeholder="Search...">
-                            <span class="input-group-btn">&nbsp;
-                                <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
-                            </span>
-                        </div> --}}
-                        <div class="row">
-                        <div class="form-group col-3" style="margin-left:20px">
-                            <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Search...">
-                            <button class="btn btn-secondary" type="submit" style="font-size: 23px;margin-bottom:3px"><i class="fa fa-search"></i></button>
-                        </div>
+                        <form action="{{route('profil.index')}}" style="margin-top: 20px" method="GET">
+                            <div class="form-group col-3" style="margin-left:8px">
+                                <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Search...">
+                                <button class="btn btn-secondary" type="submit"  style="font-size: 23px;margin-bottom:3px"><i class="fa fa-search"></i></button>
+                            </form>
                     </div>
                     @if ($message = Session::get('success'))
                         <div class="alert alert-success">
@@ -121,7 +114,7 @@
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
+    <a class="scroll-to-top rounded" href="#">
         <i class="fas fa-angle-up"></i>
     </a>
 

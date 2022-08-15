@@ -29,7 +29,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800" style="text-align: center">Data Kegiatan</h1>
+                    <h1 class="h3 mb-2 text-gray-800" style="text-align: center">Data Pengumuman</h1>
                     {{-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank"
                             href="https://datatables.net">official DataTables documentation</a>.</p> --}}
@@ -37,7 +37,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Kegiatan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Pengumuman</h6>
                         </div>
                         <div class="content">
                             <div class="card card-info card-outline">
@@ -48,18 +48,11 @@
                                 </div>
                             </div>
                         </div>
-                        <form action="{{route('kegiatan.index')}}"method="GET"><br>
-                        {{-- <div class="input-group custom-search-form col-sm-5">
-                            <input type="search" class="form-control" name="search" placeholder="Search...">
-                            <span class="input-group-btn">&nbsp;
-                                <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
-                            </span>
-                        </div> --}}
-                        <div class="row">
-                        <div class="form-group col-3" style="margin-left:20px">
-                            <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Search...">
-                            <button class="btn btn-secondary" type="submit"  style="font-size: 23px;margin-bottom:3px"><i class="fa fa-search"></i></button>
-                        </div>
+                        <form action="{{route('kegiatan.index')}}" style="margin-top: 20px" method="GET">
+                            <div class="form-group col-3" style="margin-left:8px">
+                                <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Search...">
+                                <button class="btn btn-secondary" type="submit"  style="font-size: 23px;margin-bottom:3px"><i class="fa fa-search"></i></button>
+                            </form>
                     </div>
                     @if ($message = Session::get('success'))
                     <div class="alert alert-success">
@@ -122,7 +115,7 @@
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="/admin/kegiatan">
+    <a class="scroll-to-top rounded" href="#">
         <i class="fas fa-angle-up"></i>
     </a>
 

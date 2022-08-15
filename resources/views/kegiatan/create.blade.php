@@ -36,7 +36,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Tambah Kegiatan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Tambah Pengumuman</h6>
                         </div>
                         <div class="content">
                             <div class="card card-info card-outline">
@@ -61,15 +61,15 @@
                                 <form method="POST" action="{{ route ('kegiatan.create') }}" >
                                 @csrf
                                     <div class="form-group col-sm-12">
-                                        <label>Nama Kegiatan</label>
+                                        <label>Nama Pengumuman</label>
                                         <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" >
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <label>Tanggal Kegiatan</label>
+                                        <label>Tanggal Pengumuman</label>
                                         <input type="date" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" >
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <label>Deskripsi Kegiatan</label>
+                                        <label>Deskripsi</label>
                                         {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi">
                                     </div> --}}
                                     <textarea id="text" name="deskripsi" rows="5" cols="33" style="width:100%"></textarea>

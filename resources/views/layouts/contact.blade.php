@@ -99,6 +99,7 @@
 
       </div>
     </section><!-- End Contact Section -->
+    @include('layouts.footer')
 
   </main><!-- End #main -->
 

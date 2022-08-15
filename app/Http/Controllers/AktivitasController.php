@@ -7,8 +7,14 @@ use Illuminate\Http\Request;
 class AktivitasController extends Controller
 {
     public function index(Request $request){
-        $aktivitas = Aktivitas::paginate(5);
+        if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+            $aktivitas = aktivitas::where('judul', 'like', "%" . $request->search . "%")->paginate(5);
+        } else { // Jika tidak melakukan pencarian judul
+            //fungsi eloquent menampilkan data menggunakan pagination
+            $aktivitas = aktivitas::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
+        }
         return view('aktivitas.index', compact('aktivitas'));
+
     }
     public function create(){
         $aktivitas=Aktivitas::all();

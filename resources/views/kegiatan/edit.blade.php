@@ -36,7 +36,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Edit Kegiatan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Edit Pengumuman</h6>
                         </div>
                         <div class="content">
                             <div class="card card-info card-outline">
@@ -51,16 +51,16 @@
                         {{csrf_field()}}
                         <div class="form-group col-sm-12">
 
-                    <label>Nama Kegiatan</label>
+                    <label>Nama Pengumuman</label>
                     <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" required="" value="{{$kegiatan->nama_kegiatan}}" >
                 </div>
                 <div class="form-group col-sm-12">
 
-                    <label>Tanggal Kegiatan</label>
+                    <label>Tanggal Pegumuman</label>
                     <input type="date" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" required="" value="{{$kegiatan->tgl_kegiatan}}" >
                 </div>
                 <div class="form-group col-sm-12">
-                    <label>Deskripsi Kegiatan</label>
+                    <label>Deskripsi Pengumuman</label>
                     <textarea id="text" name="deskripsi" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$kegiatan->deskripsi}}</textarea>
                     {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" required="" value="{{$kegiatan->deskripsi}}" > --}}
                 </div>

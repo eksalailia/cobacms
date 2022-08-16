@@ -34,6 +34,7 @@ Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'admin'])->n
 Route::get('/reset', [\App\Http\Controllers\AdminController::class, 'reset'])->name('auth.sb-login.pass');
 Route::get('/table', [\App\Http\Controllers\TableController::class, 'tab'])->name('layouts.admin.table');
 Route::get('/blog/details', [\App\Http\Controllers\BlogController::class, 'blog_details'])->name('layouts.blog_details');
+Route::get('/opd', [\App\Http\Controllers\OPDController::class, 'opd'])->name('opd.opd');
 
 // Route::get('/kegiatan', [\App\Http\Controllers\KegiatanController::class, 'kegiatan'])->name('layouts.admin.kegiatan');
 // Route::get('/create-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'create_kegiatan'])->name('layouts.admin.create_kegiatan');

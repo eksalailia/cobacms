@@ -23,19 +23,6 @@ class ProfilController extends Controller
         return view('profil.create', compact('data'));
     }
     public function store(Request $request){
-        // $file = $request->file('img_profil');
-        // $org = $file->getClientOriginalName();
-        // $path = 'img_profil';
-        // $file->move($path,$org);
-
-        // $profil = new Profil;
-        // $profil->nama_profil = $request->nama_profil;
-        // $profil->jabatan = $request->jabatan;
-        // $profil->img_profil = $org;
-        // $profil->save();
-        // Profil::create($request->all());
-        // return redirect()->route('profil.index')
-        //                 ->with('success','Profil created successfully');
 
         $request->validate([
             'nama_profil' => 'required',
@@ -63,9 +50,11 @@ class ProfilController extends Controller
 
     public function update(Request $request, $id)
     {
-       $request->validate([
+        $profil = Profil::find($id);
+        $request->validate([
         'nama_profil' => 'required',
-        'jabatan' => 'required'
+        'jabatan' => 'required',
+        'img_profil' => 'required'
     ]);
 
     $input = $request->all();

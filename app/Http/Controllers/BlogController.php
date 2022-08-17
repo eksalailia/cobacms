@@ -1,13 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Aktivitas;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
     public function blog(){
-        return view('layouts.blogpost');
+        $semua = Aktivitas::orderBy('created_at','DESC')
+                ->take(4)
+                ->get();
+        return view('layouts.blogpost',compact('semua'));
     }
     public function contact(){
         return view('layouts.contact');

@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\AktivitasController;
+use App\Http\Controllers\SaranController;
 use App\Models\Kegiatan;
 // use App\Http\Controllers\LoginController;
 
@@ -88,3 +89,4 @@ Route::group(['middleware'=>'auth'],function(){
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('saran',  SaranController::class);

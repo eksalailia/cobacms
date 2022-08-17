@@ -121,6 +121,11 @@
             <i class="fas fa-newspaper"></i>
             <span>Kegiatan</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/saran">
+            <i class="fas fa-newspaper"></i>
+            <span>Saran</span></a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

@@ -22,25 +22,44 @@ class ProfilController extends Controller
         $data=Profil::all();
         return view('profil.create', compact('data'));
     }
-    public function store(Request $request){
 
-        $request->validate([
-            'nama_profil' => 'required',
-            'jabatan' => 'required',
-            'img_profil' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
+    public function store(Request $request)
+    {
+        $file = $request->file('img_profil');
+        $org = $file->getClientOriginalName();
+        $path = 'img_profil';
+        $file->move($path,$org);
 
-        $input = $request->all();
-        if ($img = $request->file('img_profil')) {
-            $destinationPath = 'img_profil/';
-            $file = date('YmdHis') . "." . $img->getClientOriginalExtension();
-            $img->move($destinationPath, $file);
-            $input['img_profil'] = "$file";
+        $Profil = new Profil;
+        $Profil->nama_profil = $request->nama_profil;
+        $Profil->jabatan = $request->jabatan;
+        $Profil->img_profil = $org;
+        $Profil->save();
+        if ($Profil) {
+            return redirect()->route('profil.index');
+        } else {
+            return redirect()->route('profil.index');
         }
-        Profil::create($input);
-        return redirect()->route('profil.index')
-            ->with('success','Profil Berhasil Ditambahkan!');
     }
+    // public function store(Request $request){
+
+    //     $request->validate([
+    //         'nama_profil' => 'required',
+    //         'jabatan' => 'required',
+    //         'img_profil' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+    //     ]);
+
+    //     $input = $request->all();
+    //     if ($img = $request->file('img_profil')) {
+    //         $destinationPath = 'img_profil/';
+    //         $file = date('YmdHis') . "." . $img->getClientOriginalExtension();
+    //         $img->move($destinationPath, $file);
+    //         $input['img_profil'] = "$file";
+    //     }
+    //     Profil::create($input);
+    //     return redirect()->route('profil.index')
+    //         ->with('success','Profil Berhasil Ditambahkan!');
+    // }
 
     public function edit($id) {
         $data = Profil::all();
@@ -50,29 +69,62 @@ class ProfilController extends Controller
 
     public function update(Request $request, $id)
     {
-        $profil = Profil::find($id);
-        $request->validate([
-        'nama_profil' => 'required',
-        'jabatan' => 'required',
-        'img_profil' => 'required'
-    ]);
+        $foto = $request->file('img_profil');
+        if ($foto == "") {
+            $Profil = Profil::find($id);
+            $Profil->nama_profil = $request->nama_profil;
+            $Profil->jabatan = $request->jabatan;
+            $Profil->save();
 
-    $input = $request->all();
+           if ($Profil) {
+                return redirect()->route('profil.index');
+            } else {
+                return redirect()->route('profil.index');
+            }
+        } else {
+            $file = $request->file('img_profil');
+            $org = $file->getClientOriginalName();
+            $path = 'img_profil';
+            $file->move($path,$org);
 
-    if ($img = $request->file('img_profil')) {
-        $destinationPath = 'img_profil/';
-        $file = date('YmdHis') . "." . $img->getClientOriginalExtension();
-        $img->move($destinationPath, $file);
-        $input['img_profil'] = "$file";
-    }else{
-        unset($input['img_profil']);
+            $Profil = Profil::find($id) ;
+            $Profil->nama_profil = $request->nama_profil;
+            $Profil->jabatan = $request->jabatan;
+            $Profil->img_profil = $org;
+            $Profil->save();
+            if ($Profil) {
+                return redirect()->route('profil.index');
+            } else {
+                return redirect()->route('profil.index');
+            }
+        }
     }
 
-    $profil->update($input);
+    // public function update(Request $request, $id)
+    // {
+    //     $profil = Profil::find($id);
+    //     $request->validate([
+    //     'nama_profil' => 'required',
+    //     'jabatan' => 'required',
+    //     'img_profil' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+    // ]);
 
-    return redirect()->route('profil.index')
-                    ->with('success','Profil Berhasil Diupdate!');
-    }
+    // $input = $request->all();
+
+    // if ($img = $request->file('img_profil')) {
+    //     $destinationPath = 'img_profil/';
+    //     $file = date('YmdHis') . "." . $img->getClientOriginalExtension();
+    //     $img->move($destinationPath, $file);
+    //     $input['img_profil'] = "$file";
+    // }else{
+    //     unset($input['img_profil']);
+    // }
+
+    // $profil->update($input);
+
+    // return redirect()->route('profil.index')
+    //                 ->with('success','Profil Berhasil Diupdate!');
+    // }
 
     public function show($id)
     {

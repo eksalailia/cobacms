@@ -51,25 +51,26 @@
                         <div class="form-group col-sm-12">
 
                     <label>Image</label>
-                    <input type="file" id="img_aktv" name="profil" class="form-control" required="" value="{{$aktivitas->img_aktv}}" >
+                    <img src="{{asset('img_aktv/'.$aktivitas->img_aktv)}}" style="width: 500px; height: 250px;">
+                    <input type="file" name="img_aktv" class="form-control">
                 </div>
                 <div class="form-group col-sm-12">
 
                     <label>Judul</label>
-                    <input type="text" id="nama_profil" name="nama_profil" class="form-control" required="" value="{{$aktivitas->judul}}" >
+                    <input type="text" id="judul" name="judul" class="form-control" required="" value="{{$aktivitas->judul}}" >
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Author</label>
-                    <input type="text" id="jabatan" name="jabatan" class="form-control" required="" value="{{$aktivitas->author}}" >
+                    <input type="text" id="author" name="author" class="form-control" required="" value="{{$aktivitas->author}}" >
                     {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" required="" value="{{$kegiatan->deskripsi}}" > --}}
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Tanggal Aktivitas</label>
-                    <input type="date" id="tanggal" name="tanggal" class="form-control" required="" value="{{$aktivitas->tgl_aktivitas}}" >
+                    <input type="date" id="tgl_aktivitas" name="tgl_aktivitas" class="form-control" required="" value="{{$aktivitas->tgl_aktivitas}}" >
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Isi</label>
-                    <textarea id="text" name="deskripsi" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$aktivitas->isi}}</textarea>
+                    <textarea id="text" name="isi" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$aktivitas->isi}}</textarea>
                 </div>
                 <div class="form-group col-sm-12">
                 <input type="submit" value="Simpan" class="btn btn-success">&nbsp;

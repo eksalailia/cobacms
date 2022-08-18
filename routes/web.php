@@ -26,6 +26,9 @@ use App\Models\Kegiatan;
 // Route::get('/login', function () {
 //     return view('home');
 // });
+Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
+    Auth::routes();
+});
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('layouts.main');
 Route::get('/about', [\App\Http\Controllers\AboutController::class, 'about'])->name('layouts.about');

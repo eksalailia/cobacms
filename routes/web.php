@@ -34,7 +34,7 @@ Route::get('/contact', [\App\Http\Controllers\BlogController::class, 'contact'])
 Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'admin'])->name('layouts.admin.admin');
 Route::get('/reset', [\App\Http\Controllers\AdminController::class, 'reset'])->name('auth.sb-login.pass');
 Route::get('/table', [\App\Http\Controllers\TableController::class, 'tab'])->name('layouts.admin.table');
-Route::get('/blog/details', [\App\Http\Controllers\BlogController::class, 'blog_details'])->name('layouts.blog_details');
+Route::get('/blog/details/{id}', [\App\Http\Controllers\BlogController::class, 'blog_details'])->name('layouts.blog_details');
 Route::get('/opd', [\App\Http\Controllers\OPDController::class, 'opd'])->name('opd.opd');
 
 // Route::get('/kegiatan', [\App\Http\Controllers\KegiatanController::class, 'kegiatan'])->name('layouts.admin.kegiatan');

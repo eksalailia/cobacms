@@ -29,7 +29,7 @@
             </div>
             <h3 class="post-title"> {{$all->judul}} </h3>
             <p> {{$all->isi}}... </p>
-            <a href="/blog/details" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="{{route('layouts.blog_details',$all->id)}}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
 

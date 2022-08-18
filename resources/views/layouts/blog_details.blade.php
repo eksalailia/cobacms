@@ -14,10 +14,10 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/blog-header.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>Blog Details</h2>
+        <h2>Kegiatan</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Blog Details</li>
+          <li>Kegiatan</li>
         </ol>
 
       </div>
@@ -105,7 +105,7 @@
 
             <div class="post-author d-flex align-items-center">
               <img src="assets/img/blog/blog-author.jpg" class="rounded-circle flex-shrink-0" alt="">
-              <div>
+              {{-- <div>
                 <h4>Jane Smith</h4>
                 <div class="social-links">
                   <a href="https://twitters.com/#"><i class="bi bi-twitter"></i></a>
@@ -115,7 +115,7 @@
                 <p>
                   Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
                 </p>
-              </div>
+              </div> --}}
             </div><!-- End post author -->
 
             {{-- <div class="comments">
@@ -245,9 +245,7 @@
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-
             <div class="sidebar ps-lg-4">
-
               <div class="sidebar-item search-form">
                 <h3 class="sidebar-title">Search</h3>
                 <form action="" class="mt-3">

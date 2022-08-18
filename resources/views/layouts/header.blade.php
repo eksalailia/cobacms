@@ -14,7 +14,7 @@
         <ul>
           <li><a href="/" class="active">Beranda</a></li>
           <li><a href="/about">Tentang</a></li>
-          <li><a href="/blog">Aktivitas</a></li>
+          <li><a href="/blog">Kegiatan</a></li>
           <li><a href="/contact">Kontak</a></li>
           <li><a href="/login">Admin</a></li>
         </ul>

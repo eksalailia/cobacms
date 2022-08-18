@@ -118,12 +118,12 @@
     </li>
     <li class="nav-item">
         <a class="nav-link" href="/admin/aktivitas">
-            <i class="fas fa-newspaper"></i>
+            <i class="fas fa-clipboard-list"></i>
             <span>Kegiatan</span></a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="/saran">
-            <i class="fas fa-newspaper"></i>
+            <i class="fas fa-comments"></i>
             <span>Saran</span></a>
     </li>
 

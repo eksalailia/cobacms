@@ -86,7 +86,8 @@
               <div class="form-group mt-3">
               <textarea class="form-control w-100" name="pesan" id="pesan" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter pesan'" placeholder=" Masukkan pesan" required></textarea>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><br>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
             </form>
 
           </div><!-- End Contact Form -->

@@ -19,7 +19,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="/about" class="btn-get-started">Get Started</a>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
 
@@ -35,7 +35,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Project</h2>
+          <h2>Kegiatan Terkini</h2>
         </div>
         <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
           <div class="col-xl-5 img-bg" style="background-image: url({{ asset('frontend/assets/img/why-us-bg.jpg')}}"></div>
@@ -248,7 +248,7 @@
             <div class="col-md-6">
               <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias doloremque quae delectus odit minima corrupti blanditiis quo animi!</p>
-              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="/about" class="btn-get-started">Get Started</a>
             </div>
           </div>
 

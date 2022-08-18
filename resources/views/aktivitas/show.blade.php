@@ -38,17 +38,18 @@
                 <div class="row justify-content-center align-items-center" style="margin-right: 170px">
                     <div class="card" style="width: 50rem; margin-left: 150px">
                         <div class="card-header">
-                            <h5 style="font-size: 18px; font-family: Arial, Helvetica; text-align:center"><b>Detail Data Saran</h5></b>
+                            <h5 style="font-size: 18px; font-family: Arial, Helvetica; text-align:center"><b>Detail Data Kegiatan</h5></b>
                         </div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item" style="font-size: 16px;"><b>Nama  : </b>{{$saran->nama}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Email : </b>{{$saran->email}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Subjek Email : </b>{{$saran->subjek}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Pesan : </b>{{$saran->pesan}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Judul : </b>{{$aktivitas->judul}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Isi : </b>{{$aktivitas->isi}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Tanggal Posting : </b>{{$aktivitas->tgl_aktivitas}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Author : </b>{{$aktivitas->author}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Image : </b><img src="/img_aktv/{{ $aktivitas->img_aktv }}" width="100px"></li>
                             </ul>
                         </div>
-                        <a class="btn btn-success mt-3" href="{{ route('saran.index') }}" style="font-size: 16px;">Kembali</a>
+                        <a class="btn btn-success mt-3" href="{{ route('aktivitas.index') }}" style="font-size: 16px;">Kembali</a>
                     </div>
                 </div>
             </div>

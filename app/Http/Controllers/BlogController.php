@@ -17,6 +17,9 @@ class BlogController extends Controller
     }
     public function blog_details($id){
         $news = Aktivitas::find($id);
-        return view('layouts.blog_details', compact('news'));
+        $semua = Aktivitas::orderBy('created_at','DESC')
+        ->take(6)
+        ->get();
+        return view('layouts.blog_details', compact('news', 'semua'));
     }
 }

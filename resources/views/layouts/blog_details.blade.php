@@ -68,6 +68,23 @@
                   <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
               </div><!-- End sidebar search formn-->
+              <br></br>
+
+              <div class="col-md-8">
+		<div class="btn btn-success"><b>KEGIATAN</b></div>
+		<hr>
+		@foreach($semua as $ls)
+		<a href="{{route('layouts.blog_details',$ls->id)}}" style="text-decoration: none; color: black">
+      <div class="post-img">
+       <img src="{{asset('img_aktv/'.$ls->img_aktv)}}" alt="" class="img-fluid" style="width:200px; height:200px;">
+      </div>
+			<p><b>{{$ls->judul}}</b></p>
+			<p>{{substr($ls->isi,0,100)}}...</p>
+			<br>
+		</a>
+		@endforeach
+	</div>
+</div>
     </section><!-- End Blog Details Section -->
 
   {{-- </main><!-- End #main --> --}}

@@ -5,8 +5,10 @@
         <div class="sidebar-brand-icon">
             <i class="fas fa-user"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">OPD</div>
-        <div class="user-role" ></div>
+        <div class="sidebar-brand-text mx-3">{{ Auth::user()->name }}</div>
+        <div>
+            <div class="user-role" style="font-size: 12px">{{ Auth::user()->role }}</div>
+        </div>
     </a>
 
     <!-- Divider -->

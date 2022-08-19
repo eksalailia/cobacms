@@ -33,7 +33,7 @@ class LoginController extends Controller
           if( Auth()->user()->role == "administrator"){
               return redirect()->route('indexadmin');
           }
-          elseif( Auth()->user()->role == "opd"){
+          else if( Auth()->user()->role == "opd"){
             return redirect()->route('opd.opd');
         }
       }

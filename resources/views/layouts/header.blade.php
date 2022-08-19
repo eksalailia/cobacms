@@ -16,7 +16,7 @@
           <li><a href="/about">Tentang</a></li>
           <li><a href="/blog">Kegiatan</a></li>
           <li><a href="/contact">Kontak</a></li>
-          <li><a href="/login">Admin</a></li>
+          <li><a href="/login">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 

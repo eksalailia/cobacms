@@ -21,6 +21,6 @@ class UserBaruSeeder extends Seeder
             'email' => 'ardilalukita08@gmail.com',
             'password' => Hash::make('ardila08'),
             'role' => 'opd'
-        ]);  
+        ]);
     }
 }

@@ -6,7 +6,7 @@
             <i class="fas fa-user"></i>
         </div>
         <div class="sidebar-brand-text mx-3">{{ Auth::user()->name }}</div>
-        <div class="user-role" >{{ Auth::user()->role }}</div>
+        <div class="user-role" style="font-size: 10px">{{ Auth::user()->role }}</div>
     </a>
 
     <!-- Divider -->

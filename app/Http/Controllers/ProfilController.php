@@ -8,6 +8,7 @@ use Alert;
 class ProfilController extends Controller
 {
     public function index(Request $request){
+
         if ($request->has('search')) { // Jika ingin melakukan pencarian judul
             $profil = Profil::where('nama_profil', 'like', "%" . $request->search . "%")->paginate(5);
         } else { // Jika tidak melakukan pencarian judul

@@ -71,7 +71,7 @@
               <br></br>
 
               <div class="col-md-8">
-		<div class="btn btn-success"><b>KEGIATAN</b></div>
+		<div class=""><b>KEGIATAN LAINNYA</b></div>
 		<hr>
 		@foreach($semua as $ls)
 		<a href="{{route('layouts.blog_details',$ls->id)}}" style="text-decoration: none; color: black">

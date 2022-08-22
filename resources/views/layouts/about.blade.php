@@ -138,25 +138,20 @@
         </div>
 
         <div class="row gy-5">
+        @foreach($semua as $all)
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
-                @foreach($semua as $all)
                 <div class="member-img">
-                <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" alt=""></div>
-                {{-- <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> --}}
-              </div>
+                <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:400px;" alt=""></div>
               <div class="member-info">
-                <h4> {{$all->nama_profil}}</h4>
+                <h3> {{$all->nama_profil}}</h3>
                 <span>{{$all->jabatan}}</span>
               </div>
-              @endforeach
             </div>
-          </div><!-- End Team Member -->
+          </div>
+          @endforeach
+    </div>
+    </div><!-- End Team Member -->
       {{-- </div> --}}
     </section><!-- End Team Section -->
 

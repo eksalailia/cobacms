@@ -14,9 +14,9 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-4">
-          <h2 data-aos="fade-up">Focus On What Matters</h2>
+          <h2 data-aos="fade-up">Diskominfo Kota Madiun</h2>
           <blockquote data-aos="fade-up" data-aos-delay="100">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
+            <p>Diskominfo Kota Madiun adalah Dinas Komunikasi dan Informatika Kota Madiun. </p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="/about" class="btn-get-started">Get Started</a>
@@ -92,7 +92,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Services</h2>
+          <h2>Layanan</h2>
 
         </div>
 
@@ -101,49 +101,58 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="#" class="stretched-link">Pemberian Informasi oleh Pejabat Pengelola Informasi
+                dan Dokumentasi (PPID)</a></h4>
+              {{-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --}}
             </div>
           </div>
           <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-megaphone" style="color: #15a04a;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="#" class="stretched-link">Layanan Aspirasi dan Solusi di LPPL Radio Suara Madiun</a></h4>
+              {{-- <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p> --}}
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #d90769;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <h4 class="title"><a href="#" class="stretched-link">Peliputan Kegiatan Pemerintah Kota Madiun</a></h4>
+              {{-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p> --}}
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-graph-up-arrow" style="color: #15bfbc;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <h4 class="title"><a href="#" class="stretched-link">Pelayanan Data Statistik Sektoral</a></h4>
+              {{-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> --}}
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-wifi" style="color: #f5cf13;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <h4 class="title"><a href="#" class="stretched-link">Pelayanan Wifi Gratis</a></h4>
+              {{-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p> --}}
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-telephone" style="color: #1335f5;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <h4 class="title"><a href="#" class="stretched-link">Layanan Call Center 112</a></h4>
+              {{-- <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p> --}}
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600"  style="margin-left: 380px">
+            <div class="icon flex-shrink-0"><i class="bi bi-building" style="color: #961977;"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Government Chief Information Officer (GCIO)</a></h4>
+              {{-- <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p> --}}
             </div>
           </div><!-- End Service Item -->
 
@@ -153,7 +162,7 @@
     </section><!-- End Our Services Section -->
 
     <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
+    {{-- <section id="call-to-action" class="call-to-action">
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
@@ -164,7 +173,7 @@
         </div>
 
       </div>
-    </section><!-- End Call To Action Section -->
+    </section><!-- End Call To Action Section --> --}}
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
@@ -172,65 +181,101 @@
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <h3>Powerful Features for <br>Your Business</h3>
+            <h3>Organisasi Dinas Kominfo <br>Kota Madiun</h3>
 
             <div class="row gy-4">
 
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                  <span>Easy Cart Features</span>
+                  <i class="bi bi-person-check" style="color: #ffbb2c;"></i>
+                  <span>Kepala Dinas</span>
                 </div>
               </div><!-- End Icon List Item-->
 
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                  <span>Sit amet consectetur adipisicing</span>
+                  <i class="bi bi-person" style="color: #5578ff;"></i>
+                  <span>Sekretaris Dinas</span>
                 </div>
               </div><!-- End Icon List Item-->
 
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                  <span>Ipsum Rerum Explicabo</span>
+                  <i class="bi bi-cash-coin" style="color: #e80368;"></i>
+                  <span>Sub Bagian Umum dan Keuangan</span>
                 </div>
               </div><!-- End Icon List Item-->
 
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                  <span>Easy Cart Features</span>
+                  <i class="bi bi-person-square" style="color: #e361ff;"></i>
+                  <span>Sub Bagian Perencanaan dan Kepegawaian</span>
                 </div>
               </div><!-- End Icon List Item-->
 
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="ri-database-2-line" style="color: #47aeff;"></i>
-                  <span>Easy Cart Features</span>
+                  <i class="bi bi-info-circle" style="color: #47aeff;"></i>
+                  <span>Bidang Pengelolaan Informasi dan Komunikasi Publik</span>
                 </div>
               </div><!-- End Icon List Item-->
 
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-                  <span>Sit amet consectetur adipisicing</span>
+                  <i class="bi bi-collection" style="color: #ffa76e;"></i>
+                  <span>Subkoordinator Pengelolaan Informasi dan Media Publik</span>
                 </div>
               </div><!-- End Icon List Item-->
 
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-                  <span>Ipsum Rerum Explicabo</span>
+                  <i class="bi bi-headset" style="color: #11dbcf;"></i>
+                  <span>Subkoordinator Pengelolaan Komunikasi Publik</span>
                 </div>
               </div><!-- End Icon List Item-->
 
               <div class="col-md-6">
                 <div class="icon-list d-flex">
-                  <i class="ri-base-station-line" style="color: #ff5828;"></i>
-                  <span>Easy Cart Features</span>
+                  <i class="bi bi-pc-display" style="color: #ff5828;"></i>
+                  <span>Bidang Pengelolaan Teknologi Informasi dan Komunikasi</span>
                 </div>
               </div><!-- End Icon List Item-->
+
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-diagram-3" style="color: #3a9b76;"></i>
+                  <span>Subkoordinator Pengelolaan Infrastuktur dan Tata Kelola Pemerintahan Elektronik</span>
+                </div>
+              </div><!-- End Icon List Item-->
+
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-bar-chart" style="color: #c67a0f;"></i>
+                  <span>Subkoordinator Pengembangan Sumber Daya Teknologi Informasi dan Komunikasi</span>
+                </div>
+              </div><!-- End Icon List Item-->
+
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-file-earmark-lock" style="color: #9b1a25;"></i>
+                  <span>Bidang Pengelolaan Statistik dan Persandian</span>
+                </div>
+              </div><!-- End Icon List Item-->
+
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-fingerprint" style="color: #4b637a;"></i>
+                  <span>Seksi Pengelolaan Keamanan Informasi dan Persandian</span>
+                </div>
+              </div><!-- End Icon List Item-->
+
+              <div class="col-md-6">
+                <div class="icon-list d-flex">
+                  <i class="bi bi-graph-up" style="color: #b5f127;"></i>
+                  <span>Seksi Pengelolaan Data dan Statistik</span>
+                </div>
+              </div><!-- End Icon List Item-->
+
             </div>
           </div>
           <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
@@ -246,9 +291,9 @@
         <div class="container" data-aos="fade-up" data-aos-delay="300">
           <div class="row">
             <div class="col-md-6">
-              <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias doloremque quae delectus odit minima corrupti blanditiis quo animi!</p>
-              <a href="/about" class="btn-get-started">Get Started</a>
+              <h4>Struktur Organisasi <br>Dinas Kominfo Kota Madiun</h4>
+              <p>Untuk melihat detail struktur organisasi, bisa dilihat di sini</p>
+              <a href="/about" class="btn-get-started">Lihat Di sini!</a>
             </div>
           </div>
 

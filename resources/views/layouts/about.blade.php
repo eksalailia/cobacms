@@ -35,16 +35,26 @@
           </div>
           <div class="col-lg-8">
             <div class="content ps-lg-5">
-              <h3>Voluptatem dignissimos provident quasi</h3>
+              <h3>Dinas Komunikasi dan Informatika Kota Madiun</h3>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                Selamat datang di halaman website milik Dinas Komunikasi dan Informatika Kota Madiun.
+                Website ini didirikan untuk.....
               </p>
+              <h4><b>Visi dan Misi</b></h4><br>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <h5>Visi : </h5>
+                <li><i class="bi bi-check-circle-fill"></i> Terwujudnya pelayanan informasi Kinerja Pelayanan Pemerintah Kota Madiun yang transparan dan bertanggung jawab sesuai peraturan
+                    perundang-undangan yang berlaku</li>
               </ul>
+              <ul>
+                <h5>Misi : </h5>
+                <li><i class="bi bi-check-circle-fill"></i> Meningkatkan pngelolaan dan pelayanan informasi yang berkualitas</li>
+                <li><i class="bi bi-check-circle-fill"></i> Meningkatkan insfrastruktur pelayanan dan kompetensi SDM pengelola PPID</li>
+              </ul>
+              <ul>
+                <h5>Moto : </h5>
+                <li><i class="bi bi-check-circle-fill"></i> Cepat dan Tepat</li>
+            </ul>
             </div>
           </div>
         </div>
@@ -57,7 +67,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Why Choose Us</h2>
+          <h2>Struktur Organisasi</h2>
 
         </div>
 
@@ -133,11 +143,39 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Team</h2>
+          <h2>Profil Kami</h2>
 
         </div>
 
-        <div class="row gy-5">
+
+
+        <div class="slides-1 swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="row gy-5">
+                  @foreach($semua as $all)
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                      <div class="team-member">
+                          <div class="member-img">
+                          <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:400px;" alt=""></div>
+                        <div class="member-info">
+                          <h3> {{$all->nama_profil}}</h3>
+                          <span>{{$all->jabatan}}</span>
+                        </div>
+                      </div>
+                    </div>
+                    @endforeach
+              </div>
+            </div>
+            </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+
+        {{-- <div class="row gy-5">
         @foreach($semua as $all)
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
@@ -151,7 +189,7 @@
           </div>
           @endforeach
     </div>
-    </div><!-- End Team Member -->
+    </div><!-- End Team Member --> --}}
       {{-- </div> --}}
     </section><!-- End Team Section -->
 

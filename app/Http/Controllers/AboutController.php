@@ -8,7 +8,7 @@ class AboutController extends Controller
 {
     public function about(){
         $semua = Profil::orderBy('created_at','DESC')
-        ->take(3)
+        ->take(4)
         ->get();
         return view('layouts.about',compact('semua'));
     }

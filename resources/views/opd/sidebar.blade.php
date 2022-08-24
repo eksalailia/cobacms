@@ -16,7 +16,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="/admin">
+        <a class="nav-link" href="/opd">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -107,13 +107,18 @@
             <span>Tables</span></a>
     </li> --}}
     <li class="nav-item">
-        <a class="nav-link" href="/admin/kegiatan">
+        <a class="nav-link" href="/opd/kegiatan">
+            <i class="fas fa-clipboard-list"></i>
+            <span>Kegiatan</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/opd/pengumuman">
             <i class="fa fa-bullhorn"></i>
             <span>Pengumuman</span></a>
     </li>
 
     <!-- Nav Item - Profile -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="/admin/profil">
             <i class="fas fa-users"></i>
             <span>Profil</span></a>
@@ -122,7 +127,7 @@
         <a class="nav-link" href="/admin/aktivitas">
             <i class="fas fa-newspaper"></i>
             <span>Kegiatan</span></a>
-    </li>
+    </li> --}}
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

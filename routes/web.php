@@ -6,6 +6,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\KegiatanOPDController;
 use App\Http\Controllers\AktivitasController;
 use App\Http\Controllers\SaranController;
 use App\Models\Kegiatan;
@@ -88,6 +89,28 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('/admin/aktivitas/{id}','App\Http\Controllers\AktivitasController@show')->name('aktivitas.show');
     Route::delete('/aktivitas/delete/{aktivitas}', ['as' => 'aktivitas.destroy', 'uses' => 'AktivitasController@destroy']);
 });
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/opd/pengumuman','App\Http\Controllers\PengumumanController@index')->name('opd.pengumuman.index');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/opd/pengumuman/{id}','App\Http\Controllers\PengumumanController@show')->name('opd.pengumuman.show');
+    // Route::delete('/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
+});
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/opd/kegiatan','App\Http\Controllers\KegiatanOPDController@index')->name('opd.kegiatan.index');
+    Route::get('/opd/create','App\Http\Controllers\KegiatanOPDController@create')->name('opd.kegiatan.create');
+    Route::post('/opd/create','App\Http\Controllers\KegiatanOPDController@store')->name('opd.kegiatan.create');
+    Route::get('/edit/opd/kegiatan{id}','App\Http\Controllers\KegiatanOPDController@edit')->name('opd.kegiatan.edit');
+    Route::post('/edit/opd/kegiatan{id}','App\Http\Controllers\KegiatanOPDController@update')->name('opd.kegiatan.edit');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/opd/kegiatan/{id}','App\Http\Controllers\KegiatanOPDController@show')->name('opd.kegiatan.show');
+    Route::delete('/opd/delete/{kegiatan}', ['as' => 'opd.kegiatan.destroy', 'uses' => 'KegiatanOPDController@destroy']);
+});
+
+
 
 Auth::routes();
 

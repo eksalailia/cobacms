@@ -148,11 +148,11 @@
         </div>
 
 
-
+{{--
         <div class="slides-1 swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="item">
+              <div class="item"> --}}
                 <div class="row gy-5">
                   @foreach($semua as $all)
                     <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -168,11 +168,11 @@
                     @endforeach
               </div>
             </div>
-            </div>
+            {{-- </div>
               <div class="swiper-pagination"></div>
             </div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-next"></div> --}}
             </div>
 
         {{-- <div class="row gy-5">

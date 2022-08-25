@@ -8,7 +8,7 @@ class BlogController extends Controller
 {
     public function blog(){
         $semua = Aktivitas::orderBy('created_at','DESC')
-                ->take(4)
+                ->take(8)
                 ->get();
         return view('layouts.blogpost',compact('semua'));
     }
@@ -18,7 +18,7 @@ class BlogController extends Controller
     public function blog_details($id){
         $news = Aktivitas::find($id);
         $semua = Aktivitas::orderBy('created_at','DESC')
-        ->take(6)
+        ->take(4)
         ->get();
         return view('layouts.blog_details', compact('news', 'semua'));
     }

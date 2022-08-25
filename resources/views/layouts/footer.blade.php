@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/home" class="logo d-flex align-items-center">
               <span>
                 <img src="{{URL::asset('frontend/assets/img/logo4.png')}}" style="height: 70px;width:195px;max-height:100px">
               </span>

@@ -37,8 +37,7 @@
             <div class="content ps-lg-5">
               <h3>Dinas Komunikasi dan Informatika Kota Madiun</h3>
               <p>
-                Selamat datang di halaman website milik Dinas Komunikasi dan Informatika Kota Madiun.
-                Website ini didirikan untuk.....
+                Website milik Kominfo............
               </p>
               <h4><b>Visi dan Misi</b></h4><br>
               <ul>
@@ -48,9 +47,10 @@
               </ul>
               <ul>
                 <h5>Misi : </h5>
-                <li><i class="bi bi-check-circle-fill"></i> Meningkatkan pngelolaan dan pelayanan informasi yang berkualitas</li>
+                <li><i class="bi bi-check-circle-fill"></i> Meningkatkan pengelolaan dan pelayanan informasi yang berkualitas</li>
                 <li><i class="bi bi-check-circle-fill"></i> Meningkatkan insfrastruktur pelayanan dan kompetensi SDM pengelola PPID</li>
               </ul>
+              <h4><b>Moto</b></h4><br>
               <ul>
                 <h5>Moto : </h5>
                 <li><i class="bi bi-check-circle-fill"></i> Cepat dan Tepat</li>

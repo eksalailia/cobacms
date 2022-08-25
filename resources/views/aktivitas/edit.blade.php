@@ -66,7 +66,7 @@
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Tanggal Aktivitas</label>
-                    <input type="date" id="tgl_aktivitas" name="tgl_aktivitas" class="form-control" required="" value="{{$aktivitas->tgl_aktivitas}}" >
+                    <input type="datetime-local" id="tgl_aktivitas" name="tgl_aktivitas" class="form-control" required="" value="{{$aktivitas->tgl_aktivitas}}" >
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Isi</label>

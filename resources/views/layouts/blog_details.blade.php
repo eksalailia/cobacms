@@ -63,8 +63,9 @@
             <div class="sidebar ps-lg-4">
               <div class="sidebar-item search-form">
                 <h3 class="sidebar-title">Search</h3>
-                <form action="{{route('layouts.blogpost')}}" style="margin-top: 20px" method="GET" class="mt-3">
-                  <input type="text">
+                <form class="form-inline" style="margin-top: 10px" action="{{route('layouts.cr_berita')}}" method="post">
+    		 	        {{csrf_field()}}
+                   <input  name="cari" type="text">
                   <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
               </div><!-- End sidebar search formn-->

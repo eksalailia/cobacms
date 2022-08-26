@@ -64,7 +64,7 @@
                                         <input type="text" id="nama_kegiatan" name="nama_kegiatan" class="form-control" placeholder="Nama Kegiatan">
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <input type="date" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" placeholder="Tanggal Kegiatan">
+                                        <input type="datetime-local" id="tgl_kegiatan" name="tgl_kegiatan" class="form-control" placeholder="Tanggal Kegiatan">
                                     </div>
                                     <div class="form-group col-md-12">
                                         {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi">

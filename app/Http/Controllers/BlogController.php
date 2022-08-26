@@ -18,11 +18,11 @@ class BlogController extends Controller
     public function blog_details($id){
         $news = Aktivitas::find($id);
         $semua = Aktivitas::orderBy('created_at','DESC')
-        ->take(4)
+        ->take(3)
         ->get();
         return view('layouts.blog_details', compact('news', 'semua'));
     }
-    
+
 
     public function list($id)
     {

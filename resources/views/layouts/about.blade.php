@@ -155,12 +155,12 @@
               <div class="item"> --}}
                 <div class="row gy-5">
                   @foreach($semua as $all)
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-2 col-md-6" data-aos="fade-up" data-aos-delay="100" style="margin-left: 31px">
                       <div class="team-member">
                           <div class="member-img">
-                          <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:400px;" alt=""></div>
+                          <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:400px;border-radius:50%" alt=""></div>
                         <div class="member-info">
-                          <h3> {{$all->nama_profil}}</h3>
+                          <h4> {{$all->nama_profil}}</h4>
                           <span>{{$all->jabatan}}</span>
                         </div>
                       </div>

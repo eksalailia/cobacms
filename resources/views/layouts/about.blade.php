@@ -70,8 +70,11 @@
           <h2>Struktur Organisasi</h2>
 
         </div>
+        <div>
+            <img src="{{ asset('frontend/assets/img/organisasi.png')}}" style="height: 550px; width: 1500px;margin-left: 10px" class="img-fluid" alt="">
+          </div>
 
-        <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+        {{-- <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-xl-5 img-bg" style="background-image: url('{{ asset('frontend/assets/img/why-us-bg.jpg')}}')"></div>
           <div class="col-xl-7 slides  position-relative">
@@ -118,7 +121,7 @@
             <div class="swiper-button-next"></div>
           </div>
 
-        </div>
+        </div> --}}
 
       </div>
     </section><!-- End Why Choose Us Section -->

@@ -39,12 +39,12 @@
         </div>
         @foreach ($latest as $lts)
         <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-xl-5 img-bg" style="background-image: url({{ asset('foto/'.$lts->foto)}}"></div>
-          <div class="col-xl-7 slides  position-relative">
-            <div class="slides-1 swiper">
+          <div class="col-xl-5 img-bg" style=" height:400px; width:400px; background-image: url({{ asset('img_aktv/'.$lts->img_aktv)}}"></div>
+          <div class="col-xl-7 ">
+            <!-- <div class="slides-1 swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="item">
+                <div class="swiper-slide"> -->
+                  <div class="item" style="margin-left: 100px; margin-top: 100px;">
                     <h3 class="mb-3">{{$lts->judul}}</h3>
                     <!-- <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4> -->
                     <p>{{$lts->isi}}</p>
@@ -52,14 +52,12 @@
                 </div><!-- End slide item -->
 
              @endforeach
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+              <!-- </div> -->
+              <!-- <div class="swiper-pagination"></div> -->
+            <!-- </div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
-        </div>
+            <div class="swiper-button-next"></div> -->
+          
 
       </div>
     </section>

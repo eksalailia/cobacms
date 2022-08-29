@@ -24,8 +24,8 @@ class HomeController extends Controller
     public function index()
     {
         $latest =  Aktivitas::orderBy('created_at','DESC')
-        ->where('tgl_aktivitas')
-        ->take(8)
+        ->where('tgl_aktivitas', date('Y-m-d'))
+        ->take(1)
         ->get();
 
         return view('layouts.main',compact('latest')) ;

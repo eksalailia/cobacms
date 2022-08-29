@@ -8,7 +8,6 @@ use Alert;
 class ProfilController extends Controller
 {
     public function index(Request $request){
-
         if ($request->has('search')) { // Jika ingin melakukan pencarian judul
             $profil = Profil::where('nama_profil', 'like', "%" . $request->search . "%")->paginate(5);
         } else { // Jika tidak melakukan pencarian judul
@@ -64,7 +63,7 @@ class ProfilController extends Controller
 
     public function edit($id) {
         $data = Profil::all();
-        $profil = Profil::findOrFail($id);
+        $profil = Profil::find($id);
         return view('profil.edit',compact('data','profil'));
     }
 
@@ -72,7 +71,7 @@ class ProfilController extends Controller
     {
         $foto = $request->file('img_profil');
         if ($foto == "") {
-            $Profil = Profil::findOrFail($id);
+            $Profil = Profil::find($id);
             $Profil->nama_profil = $request->nama_profil;
             $Profil->jabatan = $request->jabatan;
             $Profil->save();

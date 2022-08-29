@@ -50,9 +50,10 @@
                         {{csrf_field()}}
                         <div class="form-group col-sm-12">
 
-                    <label>Foto Profil</label>
-                    <input type="file" id="img_profil" name="profil" class="form-control" required="" value="{{$profil->img_profil}}" >
-                </div>
+                        <label>Foto Profil</label>
+                    <img src="{{asset('img_profil/'.$profil->img_profil)}}" style="width: 500px; height: 250px;">
+                    <input type="file" name="img_profil" class="form-control">
+                    </div>
                 <div class="form-group col-sm-12">
 
                     <label>Nama Profil</label>

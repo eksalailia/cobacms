@@ -64,7 +64,7 @@ class ProfilController extends Controller
 
     public function edit($id) {
         $data = Profil::all();
-        $profil = Profil::find($id);
+        $profil = Profil::findOrFail($id);
         return view('profil.edit',compact('data','profil'));
     }
 
@@ -72,7 +72,7 @@ class ProfilController extends Controller
     {
         $foto = $request->file('img_profil');
         if ($foto == "") {
-            $Profil = Profil::find($id);
+            $Profil = Profil::findOrFail($id);
             $Profil->nama_profil = $request->nama_profil;
             $Profil->jabatan = $request->jabatan;
             $Profil->save();

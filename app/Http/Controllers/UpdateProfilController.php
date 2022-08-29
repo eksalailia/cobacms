@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Profil;
+use Illuminate\Support\Facades\DB;
+use App\Models\UpdateProfil;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
-use Alert;
 
-class ProfilController extends Controller
+class UpdateProfilController extends Controller
 {
     public function index(Request $request){
 
@@ -61,44 +62,15 @@ class ProfilController extends Controller
     //     return redirect()->route('profil.index')
     //         ->with('success','Profil Berhasil Ditambahkan!');
     // }
-
-    public function edit($id) {
-        $data = Profil::all();
-        $profil = Profil::find($id);
-        return view('profil.edit',compact('data','profil'));
+    public function edit() {
+        return view('profil.edit')->with('user', auth()->user());
     }
 
-    public function update(Request $request, $id)
-    {
-        $foto = $request->file('img_profil');
-        if ($foto == "") {
-            $Profil = Profil::find($id);
-            $Profil->nama_profil = $request->nama_profil;
-            $Profil->jabatan = $request->jabatan;
-            $Profil->save();
-
-           if ($Profil) {
-                return redirect()->route('profil.index');
-            } else {
-                return redirect()->route('profil.index');
-            }
-        } else {
-            $file = $request->file('img_profil');
-            $org = $file->getClientOriginalName();
-            $path = 'img_profil';
-            $file->move($path,$org);
-
-            $Profil = Profil::find($id) ;
-            $Profil->nama_profil = $request->nama_profil;
-            $Profil->jabatan = $request->jabatan;
-            $Profil->img_profil = $org;
-            $Profil->save();
-            if ($Profil) {
-                return redirect()->route('profil.index');
-            } else {
-                return redirect()->route('profil.index');
-            }
-        }
+    public function update(Request $request) {
+        $request->user()->update([
+            'password' => Hash::make($request->get('password'))
+        ]);
+        return redirect()->route('layouts.admin.admin');
     }
 
     // public function update(Request $request, $id)

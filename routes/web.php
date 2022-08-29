@@ -71,9 +71,23 @@ Route::group(['middleware'=>'auth'],function(){
 });
 
 Route::group(['middleware'=>'auth'],function(){
-    Route::get('profile', [ProfilController::class, 'edit'])->name('profil.edit');
-    Route::patch('profile', [ProfilController::class, 'update'])->name('profil.update');
+    Route::get('/admin/profil','App\Http\Controllers\ProfilController@index')->name('profil.index');
+    Route::get('/admin/create','App\Http\Controllers\ProfilController@create')->name('profil.create');
+    Route::post('/admin/create','App\Http\Controllers\ProfilController@store')->name('profil.create');
+    Route::get('/edit/{id}','App\Http\Controllers\ProfilController@edit')->name('profil.edit');
+    Route::post('/edit/{id}','App\Http\Controllers\ProfilController@update')->name('profil.edit');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/admin/profil/{id}','App\Http\Controllers\ProfilController@show')->name('profil.show');
+    Route::delete('/profil/delete/{profil}', ['as' => 'profil.destroy', 'uses' => 'ProfilController@destroy']);
 });
+
+
+
+// Route::group(['middleware'=>'auth'],function(){
+//     Route::get('profile', [ProfilController::class, 'edit'])->name('profil.edit');
+//     Route::patch('profile', [ProfilController::class, 'update'])->name('profil.update');
+// });
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('/admin/aktivitas','App\Http\Controllers\AktivitasController@index')->name('aktivitas.index');

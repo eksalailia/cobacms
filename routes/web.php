@@ -9,6 +9,7 @@ use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\KegiatanOPDController;
 use App\Http\Controllers\AktivitasController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\UpdateProfilController;
 use App\Http\Controllers\SaranController;
 use App\Models\Kegiatan;
 
@@ -84,10 +85,10 @@ Route::group(['middleware'=>'auth'],function(){
 
 
 
-// Route::group(['middleware'=>'auth'],function(){
-//     Route::get('profile', [ProfilController::class, 'edit'])->name('profil.edit');
-//     Route::patch('profile', [ProfilController::class, 'update'])->name('profil.update');
-// });
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('profile', [UpdateProfilController::class, 'edit'])->name('profile.edit');
+    Route::patch('profile', [UpdateProfilController::class, 'update'])->name('profile.update');
+});
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('/admin/aktivitas','App\Http\Controllers\AktivitasController@index')->name('aktivitas.index');

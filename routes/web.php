@@ -59,7 +59,7 @@ Route::get('/opd', [\App\Http\Controllers\OPDController::class, 'opd'])->name('o
 // // Route::get('/log2', [\App\Http\Controllers\LogController::class, 'log'])->name('auth.login_new');
 // // Route::get('/loginadmin', [\App\Http\Controllers\AdminController::class, 'login'])->name('layouts.login.login');
 
-Route::group(['middleware'=>'auth'],function(){
+Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
     Route::get('/admin/kegiatan','App\Http\Controllers\KegiatanController@index')->name('kegiatan.index');
     Route::get('/admin/create','App\Http\Controllers\KegiatanController@create')->name('kegiatan.create');
     Route::post('/admin/create','App\Http\Controllers\KegiatanController@store')->name('kegiatan.create');

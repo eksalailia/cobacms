@@ -43,7 +43,7 @@
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                        <a href="{{ route('kegiatan.create') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
+                                        <a href="admin/create" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                                                 <td>
                                                     <form action="{{ route('kegiatan.destroy',$data->id) }}" method="POST">
                                                         <a class="btn btn-info" href="{{ route('kegiatan.show',$data->id) }}">Show <i class="fa fa-eye"></i></a>
-                                                        <a href="{{route('kegiatan.edit',$data->id)}}" class="btn btn-success ">Edit <i class="fa fa-edit"></i></a>
+                                                        <a href="/edit/{id}" class="btn btn-success ">Edit <i class="fa fa-edit"></i></a>
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger">Delete <i class="fa fa-trash"></i></button>

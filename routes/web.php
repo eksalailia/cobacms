@@ -63,8 +63,8 @@ Route::middleware(['middleware'=>'auth'])->group(function () {
     Route::get('/admin/kegiatan','App\Http\Controllers\KegiatanController@index')->name('kegiatan.index');
     Route::get('/admin/kegiatan/create','App\Http\Controllers\KegiatanController@create')->name('kegiatan.create');
     Route::post('/admin/kegiatan/create','App\Http\Controllers\KegiatanController@store')->name('kegiatan.create');
-    Route::get('/kegiatan/{id}','App\Http\Controllers\KegiatanController@edit')->name('kegiatan.edit');
-    Route::post('/kegiatan/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
+    Route::get('/edit/admin/kegiatan/{id}','App\Http\Controllers\KegiatanController@edit')->name('kegiatan.edit');
+    Route::post('/edit/admin/kegiatan/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
     // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
     // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/admin/kegiatan/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');

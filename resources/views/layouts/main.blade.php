@@ -39,7 +39,7 @@
         </div>
         @foreach ($latest as $lts)
         <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-xl-5 img-bg" style=" height:400px; width:400px; background-image: url({{ asset('img_aktv/'.$lts->img_aktv)}}"></div>
+          <div class="col-xl-5 img-bg" style="margin-left:60px; height:400px; width:400px; background-image: url({{ asset('img_aktv/'.$lts->img_aktv)}}"></div>
           <div class="col-xl-7 ">
             <!-- <div class="slides-1 swiper">
               <div class="swiper-wrapper">
@@ -57,7 +57,7 @@
             <!-- </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div> -->
-          
+
 
       </div>
     </section>

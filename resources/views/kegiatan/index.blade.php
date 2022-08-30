@@ -42,8 +42,8 @@
                         <div class="content">
                             <div class="card card-info card-outline">
                                 <div class="card-header">
-                                    <div class="card-tools">
-                                        <form action="{{route('kegiatan.create')}}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
+                                <div class="card-tools">
+                                        <a href="{{ route('kegiatan.create') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>

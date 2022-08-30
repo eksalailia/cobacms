@@ -59,24 +59,24 @@ Route::get('/opd', [\App\Http\Controllers\OPDController::class, 'opd'])->name('o
 // // Route::get('/log2', [\App\Http\Controllers\LogController::class, 'log'])->name('auth.login_new');
 // // Route::get('/loginadmin', [\App\Http\Controllers\AdminController::class, 'login'])->name('layouts.login.login');
 
-Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
+Route::middleware(['middleware'=>'auth'])->group(function () {
     Route::get('/admin/kegiatan','App\Http\Controllers\KegiatanController@index')->name('kegiatan.index');
-    Route::get('/admin/create','App\Http\Controllers\KegiatanController@create')->name('kegiatan.create');
-    Route::post('/admin/create','App\Http\Controllers\KegiatanController@store')->name('kegiatan.create');
-    Route::get('/edit/{id}','App\Http\Controllers\KegiatanController@edit')->name('kegiatan.edit');
-    Route::post('/edit/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
+    Route::get('/admin/kegiatan/create','App\Http\Controllers\KegiatanController@create')->name('kegiatan.create');
+    Route::post('/admin/kegiatan/create','App\Http\Controllers\KegiatanController@store')->name('kegiatan.create');
+    Route::get('/kegiatan/{id}','App\Http\Controllers\KegiatanController@edit')->name('kegiatan.edit');
+    Route::post('/kegiatan/{id}','App\Http\Controllers\KegiatanController@update')->name('kegiatan.edit');
     // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
     // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/admin/kegiatan/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-    Route::delete('/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
+    Route::delete('/admin/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
 });
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('/admin/profil','App\Http\Controllers\ProfilController@index')->name('profil.index');
     Route::get('/admin/create','App\Http\Controllers\ProfilController@create')->name('profil.create');
     Route::post('/admin/create','App\Http\Controllers\ProfilController@store')->name('profil.create');
-    Route::get('/edit/{id}','App\Http\Controllers\ProfilController@edit')->name('profil.edit');
-    Route::post('/edit/{id}','App\Http\Controllers\ProfilController@update')->name('profil.edit');
+    Route::get('/admin/profil/edit/{id}','App\Http\Controllers\ProfilController@edit')->name('profil.edit');
+    Route::post('/admin/profil/edit/{id}','App\Http\Controllers\ProfilController@update')->name('profil.edit');
     // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
     // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/admin/profil/{id}','App\Http\Controllers\ProfilController@show')->name('profil.show');

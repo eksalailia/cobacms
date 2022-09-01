@@ -10,6 +10,7 @@ use App\Http\Controllers\KegiatanOPDController;
 use App\Http\Controllers\AktivitasController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\UpdateProfilController;
+use App\Http\Controllers\UpdateOPDController;
 use App\Http\Controllers\SaranController;
 use App\Models\Kegiatan;
 
@@ -101,6 +102,11 @@ Route::group(['middleware'=>'auth'],function(){
 Route::group(['middleware'=>'auth'],function(){
     Route::get('profile', [UpdateProfilController::class, 'edit'])->name('profile.edit');
     Route::patch('profile', [UpdateProfilController::class, 'update'])->name('profile.update');
+});
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/opd/profile', [UpdateOPDController::class, 'edit'])->name('opd.profile.edit');
+    Route::patch('/opd/profile', [UpdateOPDController::class, 'update'])->name('opd.profile.update');
 });
 
 Route::group(['middleware'=>'auth'],function(){

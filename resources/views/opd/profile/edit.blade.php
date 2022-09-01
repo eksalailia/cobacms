@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                        <form method="POST" action="{{ route('profile.update') }}">
+                        <form method="POST" action="{{ route('opd.profile.update') }}">
                         @method('patch')
                         @csrf
 

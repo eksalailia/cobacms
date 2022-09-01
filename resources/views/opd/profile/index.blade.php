@@ -67,7 +67,7 @@
                   <div class="form-group">
                   <div class="col-sm-12">
                   <form method="POST">
-                    <button type="submit" href="{{ route('profil.edit') }}" class="btn btn-success" style="font-size: 16px;">
+                    <button type="submit" href="{{ route('opd.profil.edit') }}" class="btn btn-success" style="font-size: 16px;">
                      Update Profile
                     </button>
                   </div>

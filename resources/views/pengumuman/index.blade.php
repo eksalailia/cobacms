@@ -20,7 +20,7 @@
 
                     @include('layouts.admin.nav_item')
                     @include('layouts.admin.user_info')
-                    {{-- </ul> --}}
+                    </ul>
 
                 </nav>
                 <!-- End of Topbar -->
@@ -43,12 +43,12 @@
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                         <a href="{{ route('kegiatan.create') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
+                                         <a href="{{ route('pengumuman.create') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <form action="{{route('kegiatan.index')}}" style="margin-top: 20px" method="GET">
+                        <form action="{{route('pengumuman.index')}}" style="margin-top: 20px" method="GET">
                             <div class="form-group col-3" style="margin-left:8px">
                                 <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Search...">
                                 <button class="btn btn-secondary" type="submit"  style="font-size: 23px;margin-bottom:3px"><i class="fa fa-search"></i></button>
@@ -66,22 +66,22 @@
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>Nama Kegiatan</th>
-                                            <th>Tanggal Kegiatan</th>
+                                            <th>Nama Pengumuman</th>
+                                            <th>Tanggal Pengumuman</th>
                                             <th>Deskripsi</th>
                                             <th>Action</th>
                                         </tr>
                                         <tbody>
                                             <tr>
-                                                @foreach ($kegiatan as $data)
+                                                @foreach ($pengumuman as $data)
                                                 <td>{{ $data->id }}</td>
-                                                <td>{{ $data->nama_kegiatan }}</td>
-                                                <td>{{ $data->tgl_kegiatan }}</td>
+                                                <td>{{ $data->nama_pengumuman }}</td>
+                                                <td>{{ $data->tgl_pengumuman }}</td>
                                                 <td>{{ $data->deskripsi }}</td>
                                                 <td>
-                                                    <form action="{{ route('kegiatan.destroy',$data->id) }}" method="POST">
-                                                        <a class="btn btn-info" href="{{ route('kegiatan.show',$data->id) }}">Show <i class="fa fa-eye"></i></a>
-                                                        <a href="{{ route('kegiatan.edit',$data->id) }}" class="btn btn-success ">Edit <i class="fa fa-edit"></i></a>
+                                                    <form action="{{ route('pengumuman.destroy',$data->id) }}" method="POST">
+                                                        <a class="btn btn-info" href="{{ route('pengumuman.show',$data->id) }}">Show <i class="fa fa-eye"></i></a>
+                                                        <a href="{{ route('pengumuman.edit',$data->id) }}" class="btn btn-success ">Edit <i class="fa fa-edit"></i></a>
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger">Delete <i class="fa fa-trash"></i></button>
@@ -93,7 +93,7 @@
                                     </thead>
                                 </table>
                                   {{-- Menampilan Paginasi --}}
-                                {{ $kegiatan->render() }}
+                                {{ $pengumuman->render() }}
                             </div>
                         </div>
                     </div>

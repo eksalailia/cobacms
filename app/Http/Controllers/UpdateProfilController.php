@@ -8,15 +8,17 @@ use Illuminate\Http\Request;
 class UpdateProfilController extends Controller
 {
     public function edit() {
-        // Alert::success('Profile Berhasi di Update','Sukses'); 
+        // Alert::success('Profile Berhasi di Update','Sukses');
         return view('profile.edit')->with('user', auth()->user());
     }
 
     public function update(Request $request) {
-        // Alert::success('Profile Berhasi di Update','Sukses'); 
+        // Alert::success('Profile Berhasi di Update','Sukses');
         $request->user()->update([
             'password' => Hash::make($request->get('password'))
         ]);
         return redirect()->route('layouts.admin.admin');
+
     }
+
 }

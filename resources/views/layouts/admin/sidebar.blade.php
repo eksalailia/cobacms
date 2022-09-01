@@ -104,8 +104,14 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a>
     </li> --}}
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="/admin/kegiatan">
+            <i class="fa fa-bullhorn"></i>
+            <span>Pengumuman</span></a>
+    </li> --}}
+
+    <li class="nav-item">
+        <a class="nav-link" href="/admin/pengumuman">
             <i class="fa fa-bullhorn"></i>
             <span>Pengumuman</span></a>
     </li>

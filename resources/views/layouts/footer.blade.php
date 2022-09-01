@@ -10,12 +10,12 @@
               </span>
             </a>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            {{-- <div class="social-links d-flex  mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div> --}}
+            <div class="social-links d-flex  mt-3">
+              <a href="https://twitter.com/pemkotmadiun_" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/pemkotmadiun" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/pemkotmadiun_/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.youtube.com/c/PemerintahKotaMadiun" class="youtube"><i class="bi bi-youtube"></i></a>
+            </div>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
@@ -60,15 +60,11 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Eks Website</span></strong>. All Rights Reserved 2022
+          &copy; Copyright <strong><span>Diskominfo Kota Madiun</span></strong>. All Rights Reserved 2022
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
+        {{-- <div class="credits">
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        </div> --}}
       </div>
     </div>
   </footer><!-- End Footer -->

@@ -31,7 +31,7 @@
 
         <div class="row gy-4" data-aos="fade-up">
           <div class="col-lg-4">
-            <img src="{{ asset('frontend/assets/img/about.jpg')}}" class="img-fluid" alt="">
+            <img src="{{ asset('frontend/assets/img/gcio.jpg')}}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8">
             <div class="content ps-lg-5">

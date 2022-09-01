@@ -111,11 +111,11 @@
             <i class="fas fa-clipboard-list"></i>
             <span>Kegiatan</span></a>
     </li>
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="/opd/pengumuman">
             <i class="fa fa-bullhorn"></i>
             <span>Pengumuman</span></a>
-    </li>
+    </li> --}}
 
     <!-- Nav Item - Profile -->
     {{-- <li class="nav-item">

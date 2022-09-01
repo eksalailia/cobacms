@@ -71,6 +71,19 @@ Route::middleware(['middleware'=>'auth'])->group(function () {
     Route::delete('/admin/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
 });
 
+Route::middleware(['middleware'=>'auth'])->group(function () {
+    Route::get('/admin/pengumuman','App\Http\Controllers\PengumumanAdminController@index')->name('pengumuman.index');
+    Route::get('/admin/pengumuman/create','App\Http\Controllers\PengumumanAdminController@create')->name('pengumuman.create');
+    Route::post('/admin/pengumuman/create','App\Http\Controllers\PengumumanAdminController@store')->name('pengumuman.create');
+    Route::get('/edit/admin/pengumuman/{id}','App\Http\Controllers\PengumumanAdminController@edit')->name('pengumuman.edit');
+    Route::post('/edit/admin/pengumuman/{id}','App\Http\Controllers\PengumumanAdminController@update')->name('pengumuman.edit');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/admin/pengumuman/{id}','App\Http\Controllers\PengumumanAdminController@show')->name('pengumuman.show');
+    Route::delete('/admin/pengumuman/delete/{kegiatan}', ['as' => 'pengumuman.destroy', 'uses' => 'PengumumanAdminController@destroy']);
+});
+
+
 Route::group(['middleware'=>'auth'],function(){
     Route::get('/admin/profil','App\Http\Controllers\ProfilController@index')->name('profil.index');
     Route::get('/admin/create','App\Http\Controllers\ProfilController@create')->name('profil.create');

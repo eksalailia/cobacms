@@ -24,7 +24,7 @@
                     {{-- @include('sweetalert::alert') --}}
                         @include('opd.nav_item')
 
-                        @include('layouts.admin.user_info')
+                        @include('opd.user_info')
 
                     </ul>
 

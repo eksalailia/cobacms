@@ -38,7 +38,7 @@
         </div>
         @foreach ($latest as $lts)
         <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-xl-5 img-bg" style="margin-left:60px; height:400px; width:400px; background-image: url({{ asset('img_aktv/'.$lts->img_aktv)}}"></div>
+          <div class="col-xl-5 img-bg" style="background-image: url({{ asset('img_aktv/'.$lts->img_aktv)}}"></div>
           <div class="col-xl-7 ">
             <!-- <div class="slides-1 swiper">
               <div class="swiper-wrapper">
@@ -46,7 +46,8 @@
                   <div class="item" style="margin-left: 100px; margin-top: 100px;">
                     <h3 class="mb-3">{{$lts->judul}}</h3>
                     <!-- <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4> -->
-                    <p>{{$lts->isi}}</p>
+                    <p>{{substr($lts->isi,0,1000)}}...</p>
+                    <a href="{{route('layouts.blog_details',$lts->id)}}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div><!-- End slide item -->
 
@@ -255,7 +256,7 @@
           </div>
           <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
             <div class="phone-wrap">
-              <img src="{{ asset('frontend/assets/img/iphone.png')}}" alt="Image" class="img-fluid">
+              <img src="{{ asset('frontend/assets/img/or.png')}}" alt="Image" class="img-fluid" style="height: 700px; width: 500px">
             </div>
           </div>
         </div>

@@ -146,7 +146,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Profil Kami</h2>
+          <h2>Profil Pimpinan</h2>
 
         </div>
 

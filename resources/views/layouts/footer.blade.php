@@ -9,7 +9,10 @@
                 <img src="{{URL::asset('frontend/assets/img/logo4.png')}}" style="height: 70px;width:195px;max-height:100px">
               </span>
             </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <p>
+                Website ini dikembangkan guna untuk mempermudah pengelolaan dan pengembangan konten
+                serta memberikan informasi terkait Dinas Komunikasi dan Informatika Kota Madiun.
+            </p>
             <div class="social-links d-flex  mt-3">
               <a href="https://twitter.com/pemkotmadiun_" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="https://www.facebook.com/pemkotmadiun" class="facebook"><i class="bi bi-facebook"></i></a>

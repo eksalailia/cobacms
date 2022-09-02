@@ -66,7 +66,7 @@
                                     </div>
                                     <div class="form-group col-sm-12">
                                         <label>Tanggal Aktivitas</label>
-                                        <input type="datetime-local" id="tgl_aktivitas" name="tgl_aktivitas" class="form-control" >
+                                        <input type="date" id="tgl_aktivitas" name="tgl_aktivitas" class="form-control" >
                                     </div>
                                 <div class="form-group col-sm-12">
                                     <label>Author</label>

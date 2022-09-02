@@ -15,11 +15,11 @@
         <div class="col-xl-4">
           <h2 data-aos="fade-up">Diskominfo Kota Madiun</h2>
           <blockquote data-aos="fade-up" data-aos-delay="100">
-            <p>Diskominfo Kota Madiun adalah Dinas Komunikasi dan Informatika Kota Madiun. </p>
+            <p>Selamat datang di website milik Dinas Komunikasi dan Informatika Kota Madiun. </p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="/about" class="btn-get-started">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=M7HwzLdqKJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <a href="/about" class="btn-get-started">Info Lanjutan</a>
+            <a href="https://www.youtube.com/watch?v=M7HwzLdqKJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Lihat video</span></a>
           </div>
 
         </div>
@@ -77,7 +77,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Pemberian Informasi oleh Pejabat Pengelola Informasi
+              <h4 class="title"><a href="https://ppid.madiunkota.go.id/" class="stretched-link">Pemberian Informasi oleh Pejabat Pengelola Informasi
                 dan Dokumentasi (PPID)</a></h4>
               {{-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> --}}
             </div>
@@ -87,7 +87,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon flex-shrink-0"><i class="bi bi-megaphone" style="color: #15a04a;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Layanan Aspirasi dan Solusi di LPPL Radio Suara Madiun</a></h4>
+              <h4 class="title"><a href="https://www.instagram.com/93fmsuaramadiun/?hl=id" class="stretched-link">Layanan Aspirasi dan Solusi di LPPL Radio Suara Madiun</a></h4>
               {{-- <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p> --}}
             </div>
           </div><!-- End Service Item -->
@@ -95,7 +95,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #d90769;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Peliputan Kegiatan Pemerintah Kota Madiun</a></h4>
+              <h4 class="title"><a href="/blog" class="stretched-link">Peliputan Kegiatan Pemerintah Kota Madiun</a></h4>
               {{-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p> --}}
             </div>
           </div><!-- End Service Item -->
@@ -103,15 +103,15 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="icon flex-shrink-0"><i class="bi bi-graph-up-arrow" style="color: #15bfbc;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Pelayanan Data Statistik Sektoral</a></h4>
+              <h4 class="title"><a href="https://dashboard.madiunkota.go.id" class="stretched-link">Pelayanan Data Statistik Sektoral</a></h4>
               {{-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> --}}
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-wifi" style="color: #f5cf13;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-gear" style="color: #f5cf13;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Pelayanan Wifi Gratis</a></h4>
+              <h4 class="title"><a href="https://servicedesk.madiunkota.go.id/" class="stretched-link">Layanan Pengaduan Masyarakat</a></h4>
               {{-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p> --}}
             </div>
           </div><!-- End Service Item -->
@@ -124,13 +124,12 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600"  style="margin-left: 380px">
+          {{-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600"  style="margin-left: 380px">
             <div class="icon flex-shrink-0"><i class="bi bi-building" style="color: #961977;"></i></div>
             <div>
               <h4 class="title"><a href="#" class="stretched-link">Government Chief Information Officer (GCIO)</a></h4>
-              {{-- <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p> --}}
             </div>
-          </div><!-- End Service Item -->
+          </div><!-- End Service Item --> --}}
 
         </div>
 
@@ -157,7 +156,7 @@
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <h3>Organisasi Dinas Kominfo <br>Kota Madiun</h3>
+            <h3>Struktur Organisasi Dinas Kominfo <br>Kota Madiun</h3>
 
             <div class="row gy-4">
 

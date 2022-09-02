@@ -71,7 +71,7 @@
 
         </div>
         <div>
-            <img src="{{ asset('frontend/assets/img/organisasi.png')}}" style="height: 550px; width: 1500px;margin-left: 10px" class="img-fluid" alt="">
+            <img src="{{ asset('frontend/assets/img/organisasi.png')}}" style="height: 550px; width: 1500px;margin-left: 6px" class="img-fluid" alt="">
           </div>
 
         {{-- <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
@@ -161,7 +161,7 @@
                     <div class="col-xl-2 col-md-6" data-aos="fade-up" data-aos-delay="100" style="margin-left: 31px">
                       <div class="team-member">
                           <div class="member-img">
-                          <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:400px;border-radius:50%" alt=""></div>
+                          <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:400px" alt=""></div>
                         <div class="member-info">
                           <h4> {{$all->nama_profil}}</h4>
                           <span>{{$all->jabatan}}</span>

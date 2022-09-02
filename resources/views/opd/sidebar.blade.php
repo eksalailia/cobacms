@@ -106,6 +106,11 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a>
     </li> --}}
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="/opd/kegiatan">
+            <i class="fas fa-clipboard-list"></i>
+            <span>Kegiatan</span></a>
+    </li> --}}
     <li class="nav-item">
         <a class="nav-link" href="/opd/kegiatan">
             <i class="fas fa-clipboard-list"></i>

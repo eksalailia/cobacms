@@ -9,7 +9,17 @@
 
 @section('content')
 
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url('{{ asset ('frontend/assets/img/blog-header.jpg')}}');">
+    <div class="container position-relative d-flex flex-column align-items-center">
 
+      <h2>Kegiatan</h2>
+      <ol>
+        <li><a href="/blog">Beranda</a></li>
+        <li>Kegiatan</li>
+      </ol>
+
+    </div>
+  </div>
 <section id="recent-posts" class="recent-posts">
     <div class="container" data-aos="fade-up">
 
@@ -34,6 +44,7 @@
         </div>
 
      @endforeach
+
 
       </div>
 

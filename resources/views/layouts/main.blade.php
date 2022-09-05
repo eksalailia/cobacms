@@ -119,7 +119,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-telephone" style="color: #1335f5;"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Layanan Call Center 112</a></h4>
+              <h4 class="title"><a href="https://wa.me/628113577800?text=Kirim Pengaduan Anda" class="stretched-link">Layanan Call Center 112</a></h4>
               {{-- <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p> --}}
             </div>
           </div><!-- End Service Item -->

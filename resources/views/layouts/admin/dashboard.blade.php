@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> --}}
 
 </head>
 
@@ -39,6 +40,12 @@
   <!-- Page level custom scripts -->
   <script src="{{ asset('backend/js/demo/chart-area-demo.js')}}"></script>
   <script src="{{ asset('backend/js/demo/chart-pie-demo.js')}}"></script>
+  <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+    </script>
 
 </body>
 

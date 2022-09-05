@@ -37,6 +37,7 @@ Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('layouts.main');
 Route::get('/about', [\App\Http\Controllers\AboutController::class, 'about'])->name('layouts.about');
+Route::get('/tupoksi', [\App\Http\Controllers\TupoksiController::class, 'tupoksi'])->name('layouts.tupoksi');
 Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'blog'])->name('layouts.blogpost');
 Route::post('/blog/carikegiatan','App\Http\Controllers\blogController@cari')->name('layouts.cr_berita');
 Route::get('/blog/list/{id}','App\Http\Controllers\blogController@list')->name('layouts.list');

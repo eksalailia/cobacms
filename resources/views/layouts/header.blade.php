@@ -13,7 +13,15 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/" class="active">Beranda</a></li>
-          <li><a href="/about">Tentang</a></li>
+          {{-- <li><a href="/about">Tentang</a></li> --}}
+          <li class="dropdown"><a href="#"><span>Tentang</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/about">Profil</a></li>
+              <li><a href="/tupoksi">Tugas Pokok dan Fungsi</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
           <li><a href="/blog">Kegiatan</a></li>
           <li><a href="/contact">Kontak</a></li>
           <li><a href="/login">Login</a></li>

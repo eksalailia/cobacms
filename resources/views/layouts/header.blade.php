@@ -18,7 +18,7 @@
             <ul>
               <li><a href="/about">Profil</a></li>
               <li><a href="/tupoksi">Tugas Pokok dan Fungsi</a></li>
-              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Standar Pelayanan</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>

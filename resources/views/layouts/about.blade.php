@@ -16,10 +16,10 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{{ asset ('frontend/assets/img/about-header.jpg')}}');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>Tentang</h2>
+        <h2>Profil</h2>
         <ol>
           <li><a href="/">Beranda</a></li>
-          <li>Tentang</li>
+          <li>Profil</li>
         </ol>
 
       </div>
@@ -161,7 +161,7 @@
                     <div class="col-xl-2 col-md-6" data-aos="fade-up" data-aos-delay="100" style="margin-left: 31px">
                       <div class="team-member">
                           <div class="member-img">
-                          <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:400px" alt=""></div>
+                          <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:600px; border-radius:50%" alt=""></div>
                         <div class="member-info">
                           <h4> {{$all->nama_profil}}</h4>
                           <span>{{$all->jabatan}}</span>

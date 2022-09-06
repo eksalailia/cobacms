@@ -18,8 +18,16 @@
             <ul>
               <li><a href="/about">Profil</a></li>
               <li><a href="/tupoksi">Tugas Pokok dan Fungsi</a></li>
-              <li><a href="#">Standar Pelayanan</a></li>
+              <li><a href="/standarpelayanan">Standar Pelayanan</a></li>
               <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>PPID</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+                <li><a href="#">Petugas PPID</a></li>
+              <li><a href="#">Prosedur Permohonan Informasi</a></li>
+              <li><a href="#">Prosedur Pengajuan Keberatan</a></li>
+              <li><a href="#">Prosedur Penyelesaian Sengketa</a></li>
             </ul>
           </li>
           <li><a href="/blog">Kegiatan</a></li>

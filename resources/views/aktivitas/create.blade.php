@@ -70,7 +70,7 @@
                                     </div>
                                 <div class="form-group col-sm-12">
                                     <label>Author</label>
-                                    <input type="text" id="author" name="author" class="form-control" >
+                                    <input type="text" id="author" name="author" class="form-control" value="{{ Auth::user()->name }}" >
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <label>Image</label>

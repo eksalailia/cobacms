@@ -1,12 +1,12 @@
-@extends('layouts.admin.dashboard')
-@extends('layouts.konten')
+@extends('opd.dashboard')
+@extends('opd.konten')
 @section('content')
 
     <!-- Page Wrapper -->
     <div id="wrapper">
 
           <!-- Sidebar -->
-          @include('layouts.admin.sidebar')
+          @include('opd.sidebar')
           <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -18,8 +18,8 @@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-                    @include('layouts.admin.nav_item')
-                    @include('layouts.admin.user_info')
+                    @include('opd.nav_item')
+                    @include('opd.user_info')
                     </ul>
 
                 </nav>
@@ -105,7 +105,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-           @include('layouts.admin.footer')
+           @include('opd.footer')
             <!-- End of Footer -->
 
         </div>
@@ -120,6 +120,6 @@
     </a>
 
     <!-- Logout Modal-->
-@include('layouts.admin.logout')
+@include('opd.logout')
 
 @endsection

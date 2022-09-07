@@ -116,6 +116,11 @@
             <i class="fas fa-clipboard-list"></i>
             <span>Kegiatan</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/opd/pelayanan">
+            <i class="fas fa-cogs"></i>
+            <span>Standar Pelayanan</span></a>
+    </li>
     {{-- <li class="nav-item">
         <a class="nav-link" href="/opd/pengumuman">
             <i class="fa fa-bullhorn"></i>

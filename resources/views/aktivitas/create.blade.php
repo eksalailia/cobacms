@@ -78,7 +78,7 @@
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label>Isi</label>
-                                <textarea id="ckeditor form-control valid" name="isi" rows="5" cols="33" style="width:100%"></textarea>
+                                    <textarea class="ckeditor form-control valid" id="isi" name="isi" rows="5" cols="33" style="width:100%"></textarea>
                             </div>
                                     <div class="form-group col-sm-5">
                                         <button type="submit" class="btn btn-success">Simpan</button>&nbsp;

@@ -1,7 +1,6 @@
 @extends('opd.dashboard')
 @extends('opd.konten')
 @section('content')
-
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -36,13 +35,13 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Tambah Aktivitas</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Tambah Pelayanan</h6>
                         </div>
                         <div class="content">
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                        {{-- <a class="fas fa-arrow-left" href="/admin/kegiatan"></a> --}}
+                                        {{-- <a class="fas fa-arrow-left" href="/admin/pengumuman"></a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -58,31 +57,25 @@
                         </div>
                     @endif
 
-                                <form method="POST" action="{{ route ('opd.kegiatan.create') }}" enctype=multipart/form-data >
+                                <form method="POST" action="{{ route ('opd.pelayanan.create') }}" >
                                 @csrf
                                     <div class="form-group col-sm-12">
-                                        <label>Judul</label>
-                                        <input type="text" id="judul" name="judul" class="form-control" >
+                                        <label>Jenis Pelayanan</label>
+                                        <input type="text" id="jenis" name="jenis" class="form-control" >
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <label>Tanggal Aktivitas</label>
-                                        <input type="date" id="tgl_aktivitas" name="tgl_aktivitas" class="form-control" >
+                                        <label>Komponen</label>
+                                        <input type="text" id="komponen" name="komponen" class="form-control" >
                                     </div>
-                                <div class="form-group col-sm-12">
-                                    <label>Author</label>
-                                    <input type="text" id="author" name="author" class="form-control" value="{{ Auth::user()->name }}" >
+                                    <div class="form-group col-md-12">
+                                        <label>Uraian</label>
+                                        {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi">
+                                    </div> --}}
+                                    <textarea id="text" name="uraian" rows="5" cols="33" style="width:100%"></textarea>
                                 </div>
-                                <div class="form-group col-sm-12">
-                                    <label>Image</label>
-                                    <input type="file" id="img_aktv" name="img_aktv" class="form-control">
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <label>Isi</label>
-                                <textarea id="text" name="isi" rows="5" cols="33" style="width:100%"></textarea>
-                            </div>
                                     <div class="form-group col-sm-5">
                                         <button type="submit" class="btn btn-success">Simpan</button>&nbsp;
-                                        <a href="/opd/kegiatan" class="btn btn-secondary">Cancel</a>
+                                        <a href="/opd/pelayanan" class="btn btn-secondary">Cancel</a>
                                     </div>
                                 </form>
                             </div>
@@ -96,7 +89,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            {{-- @include('layouts.admin.footer') --}}
+            {{-- @include('opd.footer') --}}
             <!-- End of Footer -->
 
         </div>

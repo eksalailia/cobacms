@@ -47,6 +47,7 @@ Route::get('/reset', [\App\Http\Controllers\AdminController::class, 'reset'])->n
 Route::get('/table', [\App\Http\Controllers\TableController::class, 'tab'])->name('layouts.admin.table');
 Route::get('/blog/details/{id}', [\App\Http\Controllers\BlogController::class, 'blog_details'])->name('layouts.blog_details');
 Route::get('/opd', [\App\Http\Controllers\OPDController::class, 'opd'])->name('opd.opd');
+Route::get('/standarpelayanan', [\App\Http\Controllers\FrontendSPController::class, 'pelayanan'])->name('layouts.sp');
 
 // Route::get('/kegiatan', [\App\Http\Controllers\KegiatanController::class, 'kegiatan'])->name('layouts.admin.kegiatan');
 // Route::get('/create-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'create_kegiatan'])->name('layouts.admin.create_kegiatan');
@@ -140,6 +141,18 @@ Route::group(['middleware'=>'auth'],function(){
     // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/opd/kegiatan/{id}','App\Http\Controllers\KegiatanOPDController@show')->name('opd.kegiatan.show');
     Route::delete('/opd/delete/{kegiatan}', ['as' => 'opd.kegiatan.destroy', 'uses' => 'KegiatanOPDController@destroy']);
+});
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/opd/pelayanan','App\Http\Controllers\SPController@index')->name('opd.pelayanan.index');
+    Route::get('/opd/create/pelayanan','App\Http\Controllers\SPController@create')->name('opd.pelayanan.create');
+    Route::post('/opd/create/pelayanan','App\Http\Controllers\SPController@store')->name('opd.pelayanan.create');
+    Route::get('/edit/opd/pelayanan{id}','App\Http\Controllers\SPController@edit')->name('opd.pelayanan.edit');
+    Route::post('/edit/opd/pelayanan{id}','App\Http\Controllers\SPController@update')->name('opd.pelayanan.edit');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/opd/pelayanan/{id}','App\Http\Controllers\SPController@show')->name('opd.pelayanan.show');
+    Route::delete('/opd/delete/{pelayanan}', ['as' => 'opd.pelayanan.destroy', 'uses' => 'SPController@destroy']);
 });
 
 

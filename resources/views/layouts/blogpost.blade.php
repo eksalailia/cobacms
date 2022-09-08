@@ -1,6 +1,4 @@
-
 @extends('layouts.appnew')
-
 
 <!-- ======= Header ======= -->
 @include('layouts.header')

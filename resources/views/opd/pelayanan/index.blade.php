@@ -1,3 +1,4 @@
+
 @extends('opd.dashboard')
 @extends('opd.konten')
 @section('content')
@@ -29,7 +30,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800" style="text-align: center">Data Pengumuman</h1>
+                    <h1 class="h3 mb-2 text-gray-800" style="text-align: center">Standar Pelayanan</h1>
                     {{-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank"
                             href="https://datatables.net">official DataTables documentation</a>.</p> --}}
@@ -37,18 +38,18 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Pengumuman</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Standar Pelayanan</h6>
                         </div>
                         <div class="content">
                             <div class="card card-info card-outline">
                                 <div class="card-header">
                                     <div class="card-tools">
-                                         <a href="{{ route('pengumuman.create') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
+                                        <a href="{{ route('opd.pelayanan.create') }}" class="btn btn-success">Tambah Data <i class="fas fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <form action="{{route('pengumuman.index')}}" style="margin-top: 20px" method="GET">
+                        <form action="{{route('opd.pelayanan.index')}}" style="margin-top: 20px" method="GET">
                             <div class="form-group col-3" style="margin-left:8px">
                                 <input type="text" name="search" class="form-control w-75 d-inline" id="search" placeholder="Search...">
                                 <button class="btn btn-secondary" type="submit"  style="font-size: 23px;margin-bottom:3px"><i class="fa fa-search"></i></button>
@@ -66,26 +67,26 @@
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>Nama Pengumuman</th>
-                                            <th>Tanggal Pengumuman</th>
-                                            <th>Deskripsi</th>
+                                            <th>Jenis Pelayanan</th>
+                                            <th>Komponen</th>
+                                            <th>Uraian</th>
                                             <th>Action</th>
                                         </tr>
                                         <tbody>
                                             <tr>
-                                                @foreach ($pengumuman as $data)
+                                                @foreach ($pelayanan as $data)
                                                 <td>{{ $data->id }}</td>
-                                                <td>{{ $data->nama_pengumuman }}</td>
-                                                <td>{{ $data->tgl_pengumuman }}</td>
-                                                <td>{{ $data->deskripsi }}</td>
+                                                <td>{{ $data->jenis}}</td>
+                                                <td>{{ $data->komponen }}</td>
+                                                <td>{{ $data->uraian }}</td>
                                                 <td>
-                                                    <form action="{{ route('pengumuman.destroy',$data->id) }}" method="POST">
-                                                        <a class="btn btn-info" href="{{ route('pengumuman.show',$data->id) }}">Show <i class="fa fa-eye"></i></a>
-                                                        <a href="{{ route('pengumuman.edit',$data->id) }}" class="btn btn-success ">Edit <i class="fa fa-edit"></i></a>
+                                                    <form action="" method="POST">
+                                                        <a class="btn btn-info" href="{{ route('opd.pelayanan.show',$data->id) }}">Show <i class="fa fa-eye"></i></a>
+                                                        <a href="{{route('opd.pelayanan.edit',$data->id)}}" class="btn btn-success ">Edit <i class="fa fa-edit"></i></a>
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger">Delete <i class="fa fa-trash"></i></button>
-                                                    {{-- </form> --}}
+                                                    </form>
                                                 </td>
                                         </tr>
                                         @endforeach
@@ -93,7 +94,7 @@
                                     </thead>
                                 </table>
                                   {{-- Menampilan Paginasi --}}
-                                {{ $pengumuman->render() }}
+                                {{ $pelayanan->render() }}
                             </div>
                         </div>
                     </div>

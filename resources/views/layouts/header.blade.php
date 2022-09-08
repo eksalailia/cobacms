@@ -14,7 +14,7 @@
         <ul>
           <li><a href="/" class="active">Beranda</a></li>
           {{-- <li><a href="/about">Tentang</a></li> --}}
-          <li class="dropdown"><a href="#"><span>Tentang</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="/about"><span>Tentang</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/about">Profil</a></li>
               <li><a href="/tupoksi">Tugas Pokok dan Fungsi</a></li>

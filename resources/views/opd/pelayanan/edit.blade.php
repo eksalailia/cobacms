@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Uraian</label>
-                    <textarea id="text" name="uraian" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$pelayanan->uraian}}</textarea>
+                    <textarea class="ckeditor form-control valid" name="uraian" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$pelayanan->uraian}}</textarea>
                     {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" required="" value="{{$pelayanan->deskripsi}}" > --}}
                 </div>
                 <div class="form-group col-sm-12">

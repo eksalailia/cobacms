@@ -70,7 +70,7 @@
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Isi</label>
-                    <textarea id="text" name="isi" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$aktivitas->isi}}</textarea>
+                    <textarea class="ckeditor form-control valid" name="isi" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$aktivitas->isi}}</textarea>
                 </div>
                 <div class="form-group col-sm-12">
                 <input type="submit" value="Simpan" class="btn btn-success">&nbsp;

@@ -78,7 +78,7 @@
                                                 <td>{{ $data->id }}</td>
                                                 <td>{{ $data->jenis}}</td>
                                                 <td>{{ $data->komponen }}</td>
-                                                <td>{{ $data->uraian }}</td>
+                                                <td>{!! $data->uraian !!}</td>
                                                 <td>
                                                     <form action="" method="POST">
                                                         <a class="btn btn-info" href="{{ route('opd.pelayanan.show',$data->id) }}">Show <i class="fa fa-eye"></i></a>

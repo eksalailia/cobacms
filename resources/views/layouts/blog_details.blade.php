@@ -49,7 +49,7 @@
 
               <div class="content">
                 <p>
-                 {{$news->isi}}
+                 {!! $news->isi !!}
                 </p>
               </div><!-- End post content -->
 
@@ -80,7 +80,7 @@
        <img src="{{asset('img_aktv/'.$ls->img_aktv)}}" alt="" class="img-fluid" style="width:200px; height:200px;">
       </div>
 			<p><b>{{$ls->judul}}</b></p>
-			<p>{{substr($ls->isi,0,100)}}...</p>
+			<p>{!! substr($ls->isi,0,100) !!}...</p>
 			<br>
 		</a>
 		@endforeach

@@ -71,7 +71,7 @@
                                         <label>Uraian</label>
                                         {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi">
                                     </div> --}}
-                                    <textarea id="text" name="uraian" rows="5" cols="33" style="width:100%"></textarea>
+                                    <textarea class="ckeditor form-control valid" name="uraian" rows="5" cols="33" style="width:100%"></textarea>
                                 </div>
                                     <div class="form-group col-sm-5">
                                         <button type="submit" class="btn btn-success">Simpan</button>&nbsp;

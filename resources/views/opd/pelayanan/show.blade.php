@@ -44,7 +44,7 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item" style="font-size: 16px;"><b>Jenis Pelayanan : </b>{{$data->jenis}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Komponen : </b>{{$data->jenis}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Deskripsi : </b>{{$data->uraian}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Deskripsi : </b>{!! $data->uraian!!}</li>
                             </ul>
                         </div>
                         <a class="btn btn-success mt-3" href="{{ route('opd.pelayanan.index') }}" style="font-size: 16px;">Kembali</a>

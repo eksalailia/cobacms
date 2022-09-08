@@ -36,7 +36,7 @@
               <span class="post-author"> / {{$all->author}} </span>
             </div>
             <h3 class="post-title"> {{$all->judul}} </h3>
-            <p> {{substr($all->isi,0,100)}}</p>
+            <p> {!!substr($all->isi,0,100)!!}</p>
             <a href="{{route('layouts.blog_details',$all->id)}}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
         </div>

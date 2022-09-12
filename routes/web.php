@@ -48,6 +48,7 @@ Route::get('/table', [\App\Http\Controllers\TableController::class, 'tab'])->nam
 Route::get('/blog/details/{id}', [\App\Http\Controllers\BlogController::class, 'blog_details'])->name('layouts.blog_details');
 Route::get('/opd', [\App\Http\Controllers\OPDController::class, 'opd'])->name('opd.opd');
 Route::get('/standarpelayanan', [\App\Http\Controllers\FrontendSPController::class, 'pelayanan'])->name('layouts.sp');
+Route::get('/petugas', [\App\Http\Controllers\PetugasFrontendController::class, 'petugasfront'])->name('layouts.ppid.petugas');
 
 // Route::get('/kegiatan', [\App\Http\Controllers\KegiatanController::class, 'kegiatan'])->name('layouts.admin.kegiatan');
 // Route::get('/create-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'create_kegiatan'])->name('layouts.admin.create_kegiatan');

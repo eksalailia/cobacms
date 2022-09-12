@@ -43,10 +43,10 @@
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item" style="font-size: 16px;"><b>Judul : </b>{{$aktivitas->judul}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Isi : </b>{{$aktivitas->isi}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Tanggal Posting : </b>{{$aktivitas->tgl_aktivitas}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Author : </b>{{$aktivitas->author}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Image : </b><img src="/img_aktv/{{ $aktivitas->img_aktv }}" width="100px"></li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Isi : </b>{!! $aktivitas->isi !!}</li>
                             </ul>
                         </div>
                         <a class="btn btn-success mt-3" href="{{ route('opd.kegiatan.index') }}" style="font-size: 16px;">Kembali</a>

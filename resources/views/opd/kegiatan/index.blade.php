@@ -78,7 +78,7 @@
                                                 @foreach ($aktivitas as $ak)
                                                 <td>{{ $ak->id }}</td>
                                                 <td>{{ $ak->judul }}</td>
-                                                <td>{{ $ak->isi }}</td>
+                                                <td>{!! $ak->isi !!}</td>
                                                 <td>{{ $ak->tgl_aktivitas }}</td>
                                                 <td>By : {{ $ak->author }}</td>
                                                 <td><img alt="img" src="/img_aktv/{{ $ak->img_aktv }}" width="100px"></td>

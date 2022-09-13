@@ -14,20 +14,22 @@
         <ul>
           <li><a href="/" class="active">Beranda</a></li>
           {{-- <li><a href="/about">Tentang</a></li> --}}
-          <li class="dropdown"><a href="/about"><span>Tentang</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="/about/sejarah"><span>Tentang</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/about">Profil</a></li>
+              <li><a href="/about/sejarah">Sejarah dan Visi Misi</a></li>
+              <li><a href="/organisasi">Struktur Organisasi</a></li>
+              <li><a href="/pimpinan">Profil Pimpinan</a></li>
               <li><a href="/tupoksi">Tugas Pokok dan Fungsi</a></li>
               <li><a href="/standarpelayanan">Standar Pelayanan</a></li>
-              {{-- <li><a href="#">Dropdown 4</a></li> --}}
+              <li><a href="/maklumatpelayanan">Maklumat Pelayanan</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="/petugas"><span>PPID</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
                 <li><a href="/petugas">Petugas PPID</a></li>
-              <li><a href="#">Prosedur Permohonan Informasi</a></li>
-              <li><a href="#">Prosedur Pengajuan Keberatan</a></li>
-              <li><a href="#">Prosedur Penyelesaian Sengketa</a></li>
+              <li><a href="/permohonan">Prosedur Permohonan Informasi</a></li>
+              <li><a href="/pengajuan">Prosedur Pengajuan Keberatan</a></li>
+              <li><a href="/penyelesaian">Prosedur Penyelesaian Sengketa</a></li>
             </ul>
           </li>
           <li><a href="/blog">Kegiatan</a></li>

@@ -36,7 +36,10 @@ Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
 });
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('layouts.main');
-Route::get('/about', [\App\Http\Controllers\AboutController::class, 'about'])->name('layouts.about');
+Route::get('/about/sejarah', [\App\Http\Controllers\AboutController::class, 'about'])->name('layouts.about');
+Route::get('/pimpinan', [\App\Http\Controllers\TentangController::class, 'pimpinan'])->name('layouts.pimpinan');
+Route::get('/organisasi', [\App\Http\Controllers\TentangController::class, 'organisasi'])->name('layouts.organisasi');
+Route::get('/maklumatpelayanan', [\App\Http\Controllers\TentangController::class, 'maklumat'])->name('layouts.maklumat');
 Route::get('/tupoksi', [\App\Http\Controllers\TupoksiController::class, 'tupoksi'])->name('layouts.tupoksi');
 Route::get('/blog', [\App\Http\Controllers\BlogController::class, 'blog'])->name('layouts.blogpost');
 Route::post('/blog/carikegiatan','App\Http\Controllers\blogController@cari')->name('layouts.cr_berita');
@@ -49,6 +52,9 @@ Route::get('/blog/details/{id}', [\App\Http\Controllers\BlogController::class, '
 Route::get('/opd', [\App\Http\Controllers\OPDController::class, 'opd'])->name('opd.opd');
 Route::get('/standarpelayanan', [\App\Http\Controllers\FrontendSPController::class, 'pelayanan'])->name('layouts.sp');
 Route::get('/petugas', [\App\Http\Controllers\PetugasFrontendController::class, 'petugasfront'])->name('layouts.ppid.petugas');
+Route::get('/permohonan', [\App\Http\Controllers\PetugasFrontendController::class, 'permohonan'])->name('layouts.ppid.permohonan');
+Route::get('/pengajuan', [\App\Http\Controllers\PetugasFrontendController::class, 'pengajuan'])->name('layouts.ppid.pengajuan');
+Route::get('/penyelesaian', [\App\Http\Controllers\PetugasFrontendController::class, 'penyelesaian'])->name('layouts.ppid.penyelesaian');
 
 // Route::get('/kegiatan', [\App\Http\Controllers\KegiatanController::class, 'kegiatan'])->name('layouts.admin.kegiatan');
 // Route::get('/create-kegiatan', [\App\Http\Controllers\KegiatanController::class, 'create_kegiatan'])->name('layouts.admin.create_kegiatan');

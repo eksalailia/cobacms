@@ -16,10 +16,10 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{{ asset ('frontend/assets/img/about-header.jpg')}}');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>Profil</h2>
+        <h2>Sejarah dan Visi Misi</h2>
         <ol>
           <li><a href="/">Beranda</a></li>
-          <li>Profil</li>
+          <li>Sejarah dan Visi Misi</li>
         </ol>
 
       </div>
@@ -35,24 +35,22 @@
           </div>
           <div class="col-lg-8">
             <div class="content ps-lg-5">
-              <h3>Dinas Komunikasi dan Informatika Kota Madiun</h3>
+              <h3>Sejarah Diskominfo Kota Madiun</h3>
               <p>
                 Website milik Kominfo............
               </p>
-              <h4><b>Visi dan Misi</b></h4><br>
+              <h3>Visi</h3><br>
               <ul>
-                <h5>Visi : </h5>
                 <li><i class="bi bi-check-circle-fill"></i> Terwujudnya pelayanan informasi Kinerja Pelayanan Pemerintah Kota Madiun yang transparan dan bertanggung jawab sesuai peraturan
                     perundang-undangan yang berlaku</li>
               </ul>
+              <h3>Misi</h3><br>
               <ul>
-                <h5>Misi : </h5>
                 <li><i class="bi bi-check-circle-fill"></i> Meningkatkan pengelolaan dan pelayanan informasi yang berkualitas</li>
                 <li><i class="bi bi-check-circle-fill"></i> Meningkatkan insfrastruktur pelayanan dan kompetensi SDM pengelola PPID</li>
               </ul>
-              <h4><b>Moto</b></h4><br>
+              <h3>Moto</h3><br>
               <ul>
-                <h5>Moto : </h5>
                 <li><i class="bi bi-check-circle-fill"></i> Cepat dan Tepat</li>
             </ul>
             </div>
@@ -63,7 +61,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Why Choose Us Section ======= -->
-    <section id="why-us" class="why-us">
+    {{-- <section id="why-us" class="why-us">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -124,25 +122,10 @@
         </div> --}}
 
       </div>
-    </section><!-- End Why Choose Us Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    {{-- <section id="call-to-action" class="call-to-action">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h3>Ut fugiat aliquam aut non</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            <a class="cta-btn" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section> --}}
-    <!-- End Call To Action Section -->
+    </section><!-- End Why Choose Us Section --> --}}
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    {{-- <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -150,12 +133,6 @@
 
         </div>
 
-
-{{--
-        <div class="slides-1 swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="item"> --}}
                 <div class="row gy-5">
                   @foreach($semua as $all)
                     <div class="col-xl-2 col-md-6" data-aos="fade-up" data-aos-delay="100" style="margin-left: 31px">
@@ -171,30 +148,7 @@
                     @endforeach
               </div>
             </div>
-            {{-- </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> --}}
-            </div>
-
-        {{-- <div class="row gy-5">
-        @foreach($semua as $all)
-          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-                <div class="member-img">
-                <img src="{{asset('img_profil/'.$all->img_profil)}}" class="img-fluid" style="height:200px; width:400px;" alt=""></div>
-              <div class="member-info">
-                <h3> {{$all->nama_profil}}</h3>
-                <span>{{$all->jabatan}}</span>
-              </div>
-            </div>
-          </div>
-          @endforeach
-    </div>
-    </div><!-- End Team Member --> --}}
-      {{-- </div> --}}
-    </section><!-- End Team Section -->
+    </section><!-- End Team Section --> --}}
 
     @include('layouts.footer')
 

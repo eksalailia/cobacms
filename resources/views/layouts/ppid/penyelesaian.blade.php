@@ -14,10 +14,10 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{{ asset ('frontend/assets/img/blog-header.jpg')}}');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>Prosedur Permohonan Informasi</h2>
+        <h2>Prosedur Penyelesaian Sengketa</h2>
         <ol>
           <li><a href="/home">Beranda</a></li>
-          <li>Prosedur Permohonan Informasi</li>
+          <li>Prosedur Penyelesaian Sengketa</li>
         </ol>
 
       </div>

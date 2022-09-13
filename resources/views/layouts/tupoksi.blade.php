@@ -38,18 +38,65 @@
             <div class="content ps-lg-5">
               <h3>Tugas Pokok dan Fungsi</h3><br>
               <h4><b>Kepala Dinas</b></h4><br>
+              <ol>
               <ul>
+                <h5><b>Tugas Pokok : </b></h5><br>
                 <li><i class="bi bi-check-circle-fill">
                     </i>Memimpin, mengkoordinasikan dan mengawasi pelaksanaan kebijakan, evaluasi, dan bimbigan teknis
                     di bidang komunikasi, informatika, statistik dan persandian sesuai dengan ketentuan peraturan
                     perundang-undangan</li>
               </ul>
+            </ol>
+              <ol>
+                <ul>
+                  <h5><b>Fungsi : </b></h5><br>
+                    <li><i class="bi bi-1-circle"></i>Penyusunan rumusan kebijakan teknis di bidang
+                    komunikasi dan informatika, statistik, dan persandian</li>
+                    <li><i class="bi bi-2-circle"></i>Penyelenggaraan urusan pemerintahan dan pelayanan
+                    umum di bidang komunikasi dan informatika, statistik, dan persandian</li>
+                    <li><i class="bi bi-3-circle"></i>Pembinaan dan pelaksanaan tugas di bidang
+                        komunikasi dan informatika, statistik, dan persandian</li>
+                    <li><i class="bi bi-4-circle"></i>Pemantauan, evaluasi dan pelaporan di bidang
+                        komunikasi dan informatika, statistik, dan persandian</li>
+                    <li><i class="bi bi-5-circle"></i>Pelaksanaan tugas lain yang bersifat kedinasan yang
+                        diberikan oleh Walikota sesuai dengan bidangnya</li>
+                </ul>
+              </ol>
               <h4><b>Sekretariat</b></h4><br>
+              <ol>
               <ul>
+                <h5><b>Tugas Pokok : </b></h5><br>
                 <li><i class="bi bi-check-circle-fill">
                     </i>Melaksanakan kebijakan pelayanan administrasi kepada semua unsur di lingkungan Dinas meliputi perencanaan,
                     pengelolaan, administrasi umu, rumah tangga, kepegawaian, dan administrasi keuangan.</li>
               </ul>
+              </ol>
+              <ol>
+                <ul>
+                  <h5><b>Fungsi : </b></h5><br>
+                    <li><i class="bi bi-1-circle"></i>Perumusan kebijakan teknis, penyusunan
+                        perencanaan program kerja, dan evaluasi pelaksanaan
+                        tugas-tugas pada Sekretariat</li>
+                    <li><i class="bi bi-2-circle"></i>Pengoordinasian penyusunan program kegiatan,
+                        pelayanan administratif, dan penyelenggaraan tugastugas bidang secara terpadu</li>
+                    <li><i class="bi bi-3-circle"></i>pengelolaan administrasi umum, rumah tangga, dan
+                        perlengkapan</li>
+                    <li><i class="bi bi-4-circle"></i>Pengelolaan urusan kehumasan, keprotokolan, dan
+                        kearsipan di lingkungan Dinas</li>
+                    <li><i class="bi bi-5-circle"></i>Pengelolaan administrasi dan pembinaan kepegawaian
+                        di lingkungan Dinas</li>
+                    <li><i class="bi bi-6-circle"></i>Pelaksanaan administrasi keuangan dan pembayaran
+                        gaji pegawai di lingkungan Dinas</li>
+                    <li><i class="bi bi-7-circle"></i>Penyusunan rencana program pelaksanaan
+                        pemeliharaan, rehabilitasi sedang dan berat prasarana
+                        di lingkungan Dinas</li>
+                    <li><i class="bi bi-8-circle"></i>Penyusunan rencana program pelaksanaan
+                        pengadaan/pemeliharaan sarana di lingkungan
+                        Dinas</li>
+                    <li><i class="bi bi-9-circle"></i>Pelaksanaan tugas lain yang bersifat kedinasan
+                        yang diberikan oleh Kepala Dinas</li>
+                </ul>
+              </ol>
               <ol>
               <ul>
                 <h5><b>Sekretariat terdiri atas : </b></h5><br>

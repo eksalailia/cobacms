@@ -268,7 +268,7 @@
             <div class="col-md-6">
               <h4>Struktur Organisasi <br>Dinas Kominfo Kota Madiun</h4>
               <p>Untuk melihat detail struktur organisasi, bisa dilihat di sini</p>
-              <a href="/about" class="btn-get-started">Lihat Di sini!</a>
+              <a href="/organisasi" class="btn-get-started">Lihat Di sini!</a>
             </div>
           </div>
 

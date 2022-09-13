@@ -71,7 +71,7 @@
 
         </div>
         <div>
-            <img src="{{ asset('frontend/assets/img/organisasi.png')}}" style="height: 550px; width: 1500px;margin-left: 6px" class="img-fluid" alt="">
+            <img src="{{ asset('frontend/assets/img/organisasi.jpg')}}" style="height: 650px; width: 1500px;margin-left: 6px" class="img-fluid" alt="">
           </div>
 
       </div>

@@ -162,6 +162,19 @@ Route::group(['middleware'=>'auth'],function(){
     Route::delete('/opd/delete/{pelayanan}', ['as' => 'opd.pelayanan.destroy', 'uses' => 'SPController@destroy']);
 });
 
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/admin/petugas','App\Http\Controllers\PetugasController@index')->name('layouts.admin.petugas.index');
+    Route::get('/admin/create/petugas','App\Http\Controllers\PetugasController@create')->name('layouts.admin.petugas.create');
+    Route::post('/admin/create/petugas','App\Http\Controllers\PetugasController@store')->name('layouts.admin.petugas.create');
+    Route::get('/edit/admin/petugas{id}','App\Http\Controllers\PetugasController@edit')->name('layouts.admin.petugas.edit');
+    Route::post('/edit/admin/petugas{id}','App\Http\Controllers\PetugasController@update')->name('layouts.admin.petugas.edit');
+    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
+    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
+    Route::get('/admin/petugas/{id}','App\Http\Controllers\PetugasController@show')->name('layouts.admin.petugas.show');
+    Route::delete('/admin/delete/{petugas}', ['as' => 'layouts.admin.petugas.destroy', 'uses' => 'PetugasController@destroy']);
+});
+
+
 
 
 Auth::routes();

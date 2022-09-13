@@ -128,6 +128,11 @@
             <span>Kegiatan</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="/admin/petugas">
+            <i class="fas fa-clipboard-list"></i>
+            <span>Petugas PPID</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="/saran">
             <i class="fas fa-comments"></i>
             <span>Saran</span></a>

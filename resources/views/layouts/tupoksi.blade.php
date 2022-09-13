@@ -37,9 +37,9 @@
           <div class="col-lg-8">
             <div class="content ps-lg-5">
               <h3>Tugas Pokok dan Fungsi</h3><br>
-              <h4><b>Kepala Dinas</b></h4><br>
+              <btn1><h4><b>Kepala Dinas</b></h4></btn1><br><br>
               <ol>
-              <ul>
+              <ul  id="div1">
                 <h5><b>Tugas Pokok : </b></h5><br>
                 <li><i class="bi bi-check-circle-fill">
                     </i>Memimpin, mengkoordinasikan dan mengawasi pelaksanaan kebijakan, evaluasi, dan bimbigan teknis
@@ -48,7 +48,7 @@
               </ul>
             </ol>
               <ol>
-                <ul>
+                <ul  id="div2">
                   <h5><b>Fungsi : </b></h5><br>
                     <li><i class="bi bi-1-circle"></i>Penyusunan rumusan kebijakan teknis di bidang
                     komunikasi dan informatika, statistik, dan persandian</li>
@@ -62,9 +62,9 @@
                         diberikan oleh Walikota sesuai dengan bidangnya</li>
                 </ul>
               </ol>
-              <h4><b>Sekretariat</b></h4><br>
+              <btn2><h4><b>Sekretariat</b></h4></btn2><br><br>
               <ol>
-              <ul>
+              <ul id="div4">
                 <h5><b>Tugas Pokok : </b></h5><br>
                 <li><i class="bi bi-check-circle-fill">
                     </i>Melaksanakan kebijakan pelayanan administrasi kepada semua unsur di lingkungan Dinas meliputi perencanaan,
@@ -72,7 +72,7 @@
               </ul>
               </ol>
               <ol>
-                <ul>
+                <ul id="div5">
                   <h5><b>Fungsi : </b></h5><br>
                     <li><i class="bi bi-1-circle"></i>Perumusan kebijakan teknis, penyusunan
                         perencanaan program kerja, dan evaluasi pelaksanaan
@@ -98,14 +98,14 @@
                 </ul>
               </ol>
               <ol>
-              <ul>
+              <ul id="div6">
                 <h5><b>Sekretariat terdiri atas : </b></h5><br>
                 <li><i class="bi bi-1-circle"></i>Sub Bagian Umum dan Keuangan</li>
                 <li><i class="bi bi-2-circle"></i>Sub Bagian Perencanaan dan Kepegawaian</li>
               </ul>
             </ol>
-              <h4><b>Bidang Pengelolaan Informasi dan Komunukasi Publik</b></h4><br>
-              <ul>
+            <btn3><h4><b>Bidang Pengelolaan Informasi dan Komunukasi Publik</b></h4></btn3><br><br>
+              <ul id="div7">
                 <li><i class="bi bi-check-circle-fill">
                     </i>Melaksanakan sebagian tugas Dinas yang meliputi penyiapan perumusan dan pelaksanaan kebijakan, penyusunan
                     norma, standar, prosedur dan kriteria dan pemberian bimbingaan teknis dan supervisi, serta pemantauan,

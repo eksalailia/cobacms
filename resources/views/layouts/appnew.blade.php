@@ -35,6 +35,42 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("btn1").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(1000);
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("btn2").click(function(){
+    $("#div4").fadeToggle();
+    $("#div5").fadeToggle("slow");
+    $("#div6").fadeToggle(1000);
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("btn3").click(function(){
+    $("#div7").fadeToggle();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("btn3").click(function(){
+    $("#div7").fadeToggle();
+  });
+});
+</script>
 </head>
 
 

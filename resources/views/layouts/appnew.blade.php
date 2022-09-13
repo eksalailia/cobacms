@@ -68,6 +68,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("btn3").click(function(){
     $("#div7").fadeToggle();
+    $("#div8").fadeToggle();
+    $("#div9").fadeToggle();
   });
 });
 </script>

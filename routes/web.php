@@ -124,18 +124,13 @@ Route::group(['middleware'=>'auth'],function(){
     Route::post('/admin/aktivitas/create','App\Http\Controllers\AktivitasController@store')->name('aktivitas.create');
     Route::get('/edit/aktivitas/{id}','App\Http\Controllers\AktivitasController@edit')->name('aktivitas.edit');
     Route::post('/edit/aktivitas/{id}','App\Http\Controllers\AktivitasController@update')->name('aktivitas.edit');
-    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/admin/aktivitas/{id}','App\Http\Controllers\AktivitasController@show')->name('aktivitas.show');
     Route::delete('/aktivitas/delete/{aktivitas}', ['as' => 'aktivitas.destroy', 'uses' => 'AktivitasController@destroy']);
 });
 
 Route::group(['middleware'=>'auth'],function(){
     Route::get('/opd/pengumuman','App\Http\Controllers\PengumumanController@index')->name('opd.pengumuman.index');
-    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/opd/pengumuman/{id}','App\Http\Controllers\PengumumanController@show')->name('opd.pengumuman.show');
-    // Route::delete('/kegiatan/delete/{kegiatan}', ['as' => 'kegiatan.destroy', 'uses' => 'KegiatanController@destroy']);
 });
 
 Route::group(['middleware'=>'auth'],function(){
@@ -144,8 +139,6 @@ Route::group(['middleware'=>'auth'],function(){
     Route::post('/opd/create','App\Http\Controllers\KegiatanOPDController@store')->name('opd.kegiatan.create');
     Route::get('/edit/opd/kegiatan{id}','App\Http\Controllers\KegiatanOPDController@edit')->name('opd.kegiatan.edit');
     Route::post('/edit/opd/kegiatan{id}','App\Http\Controllers\KegiatanOPDController@update')->name('opd.kegiatan.edit');
-    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/opd/kegiatan/{id}','App\Http\Controllers\KegiatanOPDController@show')->name('opd.kegiatan.show');
     Route::delete('/opd/delete/{kegiatan}', ['as' => 'opd.kegiatan.destroy', 'uses' => 'KegiatanOPDController@destroy']);
 });
@@ -156,8 +149,6 @@ Route::group(['middleware'=>'auth'],function(){
     Route::post('/opd/create/pelayanan','App\Http\Controllers\SPController@store')->name('opd.pelayanan.create');
     Route::get('/edit/opd/pelayanan{id}','App\Http\Controllers\SPController@edit')->name('opd.pelayanan.edit');
     Route::post('/edit/opd/pelayanan{id}','App\Http\Controllers\SPController@update')->name('opd.pelayanan.edit');
-    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/opd/pelayanan/{id}','App\Http\Controllers\SPController@show')->name('opd.pelayanan.show');
     Route::delete('/opd/delete/{pelayanan}', ['as' => 'opd.pelayanan.destroy', 'uses' => 'SPController@destroy']);
 });
@@ -168,10 +159,38 @@ Route::group(['middleware'=>'auth'],function(){
     Route::post('/admin/create/petugas','App\Http\Controllers\PetugasController@store')->name('layouts.admin.petugas.create');
     Route::get('/edit/admin/petugas{id}','App\Http\Controllers\PetugasController@edit')->name('layouts.admin.petugas.edit');
     Route::post('/edit/admin/petugas{id}','App\Http\Controllers\PetugasController@update')->name('layouts.admin.petugas.edit');
-    // Route::get('/show/{id}','App\Http\Controllers\KegiatanController@show')->name('kegiatan.show');
-    // Route::get('/admin/kegiatan/show/{kegiatan}', ['as' => 'kegiatan.show', 'uses' => 'KegiatanController@show']);
     Route::get('/admin/petugas/{id}','App\Http\Controllers\PetugasController@show')->name('layouts.admin.petugas.show');
     Route::delete('/admin/delete/{petugas}', ['as' => 'layouts.admin.petugas.destroy', 'uses' => 'PetugasController@destroy']);
+});
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/admin/permohonan','App\Http\Controllers\PermohonanController@index')->name('layouts.admin.permohonan.index');
+    Route::get('/admin/create/permohonan','App\Http\Controllers\PermohonanController@create')->name('layouts.admin.permohonan.create');
+    Route::post('/admin/create/permohonan','App\Http\Controllers\PermohonanController@store')->name('layouts.admin.permohonan.create');
+    Route::get('/edit/admin/permohonan{id}','App\Http\Controllers\PermohonanController@edit')->name('layouts.admin.permohonan.edit');
+    Route::post('/edit/admin/permohonan{id}','App\Http\Controllers\PermohonanController@update')->name('layouts.admin.permohonan.edit');
+    Route::get('/admin/permohonan/{id}','App\Http\Controllers\PermohonanController@show')->name('layouts.admin.permohonan.show');
+    Route::delete('/admin/delete/{permohonan}', ['as' => 'layouts.admin.permohonan.destroy', 'uses' => 'PermohonanController@destroy']);
+});
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/admin/pengajuan','App\Http\Controllers\PengajuanController@index')->name('layouts.admin.pengajuan.index');
+    Route::get('/admin/create/pengajuan','App\Http\Controllers\PengajuanController@create')->name('layouts.admin.pengajuan.create');
+    Route::post('/admin/create/pengajuan','App\Http\Controllers\PengajuanController@store')->name('layouts.admin.pengajuan.create');
+    Route::get('/edit/admin/pengajuan{id}','App\Http\Controllers\PengajuanController@edit')->name('layouts.admin.pengajuan.edit');
+    Route::post('/edit/admin/pengajuan{id}','App\Http\Controllers\PengajuanController@update')->name('layouts.admin.pengajuan.edit');
+    Route::get('/admin/pengajuan/{id}','App\Http\Controllers\PengajuanController@show')->name('layouts.admin.pengajuan.show');
+    Route::delete('/admin/delete/{pengajuan}', ['as' => 'layouts.admin.pengajuan.destroy', 'uses' => 'PengajuanController@destroy']);
+});
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::get('/admin/penyelesaian','App\Http\Controllers\PenyelesaianController@index')->name('layouts.admin.penyelesaian.index');
+    Route::get('/admin/create/penyelesaian','App\Http\Controllers\PenyelesaianController@create')->name('layouts.admin.penyelesaian.create');
+    Route::post('/admin/create/penyelesaian','App\Http\Controllers\PenyelesaianController@store')->name('layouts.admin.penyelesaian.create');
+    Route::get('/edit/admin/penyelesaian{id}','App\Http\Controllers\PenyelesaianController@edit')->name('layouts.admin.penyelesaian.edit');
+    Route::post('/edit/admin/penyelesaian{id}','App\Http\Controllers\PenyelesaianController@update')->name('layouts.admin.penyelesaian.edit');
+    Route::get('/admin/penyelesaian/{id}','App\Http\Controllers\PenyelesaianController@show')->name('layouts.admin.penyelesaian.show');
+    Route::delete('/admin/delete/{penyelesaian}', ['as' => 'layouts.admin.penyelesaian.destroy', 'uses' => 'PenyelesaianController@destroy']);
 });
 
 

@@ -62,7 +62,7 @@
                                 @csrf
                                     <div class="form-group col-sm-12">
                                         <label>Nama</label>
-                                        <input type="text" id="judul" name="judul" class="form-control" >
+                                        <input type="text" id="nama" name="nama" class="form-control" >
                                     </div>
                                     <div class="form-group col-sm-12">
                                         <label>Jabatan</label>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <label>Pendidikan</label>
-                                    <input type="text" id="pendidikan" name="img_aktv" class="form-control">
+                                    <input type="text" id="pendidikan" name="pendidikan" class="form-control">
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label>Pelatihan yang diikuti</label>

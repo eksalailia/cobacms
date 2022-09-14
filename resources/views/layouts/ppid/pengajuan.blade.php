@@ -37,7 +37,7 @@
                 {{-- <img src="{{asset('img_aktv/'.$news->img_aktv)}}" alt="" class="img-fluid"> --}}
               </div>
 
-              <h1 class="title" style="text-align: center">jhjj</h1>
+              <h1 class="title" style="text-align: center">Prosedur Pengajuan Keberatan</h1>
 
               <div class="meta-top">
                 {{-- <ul>

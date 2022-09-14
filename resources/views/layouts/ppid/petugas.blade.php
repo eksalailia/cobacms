@@ -37,7 +37,7 @@
                 {{-- <img src="{{asset('img_aktv/'.$news->img_aktv)}}" alt="" class="img-fluid"> --}}
               </div>
 
-              <h1 class="title" style="text-align: center">jhjj</h1>
+              <h1 class="title" style="text-align: center">Petugas PPID dan Pengaduan</h1>
 
               <div class="meta-top">
                 {{-- <ul>
@@ -52,10 +52,12 @@
                     <table id="bootstrap-all-table-export" class="table table-striped table-bordered">
                                             <thead>
                                                 <tr>
+                                                <th>No</th>
                                                 <th>Nama</th>
-                                                <th>NIP</th>
                                                 <th>Jabatan</th>
-                                                <th>Keterangan</th>
+                                                <th>Uraian Jabatan</th>
+                                                <th>Pendidikan</th>
+                                                <th>Pelatihan yang diikuti</th>
                                                 </tr>
                                             </thead>
                                             <tbody>

@@ -127,9 +127,25 @@
             <i class="fas fa-clipboard-list"></i>
             <span>Kegiatan</span></a>
     </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-book"></i>
+            <span>Prosedur</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="/admin/permohonan"><i class="fa fa-file-alt"></i> Prosedur Permohonan</a>
+                <a class="collapse-item" href="/admin/pengajuan"><i class="fa fa-envelope-open-text"></i> Prosedur Pengajuan</a>
+                <a class="collapse-item" href="/admin/penyelesaian"><i class="fa fa-stamp"></i> Prosedur Penyelesain</a>
+            </div>
+        </div>
+    </li>
+
     <li class="nav-item">
         <a class="nav-link" href="/admin/petugas">
-            <i class="fas fa-clipboard-list"></i>
+            <i class="fas fa-user-circle"></i>
             <span>Petugas PPID</span></a>
     </li>
     <li class="nav-item">

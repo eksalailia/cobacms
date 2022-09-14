@@ -16,7 +16,7 @@
           {{-- <li><a href="/about">Tentang</a></li> --}}
           <li class="dropdown"><a href="/about/sejarah"><span>Tentang</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="/about/sejarah">Sejarah dan Visi Misi</a></li>
+              <li><a href="/about/sejarah">Sejarah & Visi Misi</a></li>
               <li><a href="/organisasi">Struktur Organisasi</a></li>
               <li><a href="/pimpinan">Profil Pimpinan</a></li>
               <li><a href="/tupoksi">Tugas Pokok dan Fungsi</a></li>

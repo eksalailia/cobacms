@@ -61,15 +61,16 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                            {{-- @foreach ($semua as $data)
+                                            @foreach ($petugas as $data)
                                             <tr>
-
+                                                <td>{{$data->id}}</td>
                                                 <td>{{ $data->nama }}</td>
-                                                <td>{{ $data->nip }}</td>
                                                 <td>{{ $data->jabatan }}</td>
-                                                <td>{!! $data->keterangan !!}</td>
+                                                <td>{!! $data->uraian !!}</td>
+                                                <td>{{$data->pendidikan}}</td>
+                                                <td>{!! $data->pelatihan !!}</td>
                                                 </tr>
-                                                @endforeach  --}}
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>

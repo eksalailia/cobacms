@@ -87,33 +87,6 @@
               <img src="assets/img/blog/blog-author.jpg" class="rounded-circle flex-shrink-0" alt="">
 
           </div>
-{{--
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400" >
-            <div class="sidebar ps-lg-4">
-              <div class="sidebar-item search-form">
-                <h3 class="sidebar-title">Search</h3>
-                <form class="form-inline" style="margin-top: 10px" action="{{route('layouts.cr_berita')}}" method="post">
-    		 	        {{csrf_field()}}
-                   <input  name="cari" type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
-                </form>
-              </div><!-- End sidebar search formn-->
-              <br></br>
-
-              <div class="col-md-8">
-		<div class=""><b>KEGIATAN LAINNYA</b></div>
-		<hr>
-		@foreach($semua as $ls)
-		<a href="{{route('layouts.blog_details',$ls->id)}}" style="text-decoration: none; color: black">
-      <div class="post-img">
-       <img src="{{asset('img_aktv/'.$ls->img_aktv)}}" alt="" class="img-fluid" style="width:200px; height:200px;">
-      </div>
-			<p><b>{{$ls->judul}}</b></p>
-			<p>{!! substr($ls->isi,0,100) !!}...</p>
-			<br>
-		</a>
-		@endforeach
-	</div> --}}
 </div>
     </section><!-- End Blog Details Section -->
 

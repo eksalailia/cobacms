@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Pelayanan;
 
 use Illuminate\Http\Request;
 
 class FrontendSPController extends Controller
 {
     public function pelayanan(){
-        return view('layouts.sp');
+        $pelayanan = pelayanan::orderBy('created_at','DESC')
+        ->get();
+        return view('layouts.sp', compact('pelayanan'));
     }
 }

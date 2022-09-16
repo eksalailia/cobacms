@@ -65,12 +65,10 @@
                                     </div>
                                     <div class="form-group col-sm-12">
                                         <label>Komponen</label>
-                                        <input type="text" id="komponen" name="komponen" class="form-control" >
+                                        <textarea class="ckeditor form-control valid" name="komponen" rows="5" cols="33" style="width:100%"></textarea>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label>Uraian</label>
-                                        {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" placeholder="Deskripsi">
-                                    </div> --}}
                                     <textarea class="ckeditor form-control valid" name="uraian" rows="5" cols="33" style="width:100%"></textarea>
                                 </div>
                                     <div class="form-group col-sm-5">

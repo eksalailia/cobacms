@@ -26,9 +26,9 @@
             <ul>
               <li><i class="bi bi-dash"></i> <a href="/">Beranda</a></li>
               <li><i class="bi bi-dash"></i> <a href="/about">Tentang</a></li>
-              <li><i class="bi bi-dash"></i> <a href="/blog">Aktivitas</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/petugas">PPID</a></li>
+              <li><i class="bi bi-dash"></i> <a href="/blog">Kegiatan</a></li>
               <li><i class="bi bi-dash"></i> <a href="/contact">Kontak</a></li>
-              <li><i class="bi bi-dash"></i> <a href="/login">Login</a></li>
             </ul>
           </div>
 

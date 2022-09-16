@@ -35,7 +35,7 @@
                 {{-- <img src="{{asset('img_aktv/'.$news->img_aktv)}}" alt="" class="img-fluid"> --}}
               </div>
 
-              <h1 class="title" style="text-align: center">Standar Pelayanan</h1>
+              <h1 class="title" style="text-align: center">Standar Pelayanan Dinas Kominfo Kota Madiun </h1>
 
               <div class="meta-top">
                 {{-- <ul>
@@ -50,7 +50,7 @@
                     <table id="bootstrap-all-table-export" class="table table-striped table-bordered">
                                             <thead>
                                                 <tr>
-                                                <th>No</th>
+                                                <th>No.</th>
                                                 <th>Jenis Layanan</th>
                                                 <th>Komponen</th>
                                                 <th>Uraian Layanan</th>
@@ -59,9 +59,9 @@
                                             <tbody>
                                             @foreach ($pelayanan as $data)
                                             <tr>
-                                                <td>{{$data->id}}</td>
+                                                <td>{{$data->id}}.</td>
                                                 <td>{{ $data->jenis }}</td>
-                                                <td>{{ $data->komponen }}</td>
+                                                <td>{!! $data->komponen !!}</td>
                                                 <td>{!! $data->uraian !!}</td>
                                                 </tr>
                                                 @endforeach

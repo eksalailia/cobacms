@@ -77,7 +77,7 @@
                                                 @foreach ($pelayanan as $data)
                                                 <td>{{ $data->id }}</td>
                                                 <td>{{ $data->jenis}}</td>
-                                                <td>{{ $data->komponen }}</td>
+                                                <td>{!! $data->komponen !!}</td>
                                                 <td>{!! $data->uraian !!}</td>
                                                 <td>
                                                     <form action="" method="POST">

@@ -19,7 +19,7 @@
               <li><a href="/about/sejarah">Sejarah & Visi Misi</a></li>
               <li><a href="/organisasi">Struktur Organisasi</a></li>
               <li><a href="/pimpinan">Profil Pimpinan</a></li>
-              <li><a href="/tupoksi">Tugas Pokok dan Fungsi</a></li>
+              <li><a href="/tupoksi">Tugas Pokok & Fungsi</a></li>
               <li><a href="/standarpelayanan">Standar Pelayanan</a></li>
               <li><a href="/maklumatpelayanan">Maklumat Pelayanan</a></li>
             </ul>

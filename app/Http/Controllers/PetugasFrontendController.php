@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class PetugasFrontendController extends Controller
 {
     public function petugasfront(){
-        $petugas = petugas::orderBy('created_at','DESC')
+        $petugas = petugas::orderBy('created_at','ASC')
         ->get();
         return view('layouts.ppid.petugas', compact('petugas'));
     }

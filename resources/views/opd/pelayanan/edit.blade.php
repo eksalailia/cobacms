@@ -55,14 +55,12 @@
                     <input type="text" id="jenis" name="jenis" class="form-control" required="" value="{{$pelayanan->jenis}}" >
                 </div>
                 <div class="form-group col-sm-12">
-
                     <label>Komponen</label>
-                    <input type="text" id="komponen" name="komponen" class="form-control" required="" value="{{$pelayanan->komponen}}" >
+                    <textarea class="ckeditor form-control valid" name="komponen" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$pelayanan->komponen}}</textarea>
                 </div>
                 <div class="form-group col-sm-12">
                     <label>Uraian</label>
                     <textarea class="ckeditor form-control valid" name="uraian" rows="5" cols="33" style="width:100%"  class="form-control" required="" >{{$pelayanan->uraian}}</textarea>
-                    {{-- <input type="text" id="deskripsi" name="deskripsi" class="form-control" required="" value="{{$pelayanan->deskripsi}}" > --}}
                 </div>
                 <div class="form-group col-sm-12">
                 <input type="submit" value="Simpan" class="btn btn-success">&nbsp;

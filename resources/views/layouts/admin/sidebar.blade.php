@@ -110,11 +110,11 @@
             <span>Pengumuman</span></a>
     </li> --}}
 
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="/admin/pengumuman">
             <i class="fa fa-bullhorn"></i>
             <span>Pengumuman</span></a>
-    </li>
+    </li> --}}
 
     <!-- Nav Item - Profile -->
     <li class="nav-item">

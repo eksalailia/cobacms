@@ -180,7 +180,7 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('/edit/admin/pengajuan{id}','App\Http\Controllers\PengajuanController@edit')->name('layouts.admin.pengajuan.edit');
     Route::post('/edit/admin/pengajuan{id}','App\Http\Controllers\PengajuanController@update')->name('layouts.admin.pengajuan.edit');
     Route::get('/admin/pengajuan/{id}','App\Http\Controllers\PengajuanController@show')->name('layouts.admin.pengajuan.show');
-    Route::delete('/admin/delete/{pengajuan}', ['as' => 'layouts.admin.pengajuan.destroy', 'uses' => 'PengajuanController@destroy']);
+    Route::delete('/admin/clear/{pengajuan}', ['as' => 'layouts.admin.pengajuan.destroy', 'uses' => 'PengajuanController@destroy']);
 });
 
 Route::group(['middleware'=>'auth'],function(){
@@ -190,7 +190,7 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('/edit/admin/penyelesaian{id}','App\Http\Controllers\PenyelesaianController@edit')->name('layouts.admin.penyelesaian.edit');
     Route::post('/edit/admin/penyelesaian{id}','App\Http\Controllers\PenyelesaianController@update')->name('layouts.admin.penyelesaian.edit');
     Route::get('/admin/penyelesaian/{id}','App\Http\Controllers\PenyelesaianController@show')->name('layouts.admin.penyelesaian.show');
-    Route::delete('/admin/delete/{penyelesaian}', ['as' => 'layouts.admin.penyelesaian.destroy', 'uses' => 'PenyelesaianController@destroy']);
+    Route::delete('/admin/hapus/{penyelesaian}', ['as' => 'layouts.admin.penyelesaian.destroy', 'uses' => 'PenyelesaianController@destroy']);
 });
 
 

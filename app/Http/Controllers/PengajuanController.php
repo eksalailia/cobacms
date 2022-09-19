@@ -31,17 +31,22 @@ class PengajuanController extends Controller
         $pengajuan->uraian = $request->uraian;
         $pengajuan->img = $org;
         $pengajuan->save();
+            return redirect()->route('layouts.admin.pengajuan.index')
+                ->with('success','Pengajuan Berhasil Ditambahkan!');
+
         if ($pengajuan) {
             return redirect()->route('layouts.admin.pengajuan.index');
         } else {
             return redirect()->route('layouts.admin.pengajuan.index');
         }
+
     }
 
     public function edit($id) {
         $data = Pengajuan::all();
         $pengajuan = Pengajuan::find($id);
         return view('layouts.admin.pengajuan.edit',compact('data','pengajuan'));
+
     }
 
     public function update(Request $request, $id)
@@ -52,6 +57,8 @@ class PengajuanController extends Controller
             $pengajuan->judul = $request->judul;
             $pengajuan->uraian = $request->uraian;
             $pengajuan->save();
+            return redirect()->route('layouts.admin.pengajuan.index')
+                ->with('success','Pengajuan Berhasil Diupdate!');
 
            if ($pengajuan) {
                 return redirect()->route('layouts.admin.pengajuan.index');
@@ -69,12 +76,14 @@ class PengajuanController extends Controller
             $pengajuan->uraian = $request->uraian;
             $pengajuan->img = $org;
             $pengajuan->save();
+
             if ($pengajuan) {
                 return redirect()->route('layouts.admin.pengajuan.index');
             } else {
                 return redirect()->route('layouts.admin.pengajuan.index');
             }
         }
+
     }
 
     public function show($id)
@@ -82,11 +91,12 @@ class PengajuanController extends Controller
         $data= Pengajuan::find($id);
         return view('layouts.admin.pengajuan.show', compact('data'));
     }
+
     public function destroy($id) {
         // Alert::success('pengajuan Berhasi Dihapus','Sukses');
         Pengajuan::find($id)->delete();
         return redirect()->route('layouts.admin.pengajuan.index')
-            ->with('success', 'pengajuan Berhasil Dihapus!');
+            ->with('success', 'Pengajuan Berhasil Dihapus!');
     }
 }
 

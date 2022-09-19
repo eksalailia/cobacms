@@ -52,7 +52,7 @@
 
                     <label>Image</label>
                     <img src="{{asset('img/'.$permohonan->img)}}" style="width: 500px; height: 250px;">
-                    <input type="file" name="img_aktv" class="form-control">
+                    <input type="file" name="img" class="form-control">
                 </div>
                 <div class="form-group col-sm-12">
 

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class TentangController extends Controller
 {
     public function pimpinan(){
-        $semua = Profil::orderBy('created_at','DESC')
+        $semua = Profil::orderBy('created_at','ASC')
         ->take(5)
         ->get();
         return view('layouts.pimpinan',compact('semua'));

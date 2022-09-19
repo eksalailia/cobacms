@@ -32,16 +32,18 @@
           <div class="col-lg-20" data-aos="fade-up" data-aos-delay="200">
 
             <article class="blog-details">
+                @foreach ($permohonan as $permohonan)
 
-              <h1 class="title" style="text-align: center">Prosedur Permohonan Informasi</h1>
+{{--
+              <h1 class="title" style="text-align: center">Prosedur Permohonan Informasi</h1> --}}
+              <h1 class="title" style="text-align: center">{{$permohonan->judul}}</h1>
               <br><br>
-              @foreach ($permohonan as $permohonan)
-
+                <br><br>
               <div class="post-img">
-                <img src="{{asset('img/'.$permohonan->img)}}" alt="" class="img-fluid" style="align:center; margin-left:250px;">
+                <img src="{{asset('img/'.$permohonan->img)}}" alt="" class="img-fluid" style="align:center; margin-left:270px;">
               </div>
-              <h2 class="title">{{$permohonan->judul}}</h2>
-              <div class="content">
+              {{-- <h3 class="title" style="text-align: center">{{$permohonan->judul}}</h3> --}}
+              <div class="content" >
                 <p>
                 {!! $permohonan->uraian !!}
                 </p>

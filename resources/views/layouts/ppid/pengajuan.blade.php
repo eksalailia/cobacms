@@ -32,15 +32,15 @@
           <div class="col-lg-20" data-aos="fade-up" data-aos-delay="200">
 
             <article class="blog-details">
+                @foreach ($pengajuan as $pengajuan)
+                <h1 class="title" style="text-align: center">{{$pengajuan->judul}}</h1>
+              <br><br><br><br>
 
-              <h1 class="title" style="text-align: center">Prosedur Pengajuan Keberatan</h1>
-              <br><br>
-              @foreach ($pengajuan as $pengajuan)
 
                   <div class="post-img">
-                    <img src="{{asset('img/'.$pengajuan->img)}}" alt="" class="img-fluid" style="align:center;">
+                    <img src="{{asset('img/'.$pengajuan->img)}}" alt="" class="img-fluid" style="align:center; margin-left:270px;">
                   </div>
-              <h2 class="title">{{$pengajuan->judul}}</h2>
+
                   <div class="content">
                     <p>
                     {!! $pengajuan->uraian !!}

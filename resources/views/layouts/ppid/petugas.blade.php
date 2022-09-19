@@ -52,7 +52,7 @@
                     <table id="bootstrap-all-table-export" class="table table-striped table-bordered">
                                             <thead>
                                                 <tr>
-                                                <th>No</th>
+                                                <th>No.</th>
                                                 <th>Nama</th>
                                                 <th>Jabatan</th>
                                                 <th>Uraian Jabatan</th>
@@ -63,7 +63,7 @@
                                             <tbody>
                                             @foreach ($petugas as $data)
                                             <tr>
-                                                <td>{{$data->id}}</td>
+                                                <td>{{$data->id}}.</td>
                                                 <td>{{ $data->nama }}</td>
                                                 <td>{{ $data->jabatan }}</td>
                                                 <td>{!! $data->uraian !!}</td>

@@ -32,15 +32,15 @@
           <div class="col-lg-20" data-aos="fade-up" data-aos-delay="200">
 
             <article class="blog-details">
-              <h1 class="title" style="text-align: center">Prosedur Penyelesaian Sengketa</h1>
+                @foreach ($penyelesaian as $penyelesaian)
+                <h1 class="title" style="text-align: center">{{$penyelesaian->judul}}</h1>
 
-              <br><br>
-              @foreach ($penyelesaian as $penyelesaian)
+              <br><br><br><br>
 
                   <div class="post-img">
-                    <img src="{{asset('img/'.$penyelesaian->img)}}" alt="" class="img-fluid" style="align:center;">
+                    <img src="{{asset('img/'.$penyelesaian->img)}}" alt="" class="img-fluid" style="align:center; margin-left:150px;">
                   </div>
-              <h2 class="title">{{$penyelesaian->judul}}</h2>
+
                   <div class="content">
                     <p>
                     {!! $penyelesaian->uraian !!}

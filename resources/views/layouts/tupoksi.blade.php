@@ -37,7 +37,7 @@
           <div class="col-lg-8">
             <div class="content ps-lg-5">
               <h3>Tugas Pokok & Fungsi</h3><br>
-              <btn1><h4><b>Kepala Dinas</b> <i class="bi bi-caret-down-fill"></i></h4></btn1><br><br>
+              <btn1><h4><b>Kepala Dinas</b> </h4></btn1><br><br>
               <ol>
               <ul  id="div1">
                 <h5><b>Tugas Pokok : </b></h5><br>

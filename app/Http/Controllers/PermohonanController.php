@@ -31,6 +31,9 @@ class PermohonanController extends Controller
         $permohonan->uraian = $request->uraian;
         $permohonan->img = $org;
         $permohonan->save();
+        return redirect()->route('layouts.admin.permohonan.index')
+                ->with('success','Permohonan Berhasil Ditambahkan!');
+
         if ($permohonan) {
             return redirect()->route('layouts.admin.permohonan.index');
         } else {
@@ -52,6 +55,8 @@ class PermohonanController extends Controller
             $permohonan->judul = $request->judul;
             $permohonan->uraian = $request->uraian;
             $permohonan->save();
+            return redirect()->route('layouts.admin.permohonan.index')
+                ->with('success','Permohonan Berhasil Ditambahkan!');
 
            if ($permohonan) {
                 return redirect()->route('layouts.admin.permohonan.index');
@@ -86,6 +91,6 @@ class PermohonanController extends Controller
         // Alert::success('permohonan Berhasi Dihapus','Sukses');
         Permohonan::find($id)->delete();
         return redirect()->route('layouts.admin.permohonan.index')
-            ->with('success', 'permohonan Berhasil Dihapus!');
+            ->with('success', 'Permohonan Berhasil Dihapus!');
     }
 }

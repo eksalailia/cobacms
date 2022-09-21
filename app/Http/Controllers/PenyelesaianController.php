@@ -31,6 +31,8 @@ class PenyelesaianController extends Controller
         $penyelesaian->uraian = $request->uraian;
         $penyelesaian->img = $org;
         $penyelesaian->save();
+        return redirect()->route('layouts.admin.penyelesaian.index')
+                ->with('success','Penyelesaian Berhasil Ditambahkan!');
         if ($penyelesaian) {
             return redirect()->route('layouts.admin.penyelesaian.index');
         } else {
@@ -52,6 +54,8 @@ class PenyelesaianController extends Controller
             $penyelesaian->judul = $request->judul;
             $penyelesaian->uraian = $request->uraian;
             $penyelesaian->save();
+            return redirect()->route('layouts.admin.penyelesaian.index')
+                ->with('success','Penyelesaian Berhasil Ditambahkan!');
 
            if ($penyelesaian) {
                 return redirect()->route('layouts.admin.penyelesaian.index');
@@ -86,7 +90,7 @@ class PenyelesaianController extends Controller
         // Alert::success('penyelesaian Berhasi Dihapus','Sukses');
         Penyelesaian::find($id)->delete();
         return redirect()->route('layouts.admin.penyelesaian.index')
-            ->with('success', 'penyelesaian Berhasil Dihapus!');
+            ->with('success', 'Penyelesaian Berhasil Dihapus!');
     }
 }
 

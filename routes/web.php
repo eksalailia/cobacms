@@ -170,7 +170,7 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('/edit/admin/permohonan{id}','App\Http\Controllers\PermohonanController@edit')->name('layouts.admin.permohonan.edit');
     Route::post('/edit/admin/permohonan{id}','App\Http\Controllers\PermohonanController@update')->name('layouts.admin.permohonan.edit');
     Route::get('/admin/permohonan/{id}','App\Http\Controllers\PermohonanController@show')->name('layouts.admin.permohonan.show');
-    Route::delete('/admin/delete/{permohonan}', ['as' => 'layouts.admin.permohonan.destroy', 'uses' => 'PermohonanController@destroy']);
+    Route::delete('/admin/delete2/{permohonan}', ['as' => 'layouts.admin.permohonan.destroy', 'uses' => 'PermohonanController@destroy']);
 });
 
 Route::group(['middleware'=>'auth'],function(){

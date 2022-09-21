@@ -18,7 +18,7 @@
             <p>Selamat datang di website milik Dinas Komunikasi dan Informatika Kota Madiun. </p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="/about" class="btn-get-started">Info Lanjutan</a>
+            <a href="/about/sejarah" class="btn-get-started">Info Lanjutan</a>
             <a href="https://www.youtube.com/watch?v=M7HwzLdqKJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Lihat video</span></a>
           </div>
 
@@ -46,7 +46,7 @@
                   <div class="item" style="margin-left: 100px; margin-top: 100px;">
                     <h3 class="mb-3">{{$lts->judul}}</h3>
                     <!-- <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4> -->
-                    <p>{{substr($lts->isi,0,1000)}}...</p>
+                    <p>{!! substr($lts->isi,0,1000) !!}...</p>
                     <a href="{{route('layouts.blog_details',$lts->id)}}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div><!-- End slide item -->

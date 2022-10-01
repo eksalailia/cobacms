@@ -73,6 +73,23 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+    $(document).ready(function(){
+      $("btn4").click(function(){
+        $("#div10").fadeToggle();
+        $("#div11").fadeToggle();
+      });
+    });
+    </script>
+<script>
+    $(document).ready(function(){
+      $("btn5").click(function(){
+        $("#div12").fadeToggle();
+        $("#div13").fadeToggle();
+        $("#div14").fadeToggle();
+      });
+    });
+    </script>
 </head>
 
 

@@ -37,7 +37,7 @@
           <div class="col-lg-8">
             <div class="content ps-lg-5">
               <h3>Tugas Pokok & Fungsi</h3><br>
-              <btn1><h4><b>Kepala Dinas</b> </h4></btn1><br><br>
+              <btn1><h4><b>Kepala Dinas</b> </h4></btn1><br>
               <ol>
               <ul  id="div1">
                 <h5><b>Tugas Pokok : </b></h5><br>
@@ -50,19 +50,19 @@
               <ol>
                 <ul  id="div2">
                   <h5><b>Fungsi : </b></h5><br>
-                    <li><i class="bi bi-1-circle"></i>Penyusunan rumusan kebijakan teknis di bidang
+                    <li><i class="bi bi-circle-fill"></i>Penyusunan rumusan kebijakan teknis di bidang
                     komunikasi dan informatika, statistik, dan persandian</li>
-                    <li><i class="bi bi-2-circle"></i>Penyelenggaraan urusan pemerintahan dan pelayanan
+                    <li><i class="bi bi-circle-fill"></i>Penyelenggaraan urusan pemerintahan dan pelayanan
                     umum di bidang komunikasi dan informatika, statistik, dan persandian</li>
-                    <li><i class="bi bi-3-circle"></i>Pembinaan dan pelaksanaan tugas di bidang
+                    <li><i class="bi bi-circle-fill"></i>Pembinaan dan pelaksanaan tugas di bidang
                         komunikasi dan informatika, statistik, dan persandian</li>
-                    <li><i class="bi bi-4-circle"></i>Pemantauan, evaluasi dan pelaporan di bidang
+                    <li><i class="bi bi-circle-fill"></i>Pemantauan, evaluasi dan pelaporan di bidang
                         komunikasi dan informatika, statistik, dan persandian</li>
-                    <li><i class="bi bi-5-circle"></i>Pelaksanaan tugas lain yang bersifat kedinasan yang
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan tugas lain yang bersifat kedinasan yang
                         diberikan oleh Walikota sesuai dengan bidangnya</li>
                 </ul>
               </ol>
-              <btn2><h4><b>Sekretariat</b></h4></btn2><br><br>
+              <btn2><h4><b>Sekretariat</b></h4></btn2><br>
               <ol>
               <ul id="div4">
                 <h5><b>Tugas Pokok : </b></h5><br>
@@ -74,37 +74,37 @@
               <ol>
                 <ul id="div5">
                   <h5><b>Fungsi : </b></h5><br>
-                    <li><i class="bi bi-1-circle"></i>Perumusan kebijakan teknis, penyusunan
+                    <li><i class="bi bi-circle-fill"></i>Perumusan kebijakan teknis, penyusunan
                         perencanaan program kerja, dan evaluasi pelaksanaan
                         tugas-tugas pada Sekretariat</li>
-                    <li><i class="bi bi-2-circle"></i>Pengoordinasian penyusunan program kegiatan,
+                    <li><i class="bi bi-circle-fill"></i>Pengoordinasian penyusunan program kegiatan,
                         pelayanan administratif, dan penyelenggaraan tugastugas bidang secara terpadu</li>
-                    <li><i class="bi bi-3-circle"></i>pengelolaan administrasi umum, rumah tangga, dan
+                    <li><i class="bi bi-circle-fill"></i>pengelolaan administrasi umum, rumah tangga, dan
                         perlengkapan</li>
-                    <li><i class="bi bi-4-circle"></i>Pengelolaan urusan kehumasan, keprotokolan, dan
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan urusan kehumasan, keprotokolan, dan
                         kearsipan di lingkungan Dinas</li>
-                    <li><i class="bi bi-5-circle"></i>Pengelolaan administrasi dan pembinaan kepegawaian
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan administrasi dan pembinaan kepegawaian
                         di lingkungan Dinas</li>
-                    <li><i class="bi bi-6-circle"></i>Pelaksanaan administrasi keuangan dan pembayaran
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan administrasi keuangan dan pembayaran
                         gaji pegawai di lingkungan Dinas</li>
-                    <li><i class="bi bi-7-circle"></i>Penyusunan rencana program pelaksanaan
+                    <li><i class="bi bi-circle-fill"></i>Penyusunan rencana program pelaksanaan
                         pemeliharaan, rehabilitasi sedang dan berat prasarana
                         di lingkungan Dinas</li>
-                    <li><i class="bi bi-8-circle"></i>Penyusunan rencana program pelaksanaan
+                    <li><i class="bi bi-circle-fill"></i>Penyusunan rencana program pelaksanaan
                         pengadaan/pemeliharaan sarana di lingkungan
                         Dinas</li>
-                    <li><i class="bi bi-9-circle"></i>Pelaksanaan tugas lain yang bersifat kedinasan
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan tugas lain yang bersifat kedinasan
                         yang diberikan oleh Kepala Dinas</li>
                 </ul>
               </ol>
               <ol>
               <ul id="div6">
                 <h5><b>Sekretariat terdiri atas : </b></h5><br>
-                <li><i class="bi bi-1-circle"></i>Sub Bagian Umum dan Keuangan</li>
-                <li><i class="bi bi-2-circle"></i>Sub Bagian Perencanaan dan Kepegawaian</li>
+                <li><i class="bi bi-circle-fill"></i>Sub Bagian Umum dan Keuangan</li>
+                <li><i class="bi bi-circle-fill"></i>Sub Bagian Perencanaan dan Kepegawaian</li>
               </ul>
             </ol>
-            <btn3><h4><b>Bidang Pengelolaan Informasi dan Komunukasi Publik</b></h4></btn3><br><br>
+            <btn3><h4><b>Bidang Pengelolaan Informasi dan Komunikasi Publik</b></h4></btn3><br>
               <ol>
               <ul id="div8">
                 <h5><b>Tugas Pokok : </b></h5><br>
@@ -117,49 +117,99 @@
                 <ol>
                 <ul id="div9">
                   <h5><b>Fungsi : </b></h5><br>
-                    <li><i class="bi bi-1-circle"></i>Perumusan kebijakan teknis, penyusunan
-                        perencanaan program kerja, dan evaluasi pelaksanaan
-                        tugas-tugas pada Sekretariat</li>
-                    <li><i class="bi bi-2-circle"></i>Pengoordinasian penyusunan program kegiatan,
-                        pelayanan administratif, dan penyelenggaraan tugastugas bidang secara terpadu</li>
-                    <li><i class="bi bi-3-circle"></i>pengelolaan administrasi umum, rumah tangga, dan
-                        perlengkapan</li>
-                    <li><i class="bi bi-4-circle"></i>Pengelolaan urusan kehumasan, keprotokolan, dan
-                        kearsipan di lingkungan Dinas</li>
-                    <li><i class="bi bi-5-circle"></i>Pengelolaan administrasi dan pembinaan kepegawaian
-                        di lingkungan Dinas</li>
-                    <li><i class="bi bi-6-circle"></i>Pelaksanaan administrasi keuangan dan pembayaran
-                        gaji pegawai di lingkungan Dinas</li>
-                    <li><i class="bi bi-7-circle"></i>Penyusunan rencana program pelaksanaan
-                        pemeliharaan, rehabilitasi sedang dan berat prasarana
-                        di lingkungan Dinas</li>
-                    <li><i class="bi bi-8-circle"></i>Penyusunan rencana program pelaksanaan
-                        pengadaan/pemeliharaan sarana di lingkungan
-                        Dinas</li>
-                    <li><i class="bi bi-9-circle"></i>Pelaksanaan tugas lain yang bersifat kedinasan
-                        yang diberikan oleh Kepala Dinas</li>
+                    <li><i class="bi bi-circle-fill"></i>Penyusunaan kebijakan teknis, perencanaan, program
+                        kerja, dan evaluasi pelaksanaan tugas-tugas pada
+                        Bidang Pengelolaan Informasi dan Komunikasi Publik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan monitoring opini dan aspirasi publik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan monitoring informasi dan penetapan
+                        agenda prioritas komunikasi Pemerintah Daerah</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan konten dan perencanaan media
+                        komunikasi publik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan media komunikasi publik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan pelayanan informasi publik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan layanan hubungan media</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan kemitraan dengan pemangku
+                        kepentingan</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan manajemen komunikasi krisis</li>
+                    <li><i class="bi bi-circle-fill"></i>Penguatan kapasitas sumber daya komunikasi
+                        publik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan tugas lain yang bersifat kedinasan yang
+                        diberikan oleh Kepala Dinas</li>
                 </ul>
               </ol>
-              <ul>
-                <h4><b>Bidang Pengelolaan Teknologi Informasi dan Komunikasi</b></h4><br>
-              <ul>
+              <btn4><h4><b>Bidang Pengelolaan Teknologi Informasi dan Komunikasi</b></h4></btn4><br>
+              <ol>
+              <ul id="div10">
+                <h5><b>Tugas Pokok : </b></h5><br>
                 <li><i class="bi bi-check-circle-fill">
                     </i>Melaksanakan sebagian tugas Dinas yang meliputi penyiapan perumusan dan pelaksanaan kebijakan, penyusunan
                     norma, standar, prosedur dan kriteria dan pemberian bimbingaan teknis dan supervisi, serta pemantauan,
                     evaluasi, dan pelaporan di Bidang Pengelolaan Teknologi Informasi dan Komunikasi.</li>
               </ul>
-              <h4><b>Bidang Pengelolaan Statistik dan Persandian</b></h4><br>
-              <ul>
+              </ol>
+                <ol>
+                <ul id="div11">
+                  <h5><b>Fungsi : </b></h5><br>
+                    <li><i class="bi bi-circle-fill"></i>Penyusunan kebijakan teknis, perencanaan, program
+                        kerja dan evaluasi pelaksanaan tugas-tugas pada
+                        Bidang Pengelolaan Teknologi Informasi dan
+                        Komunikasi</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan rencana induk dan anggaran
+                        pemerintahan berbasis elektronik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan nama domain</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan pusat data</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan sistem jaringan intra Pemerintah Daerah</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan sistem komunikasi intra Pemerintah
+                        Daerah</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan data dan informasi elektronik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan aplikasi dan proses bisnis pemerintahan
+                        berbasis elektronik</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan sistem penghubung layanan pemerintah</li>
+                    <li><i class="bi bi-circle-alt"></i>Pengelolaan ekosistem kota cerdas</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan sumber daya teknologi informasi dan
+                        komunikasi Pemerintah Daerah</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan Government Chief Information Officer</li>
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan tugas lain yang bersifat kedinasan yang
+                        diberikan oleh Kepala Dinas</li>
+                </ul>
+              </ol>
+              <btn5><h4><b>Bidang Pengelolaan Statistik dan Persandian</b></h4></btn5><br>
+              <ol>
+              <ul id="div12">
+                <h5><b>Tugas Pokok : </b></h5><br>
                 <li><i class="bi bi-check-circle-fill">
                     </i>Melaksanakan sebagian tugas Dinas yang meliputi penyiapan perumusan dan pelaksanaan kebijakan, penyusunan
                     norma, standar, prosedur dan kriteria dan pemberian bimbingaan teknis dan supervisi, serta pemantauan,
                     evaluasi, dan pelaporan di Bidang Pengelolaan Statistik dan Persandian.</li>
               </ul>
+              </ol>
               <ol>
-              <ul>
+                <ul id="div13">
+                  <h5><b>Fungsi : </b></h5><br>
+                    <li><i class="bi bi-circle-fill"></i>Penyusunan kebijakan teknis, perencanaan, program
+                        kerja dan evaluasi pelaksanaan tugas-tugas pada
+                        Bidang Pengelolaan Statistik dan Persandian</li>
+                    <li><i class="bi bi-circle-fill"></i>Penetapan, perencanaan teknis operasional program
+                        pengumpulan data statistik, pengolahan data dan
+                        diseminasi statistik serta persandian sesuai dengan
+                        norma, standar, prosedur dan kriteria yang ditetapkan
+                        Pemerintah</li>
+                    <li><i class="bi bi-circle-fill"></i>Penyelenggaraan administrasi di Bidang Pengelolaan
+                        Statistik dan Persandian</li>
+                    <li><i class="bi bi-circle-fill"></i>Pengelolaan program dan kegiatan di Bidang
+                        Pengelolaan Statistik dan Persandian</li>
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan evaluasi dan pelaporan program dan
+                        kegiatan di Bidang Pengelolaan Statistik dan
+                        Persandian</li>
+                    <li><i class="bi bi-circle-fill"></i>Pelaksanaan tugas lain yang bersifat kedinasan yang
+                        diberikan oleh Kepala Dinas</li>
+                </ul>
+              </ol>
+              <ol>
+              <ul id="div14">
                 <h5><b>Bidang Pengelolaan Statistik dan Persandian terdiri atas : </b></h5><br>
-                <li><i class="bi bi-1-circle"></i>Seksi pengelolaan data dan statistik</li>
-                <li><i class="bi bi-2-circle"></i>Seksi pengelolaan keamanan informasi dan persandian</li>
+                <li><i class="bi bi-circle-fill"></i>Seksi pengelolaan data dan statistik</li>
+                <li><i class="bi bi-circle-fill"></i>Seksi pengelolaan keamanan informasi dan persandian</li>
               </ul>
             </ol>
             </div>
